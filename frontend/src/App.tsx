@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, memo } from "react";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import { useDeckStore } from "./stores/store";
 
@@ -11,59 +11,93 @@ import { IDeck, IDeckCard } from "./types/types";
 import DeckTable from "./components/DeckTable";
 import Precision from "./components/Precision";
 import { formatElapsedTime, getRandomCards } from "./utils/utils";
+import { FaArrowTurnDown } from "react-icons/fa6";
+import { bind } from "wanakana";
 
-function WordCard({
-  word,
-  onAnswer,
-}: {
+interface WordCardProps {
   word: IDeckCard | null;
   onAnswer: (value: boolean) => void;
-}) {
+}
+
+const WordCard: React.FC<WordCardProps> = memo(({ word, onAnswer }) => {
+  const { inputMode } = useDeckStore();
+  const [inputValue, setInputValue] = useState("");
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  console.log('render')
+
   useEffect(() => {
     const handleKeyDown = (event: { key: string }) => {
       if (event.key === "1") {
         onAnswer(false);
-      } else if (event.key === "2" || event.key === " ") {
+      } else if (!inputMode && (event.key === "2" || event.key === " ")) {
         onAnswer(true);
       }
     };
 
     document.addEventListener("keydown", handleKeyDown);
-
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, [onAnswer]);
+  }, [onAnswer, inputMode]);
+
+  useEffect(() => {
+    if (inputRef.current) {
+      // Assuming bind is a function you use to bind some functionality to the input
+      // Replace with actual implementation if different
+      // bind(inputRef.current);
+    }
+  }, []);
+
+  const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setInputValue(e.target.value);
+  };
 
   return (
     word && (
-      <article className="w-96 shadow-xl rounded-lg overflow-hidden">
-        <div className="w-full h-40 bg-primary-content text-5xl flex items-center justify-center ">
+      <article className="w-96 shadow-xl bg-primary-content rounded-lg overflow-hidden">
+        <div className="w-full h-40 text-5xl flex items-center justify-center">
           {word.question}
         </div>
-        <footer className="flex h-20 text-2xl">
-          <button
-            className="bg-error w-full h-full hover:opacity-70 text-accent-content flex items-center justify-center"
-            onClick={() => onAnswer(false)}
-          >
-            FAIL
-            <span className="kbd kbd-sm text-base-content mb-3 ml-1">1</span>
-          </button>
-          <button
-            className="bg-primary w-full h-full hover:opacity-70 text-accent-content flex items-center justify-center"
-            onClick={() => onAnswer(true)}
-          >
-            PASS
-            <span className=" text-base-content mb-5 ml-1">
-              <span className="kbd kbd-sm mr-0.5">2</span>
-              <span className=" kbd kbd-sm">_</span>
-            </span>
-          </button>
+        <footer className="flex flex-col h-min text-2xl">
+          <div className="h-20 flex">
+            <button
+              className="bg-error w-full h-full hover:opacity-70 text-accent-content flex items-center justify-center"
+              onClick={() => onAnswer(false)}
+            >
+              FAIL
+              <span className="kbd kbd-sm text-base-content mb-3 ml-1">1</span>
+            </button>
+            {!inputMode ? (
+              <button
+                className="bg-primary w-full h-full hover:opacity-70 text-accent-content flex items-center justify-center"
+                onClick={() => onAnswer(true)}
+              >
+                PASS
+                <span className=" text-base-content mb-5 ml-1">
+                  <span className="kbd kbd-sm mr-0.5">2</span>
+                  <span className=" kbd kbd-sm">_</span>
+                </span>
+              </button>
+            ) : (
+              <div className="p-1">
+                <input
+                  type="text"
+                  className="p-2 bg-primary-content h-full border-2 border-base-content rounded-lg"
+                  value={inputValue}
+                  onChange={handleInput}
+                  ref={inputRef}
+                />
+              </div>
+            )}
+          </div>
         </footer>
       </article>
     )
   );
-}
+});
+
+WordCard.whyDidYouRender = true;
 
 function FailedWordCard({ word }: { word: IDeckCard | null }) {
   return (
@@ -208,7 +242,6 @@ function Game() {
   const [failedWords, setFailedWords] = useState<IDeckCard[]>([]);
   const answerTime = 60;
 
-
   const shiftDeck = () => {
     if (!decksEmpty) {
       const nextDeckIndex = (deckIndex + 1) % decks.length;
@@ -234,8 +267,6 @@ function Game() {
     }
   };
 
-  
-
   const intervalId = useRef<NodeJS.Timeout | null>(null);
   useEffect(() => {
     if (!decksEmpty) {
@@ -245,7 +276,7 @@ function Game() {
       intervalId.current = setInterval(() => {
         setElapsedTime((prevElapsedTime) => prevElapsedTime + 1);
       }, 1000);
-    }  
+    }
     return () => {
       if (intervalId.current) {
         clearInterval(intervalId.current);
@@ -334,7 +365,8 @@ export default function App() {
     );
   };
 
-  const { setDecks, precision } = useDeckStore();
+  const { decks, setDecks, precision, inputMode, setInputMode } =
+    useDeckStore();
 
   const startGame = () => {
     setGameStarted(true);
@@ -353,6 +385,7 @@ export default function App() {
     // Pick random cards based on precision value size
     const decksWithRandomCards = selectedDecks.map((deck) => {
       const randomCards = getRandomCards(deck, precision);
+
       return {
         ...deck,
         cards: randomCards,
@@ -368,6 +401,7 @@ export default function App() {
       )
     );
   }, [selectedDecksNames, precision]);
+  console.log(decks);
 
   return (
     <main className="flex overx flex-col gap-6 min-h-screen justify-center items-center">
@@ -378,36 +412,64 @@ export default function App() {
             BETA
           </span>
         </h1>
+        <h2 className="ml-4 text-base">
+          For a fun grading and reviewing experience
+        </h2>
       </header>
       {!gameStarted ? (
-        <div className=" w-96 bg-base-100  flex flex-col gap-4">
-          <Precision />
-
-          <div className="   flex w-full justify-end">
-            <div className="bg-base-200 w-fit p-4  rounded-box">
-              Total cards: <b>{totalCardCount}</b>
+        <div className="  bg-base-100  flex  gap-20">
+          <div>
+            <div
+              className={`flex w-full justify-end pr-6 ${decks.length > 0 ? "opacity-0" : ""}`}
+            >
+              <div className="animate-pulse animate-infinite flex items-end ">
+                <span className="mb-1">Select a deck</span>
+                <FaArrowTurnDown />
+              </div>
             </div>
+            <DeckTable
+              availableDecks={availableDecks}
+              handleChange={handleDeckSelection}
+            />
           </div>
-          <div className="   flex w-full justify-end">
-            <div className="bg-base-200 w-fit p-4  rounded-box">
-              Estimated time:{" "}
-              <b>
-                {((totalCardCount * 3) / 60).toFixed(2)}~
-                {((totalCardCount * 4) / 60).toFixed(2)} min
-              </b>
-            </div>
-          </div>
-          <DeckTable
-            availableDecks={availableDecks}
-            handleChange={handleDeckSelection}
-          />
+          <div className="flex flex-col gap-4">
+            <Precision />
+            <label htmlFor="inputType" className="flex w-full justify-between">
+              {" "}
+              Write answers?
+              <input
+                type="checkbox"
+                className="toggle"
+                checked={inputMode}
+                id="inputType"
+                onChange={() => setInputMode(!inputMode)}
+              />
+            </label>
 
-          <button
-            className="btn w-full btn-primary text-xl"
-            onClick={startGame}
-          >
-            START
-          </button>
+            <div className="   flex w-full justify-end">
+              <div className="bg-base-200 w-fit p-4  rounded-box">
+                Total cards: <b>{totalCardCount}</b>
+              </div>
+            </div>
+            <div
+              className={`   flex w-full justify-end  ${decks.length > 0 ? "" : "opacity-0"}`}
+            >
+              <div className="bg-base-200 w-fit p-4  rounded-box">
+                Estimated time:{" "}
+                <b>
+                  {((totalCardCount * 3) / 60).toFixed(2)}~
+                  {((totalCardCount * 4) / 60).toFixed(2)} min
+                </b>
+              </div>
+            </div>
+            <button
+              className={`btn w-full btn-primary text-xl `}
+              onClick={startGame}
+              disabled={decks.length < 1}
+            >
+              START
+            </button>
+          </div>
         </div>
       ) : (
         <Game />
