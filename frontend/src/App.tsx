@@ -1,5 +1,4 @@
-import { useState, useEffect, useRef, memo, useMemo } from "react";
-import { CountdownCircleTimer } from "react-countdown-circle-timer";
+import { useState, useEffect, useRef,  useMemo } from "react";
 import { useDeckStore } from "./stores/deckStore";
 
 import dataN1 from "./decks/n1.json";
@@ -7,13 +6,14 @@ import dataN2 from "./decks/n2.json";
 import dataN3 from "./decks/n3.json";
 import dataN4 from "./decks/n4.json";
 import dataN5 from "./decks/n5.json";
-import { IDeck, IDeckCard } from "./types/types";
+import { IDeck, IDeckCard, IDeckCardWithState, IDeckWithStateCard } from "./types/types";
 import DeckTable from "./components/DeckTable";
 import Precision from "./components/Precision";
-import { calculateMarginOfError, calculateStandardError, estimateAccuracy, extrapolateScore, formatElapsedTime, getRandomCards, wilsonScoreInterval } from "./utils/utils";
+import {  calculateResultWithError, calculateStandardError, formatElapsedTime, getRandomCards } from "./utils/utils";
 import { FaArrowTurnDown } from "react-icons/fa6";
-import { bind, toRomaji } from "wanakana";
+import {  toRomaji } from "wanakana";
 import useTimer from "./hooks/hooks";
+import Progress from "./components/Progress";
 
 interface WordCardProps {
   word: IDeckCard | null;
@@ -37,7 +37,7 @@ function WordCard({ word, onAnswer }: WordCardProps) {
 
   const answers = isRomajiInput ? word?.answer.map(answer => toRomaji(answer.toLowerCase())): word?.answer ;
 
-    if (answers.includes(value)) {
+    if (answers && answers.includes(value)) {
       onAnswer(true);        
       setInputValue(""); 
      }else if(value.includes("1" || "１")){
@@ -52,7 +52,7 @@ function WordCard({ word, onAnswer }: WordCardProps) {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "1") {
         onAnswer(false);
-      } else if (!inputMode && event.key === "2") {
+      } else if ((!inputMode && event.key === "2" )||(!inputMode && event.key === " "  )) {
         onAnswer(true);
       }
     };
@@ -64,10 +64,9 @@ function WordCard({ word, onAnswer }: WordCardProps) {
   }, [onAnswer, inputMode]);
 
   useEffect(() => {    
-    if (inputRef.current) {
+    if (inputRef.current ) {
       setTimeout(() => {
-        
-      inputRef.current.focus()
+        if (inputRef.current !=null )     inputRef.current.focus()
       }, 100);
     }
     setInputValue("");
@@ -125,15 +124,15 @@ function WordCard({ word, onAnswer }: WordCardProps) {
 }
 
 
-function FailedWordCard({ word }: { word: IDeckCard | null }) {
+function PastWordCard({ word }: { word: IDeckCardWithState | null }) {
   return (
     <article
       className={`w-full p-2 flex flex-col shadow-xl rounded-lg overflow-hidden bg-primary-content transition-all ${!word && "opacity-0"}`}
     >
-      <div className="w-full flex-col h-28   text-5xl flex items-center justify-center pb-4 ">
+      <div className={`w-full flex-col h-28   text-5xl flex items-center justify-center pb-4 ${word?.state === "failed" ? "text-red-500" : "text-green-500"}`}>
         <span className="text-xl">{word?.answer.join(", ") || ""}</span>
-        <span>{word?.question || ""}</span>
-      </div>
+        <span className={`text-5xl `}>{word?.question || ""}</span>
+    </div>
       <div className="bg-neutral-content w-full h-1 "></div>
       <div className="w-full flex-col h-min bg-primary-content  p-4 text-5xl flex items-center justify-center ">
         <span className="text-xl">{word?.meaning || ""}</span>
@@ -142,7 +141,7 @@ function FailedWordCard({ word }: { word: IDeckCard | null }) {
   );
 }
 
-function FailedWordsCarrousel({ words }: { words: IDeckCard[] }) {
+function WordsCarrousel({ words }: { words: IDeckCardWithState[] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -168,9 +167,9 @@ function FailedWordsCarrousel({ words }: { words: IDeckCard[] }) {
           transform: `translateX(-${currentIndex * (100 / words.length)}%)`,
         }}
       >
-        {words.map((word, index) => (
+        {words.map((word) => (
           <div key={word.question} className="w-[30rem] flex-shrink-0">
-            <FailedWordCard word={word} />
+            <PastWordCard word={word} />
           </div>
         ))}
       </div>
@@ -206,20 +205,15 @@ function Results({ elapsedTime }: { elapsedTime: number }) {
           Elapsed time: <b>{formatElapsedTime(elapsedTime)}</b>
         </div>
       </div>
-      <h1 className="text-3xl mb-6">DOMINANCE</h1>
+      <h1 className="text-3xl mb-6">VOCABULARY KNOWLEDGE</h1>
       <div className="gap-x-4 flex flex-col gap-2">
         {decks.map((deck) => (
           <div key={deck.name} className="flex gap-4  items-center">
             <span>{deck.name}</span>
-            <progress
-              className="progress w-56"
-              value={deck.correctCount}
-              max={deck.sampleSize}
-            ></progress>
-            <span>
-              {((deck.correctCount! * 100) / deck.sampleSize!).toFixed(1) + "%"}
-            </span>
-            <span>Standard Error: {calculateStandardError(deck.correctCount!, deck.sampleSize!, deck.deckSize! )}%</span>
+            <Progress value={deck.correctCount } max={deck.sampleSize}/>
+           
+            
+            <span>{calculateResultWithError(deck.correctCount!, deck.sampleSize!, deck.deckSize!, ((deck.correctCount! * 100) / deck.sampleSize!))}</span>
           </div>
         ))}
       </div>
@@ -227,7 +221,7 @@ function Results({ elapsedTime }: { elapsedTime: number }) {
   );
 }
 
-function CountDown({ isPlaying, answerTime }) {
+/* function CountDown({ isPlaying, answerTime }) {
   const renderTime = ({ remainingTime }) => {
     if (remainingTime === 0) {
       return <div className="timer">Too late...</div>;
@@ -256,12 +250,12 @@ function CountDown({ isPlaying, answerTime }) {
       {renderTime}
     </CountdownCircleTimer>
   );
-}
+} */
 
 
 
 function Game() {
-  const { decks, setDecks, isRomajiInput, setIsRomajiInput} = useDeckStore();
+  const { decks, setDecks, isRomajiInput, setIsRomajiInput, inputMode} = useDeckStore();
 
   const { 
     startTimer,
@@ -272,8 +266,9 @@ function Game() {
   const [deck, setDeck] = useState<IDeck | null>(null);
   const [deckIndex, setDeckIndex] = useState(0);
   const [word, setWord] = useState<IDeckCard | null>(null);
-  const [failedWords, setFailedWords] = useState<IDeckCard[]>([]);
-  const answerTime = 60;
+  const [words, setWords] = useState<IDeckCardWithState[]>([]);
+  const [failedWordsNumber, setFailedWordsNumber] = useState(0)
+  /* const answerTime = 60; */
 
 
   const shiftDeck = () => {
@@ -321,11 +316,15 @@ function Game() {
       const updatedDecks = decks;
       updatedDecks[deckIndex].correctCount! += 1;
       setDecks(updatedDecks);
-    } else {
-      if (word) {
-        setFailedWords((prevFailedWords) => [...prevFailedWords, word]);
+    }
+    if (word) {
+      if (isCorrect) {
+        setWords(prevWords => [...prevWords, { ...word, state: "passed" }]);
+      } else {
+        setWords(prevWords => [...prevWords, { ...word, state: "failed" }]);
       }
     }
+    
     shiftCard();
   };
 
@@ -336,7 +335,7 @@ function Game() {
 
   const wordComponent = useMemo(() => <WordCard word={word} onAnswer={handleAnswer} isRomajiInput={isRomajiInput}/>, [word]);
 
-  const failedWordsComponent = useMemo(() => <FailedWordsCarrousel words={failedWords} />, [failedWords]);
+  const failedWordsComponent = useMemo(() => <WordsCarrousel words={words} />, [words]);
 
 
   return !decksEmpty ? (
@@ -379,8 +378,8 @@ function Game() {
         <div className="absolute left-2 top-2">
           {/* <CountDown isPlaying={true} answerTime={answerTime} /> */}
         </div>
-      </div>
-      <div>
+      
+        {inputMode &&
       <label htmlFor="inputRomaji" className="flex gap-4 w-full justify-between">
               {" "}
               Romaji Input
@@ -391,8 +390,9 @@ function Game() {
                 id="inputRomaji"
                 onChange={() => setIsRomajiInput(!isRomajiInput)}
               />
-            </label>
+            </label>}
       </div>
+      
     </>
   ) : (
     <Results elapsedTime={seconds} />
@@ -507,10 +507,15 @@ export default function App() {
               <div className="bg-base-200 w-fit p-4  rounded-box">
                 Estimated time:{" "}
                 <b>
-                  {((totalCardCountSample * 3) / 60).toFixed(2)}~
-                  {((totalCardCountSample * 4) / 60).toFixed(2)} min
-                </b>
-              </div>
+    {inputMode ? (
+      `${((totalCardCountSample * 2) / 60).toFixed(2)}~
+      ${((totalCardCountSample * 3) / 60).toFixed(2)} min`
+    ) : (
+      `${((totalCardCountSample * 4) / 60).toFixed(2)}~
+      ${((totalCardCountSample * 6) / 60).toFixed(2)} min`
+    )}
+  </b>
+</div>
             </div>
             <button
               className={`btn w-full btn-primary text-xl `}

@@ -19,15 +19,17 @@ export const formatElapsedTime = (timeInSeconds: number) => {
   return `${minutes}m ${seconds}s`;
 };
 
-export function calculateStandardError(j: number, n: number, N: number): string {
-  // Calculate the sample proportion
-  const p: number = j / n;
-
+export function calculateResultWithError(j: number, n: number, N: number, initialResult:number): string {
+  
   // Calculate the finite population correction factor
   const FPC: number = (N - n) / (N - 1);
+  
+  // Calculate the sample proportion
+  const p: number = (j + 0.5) / (n + 1);
 
   // Calculate the standard error
-  const SE: number = Math.sqrt((p * (1 - p) / n) * FPC);
+  const SE: number = Math.sqrt((p * (1 - p) / n) * FPC) *100;
+  console.log(SE)
 
-  return (SE*100).toFixed(2);
+  return `${initialResult.toFixed(1)} [Full deck ≈ ±${(SE).toFixed(1)}%]`
 }
