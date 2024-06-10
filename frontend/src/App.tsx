@@ -1,6 +1,6 @@
-import { useState, useEffect, useRef, memo } from "react";
+import { useState, useEffect, useRef, memo, useMemo } from "react";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
-import { useDeckStore } from "./stores/store";
+import { useDeckStore } from "./stores/deckStore";
 
 import dataN1 from "./decks/n1.json";
 import dataN2 from "./decks/n2.json";
@@ -10,27 +10,49 @@ import dataN5 from "./decks/n5.json";
 import { IDeck, IDeckCard } from "./types/types";
 import DeckTable from "./components/DeckTable";
 import Precision from "./components/Precision";
-import { formatElapsedTime, getRandomCards } from "./utils/utils";
+import { calculateMarginOfError, calculateStandardError, estimateAccuracy, extrapolateScore, formatElapsedTime, getRandomCards, wilsonScoreInterval } from "./utils/utils";
 import { FaArrowTurnDown } from "react-icons/fa6";
-import { bind } from "wanakana";
+import { bind, toRomaji } from "wanakana";
+import useTimer from "./hooks/hooks";
 
 interface WordCardProps {
   word: IDeckCard | null;
   onAnswer: (value: boolean) => void;
+  isRomajiInput: boolean;
 }
 
-const WordCard: React.FC<WordCardProps> = memo(({ word, onAnswer }) => {
-  const { inputMode } = useDeckStore();
+
+function WordCard({ word, onAnswer }: WordCardProps) {
+  const { inputMode, isRomajiInput } = useDeckStore();
   const [inputValue, setInputValue] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
 
-  console.log('render')
+
+
+  const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value.toLowerCase();
+    setInputValue(value);
+    console.log(value)
+
+
+  const answers = isRomajiInput ? word?.answer.map(answer => toRomaji(answer.toLowerCase())): word?.answer ;
+
+    if (answers.includes(value)) {
+      onAnswer(true);        
+      setInputValue(""); 
+     }else if(value.includes("1" || "１")){
+      onAnswer(false)
+     
+      setInputValue(""); 
+     }
+  };
 
   useEffect(() => {
-    const handleKeyDown = (event: { key: string }) => {
+    
+    const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "1") {
         onAnswer(false);
-      } else if (!inputMode && (event.key === "2" || event.key === " ")) {
+      } else if (!inputMode && event.key === "2") {
         onAnswer(true);
       }
     };
@@ -41,17 +63,16 @@ const WordCard: React.FC<WordCardProps> = memo(({ word, onAnswer }) => {
     };
   }, [onAnswer, inputMode]);
 
-  useEffect(() => {
+  useEffect(() => {    
     if (inputRef.current) {
-      // Assuming bind is a function you use to bind some functionality to the input
-      // Replace with actual implementation if different
-      // bind(inputRef.current);
+      setTimeout(() => {
+        
+      inputRef.current.focus()
+      }, 100);
     }
-  }, []);
+    setInputValue("");
+  }, [word]);
 
-  const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setInputValue(e.target.value);
-  };
 
   return (
     word && (
@@ -61,6 +82,8 @@ const WordCard: React.FC<WordCardProps> = memo(({ word, onAnswer }) => {
         </div>
         <footer className="flex flex-col h-min text-2xl">
           <div className="h-20 flex">
+          {!inputMode ? (
+            <>
             <button
               className="bg-error w-full h-full hover:opacity-70 text-accent-content flex items-center justify-center"
               onClick={() => onAnswer(false)}
@@ -68,7 +91,7 @@ const WordCard: React.FC<WordCardProps> = memo(({ word, onAnswer }) => {
               FAIL
               <span className="kbd kbd-sm text-base-content mb-3 ml-1">1</span>
             </button>
-            {!inputMode ? (
+           
               <button
                 className="bg-primary w-full h-full hover:opacity-70 text-accent-content flex items-center justify-center"
                 onClick={() => onAnswer(true)}
@@ -78,16 +101,20 @@ const WordCard: React.FC<WordCardProps> = memo(({ word, onAnswer }) => {
                   <span className="kbd kbd-sm mr-0.5">2</span>
                   <span className=" kbd kbd-sm">_</span>
                 </span>
-              </button>
+              </button></>
             ) : (
-              <div className="p-1">
+              <div className="p-2 w-full">
+                <div className="flex flex-col">
+                  <span className="mb-1 text-sm w-full justify-end flex">Type <i>&nbsp;1&nbsp;</i>  for Fail</span>
                 <input
+                key={word.question}
                   type="text"
-                  className="p-2 bg-primary-content h-full border-2 border-base-content rounded-lg"
+                  className="p-2 bg-primary-content h-full w-full border-2 border-base-content rounded-lg"
                   value={inputValue}
-                  onChange={handleInput}
+                  onChange={e=>handleInput(e)}
                   ref={inputRef}
                 />
+                </div>
               </div>
             )}
           </div>
@@ -95,9 +122,8 @@ const WordCard: React.FC<WordCardProps> = memo(({ word, onAnswer }) => {
       </article>
     )
   );
-});
+}
 
-WordCard.whyDidYouRender = true;
 
 function FailedWordCard({ word }: { word: IDeckCard | null }) {
   return (
@@ -188,11 +214,12 @@ function Results({ elapsedTime }: { elapsedTime: number }) {
             <progress
               className="progress w-56"
               value={deck.correctCount}
-              max={deck.deckSize}
+              max={deck.sampleSize}
             ></progress>
             <span>
-              {((deck.correctCount! * 100) / deck.deckSize!).toFixed(1) + "%"}
+              {((deck.correctCount! * 100) / deck.sampleSize!).toFixed(1) + "%"}
             </span>
+            <span>Standard Error: {calculateStandardError(deck.correctCount!, deck.sampleSize!, deck.deckSize! )}%</span>
           </div>
         ))}
       </div>
@@ -231,9 +258,15 @@ function CountDown({ isPlaying, answerTime }) {
   );
 }
 
+
+
 function Game() {
-  const { decks, setDecks } = useDeckStore();
-  const [elapsedTime, setElapsedTime] = useState(0);
+  const { decks, setDecks, isRomajiInput, setIsRomajiInput} = useDeckStore();
+
+  const { 
+    startTimer,
+    pauseTimer,
+    seconds} = useTimer()
 
   const [decksEmpty, setDecksEmpty] = useState(false);
   const [deck, setDeck] = useState<IDeck | null>(null);
@@ -242,15 +275,14 @@ function Game() {
   const [failedWords, setFailedWords] = useState<IDeckCard[]>([]);
   const answerTime = 60;
 
+
   const shiftDeck = () => {
     if (!decksEmpty) {
       const nextDeckIndex = (deckIndex + 1) % decks.length;
       setDeckIndex(nextDeckIndex);
       setDeck(decks[nextDeckIndex]);
       setWord(decks[nextDeckIndex]?.cards[0] || null);
-    } else {
-      clearInterval(timerId);
-    }
+    } 
   };
 
   const shiftCard = () => {
@@ -267,21 +299,17 @@ function Game() {
     }
   };
 
-  const intervalId = useRef<NodeJS.Timeout | null>(null);
+ 
+
   useEffect(() => {
     if (!decksEmpty) {
       setDeck(decks[deckIndex]);
       setWord(decks[deckIndex]?.cards[0] || null);
-      //timer
-      intervalId.current = setInterval(() => {
-        setElapsedTime((prevElapsedTime) => prevElapsedTime + 1);
-      }, 1000);
+      startTimer()
+     
+    }else{
+      pauseTimer()
     }
-    return () => {
-      if (intervalId.current) {
-        clearInterval(intervalId.current);
-      }
-    };
   }, [decksEmpty]);
 
   useEffect(() => {
@@ -306,12 +334,18 @@ function Game() {
     0
   );
 
+  const wordComponent = useMemo(() => <WordCard word={word} onAnswer={handleAnswer} isRomajiInput={isRomajiInput}/>, [word]);
+
+  const failedWordsComponent = useMemo(() => <FailedWordsCarrousel words={failedWords} />, [failedWords]);
+
+
   return !decksEmpty ? (
     <>
       <div className="flex items-center gap-4">
         <h1 className="w-full flex justify-center items-center text-4xl">
           QUIZ
         </h1>
+        
         <div
           className="collapse bg-base-200 w-fit shrink-0 hover:bg-base-300"
           title="current deck"
@@ -329,7 +363,7 @@ function Game() {
                   className="flex gap-3 w-full justify-between"
                 >
                   <span>{mappedDeck.name}</span>
-                  <i className="font-thin">{mappedDeck.deckSize}</i>
+                  <i className="font-thin">{mappedDeck.sampleSize}</i>
                 </li>
               ) : null
             )}
@@ -340,15 +374,28 @@ function Game() {
         <b>{remainingCards}</b> total remaining words
       </h3>
       <div className="relative flex flex-col gap-6 justify-center items-center">
-        <WordCard word={word} onAnswer={handleAnswer} />
-        {<FailedWordsCarrousel words={failedWords} />}
+      {wordComponent}
+        {failedWordsComponent}
         <div className="absolute left-2 top-2">
           {/* <CountDown isPlaying={true} answerTime={answerTime} /> */}
         </div>
       </div>
+      <div>
+      <label htmlFor="inputRomaji" className="flex gap-4 w-full justify-between">
+              {" "}
+              Romaji Input
+              <input
+                type="checkbox"
+                className="toggle"
+                checked={isRomajiInput}
+                id="inputRomaji"
+                onChange={() => setIsRomajiInput(!isRomajiInput)}
+              />
+            </label>
+      </div>
     </>
   ) : (
-    <Results elapsedTime={elapsedTime} />
+    <Results elapsedTime={seconds} />
   );
 }
 
@@ -356,6 +403,7 @@ export default function App() {
   const availableDecks = [dataN1, dataN2, dataN3, dataN4, dataN5];
   const [selectedDecksNames, setSelectedDecksNames] = useState<string[]>([]);
   const [gameStarted, setGameStarted] = useState(false);
+
 
   const handleDeckSelection = (deckName: string) => {
     setSelectedDecksNames((prevSelectedDecks) =>
@@ -372,7 +420,7 @@ export default function App() {
     setGameStarted(true);
   };
 
-  const [totalCardCount, setTotalCardCount] = useState(0);
+  const [totalCardCountSample, setTotalCardCountSample] = useState(0);
   useEffect(() => {
     const selectedDecks: IDeck[] = availableDecks
       .filter((deck) => selectedDecksNames.includes(deck.name))
@@ -389,12 +437,12 @@ export default function App() {
       return {
         ...deck,
         cards: randomCards,
-        deckSize: randomCards.length,
+        sampleSize: randomCards.length,
       };
     });
 
     setDecks(decksWithRandomCards);
-    setTotalCardCount(
+    setTotalCardCountSample(
       decksWithRandomCards.reduce(
         (accumulator, deck) => accumulator + (deck.cards.length ?? 0),
         0
@@ -402,6 +450,7 @@ export default function App() {
     );
   }, [selectedDecksNames, precision]);
   console.log(decks);
+
 
   return (
     <main className="flex overx flex-col gap-6 min-h-screen justify-center items-center">
@@ -448,8 +497,9 @@ export default function App() {
 
             <div className="   flex w-full justify-end">
               <div className="bg-base-200 w-fit p-4  rounded-box">
-                Total cards: <b>{totalCardCount}</b>
+                Total cards: <b>{totalCardCountSample}</b>
               </div>
+             
             </div>
             <div
               className={`   flex w-full justify-end  ${decks.length > 0 ? "" : "opacity-0"}`}
@@ -457,8 +507,8 @@ export default function App() {
               <div className="bg-base-200 w-fit p-4  rounded-box">
                 Estimated time:{" "}
                 <b>
-                  {((totalCardCount * 3) / 60).toFixed(2)}~
-                  {((totalCardCount * 4) / 60).toFixed(2)} min
+                  {((totalCardCountSample * 3) / 60).toFixed(2)}~
+                  {((totalCardCountSample * 4) / 60).toFixed(2)} min
                 </b>
               </div>
             </div>

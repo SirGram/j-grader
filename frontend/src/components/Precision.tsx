@@ -1,5 +1,5 @@
 
-import { useDeckStore } from '../stores/store'; 
+import { useDeckStore } from '../stores/deckStore'; 
 
 export default function Precision() {
   const { precision, setPrecision } = useDeckStore();
@@ -11,23 +11,25 @@ export default function Precision() {
 
   let shadowColorClass = "";
   if (precision > 90) {
-    shadowColorClass = "red";
+    shadowColorClass = "range [--range-shdw:red]";
   } else if (precision > 60) {
-    shadowColorClass = "yellow";
+    shadowColorClass = "range [--range-shdw:yellow]";
   } else {
-    shadowColorClass = "green";
+    shadowColorClass = "range [--range-shdw:green]";
   }
+  console.log(shadowColorClass)
 
   return (
     <div>
-      <h2 className="mb-2">Grading accuracy</h2>
+      <h2 className="mb-2">Sample size</h2>
       <input
         type="range"
         min={0}
         max={100}
         value={precision}
         onChange={e=>handleChange(e)}
-        className={`range [--range-shdw:${shadowColorClass}]`}
+        className={shadowColorClass}
+        
       />
     </div>
   );

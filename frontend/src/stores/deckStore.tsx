@@ -1,7 +1,9 @@
 import { create } from "zustand";
 import { IDeck } from "../types/types";
 
-const initialPrecision = 10;
+const initialPrecision = 15;
+const initialInputMode= true
+const initialIsRomajiInput= true
 
 interface IDeckStore {
   decks: IDeck[];
@@ -11,6 +13,9 @@ interface IDeckStore {
   incrementDeckCounter: (deckName: string) => void;
   inputMode: boolean;
   setInputMode: (value: boolean) => void;
+  isRomajiInput:boolean;
+  setIsRomajiInput: (value: boolean) => void;
+
 }
 
 export const useDeckStore = create<IDeckStore>((set) => ({
@@ -26,39 +31,10 @@ export const useDeckStore = create<IDeckStore>((set) => ({
           : deck
       ),
     })),
-  inputMode: false,
+  inputMode: initialInputMode,
   setInputMode: (value) => set({ inputMode: value }),
+  isRomajiInput: initialIsRomajiInput,
+  setIsRomajiInput: (value) => set({ isRomajiInput: value }),
 }));
 
 
-
-interface TimerState {
-  elapsedTime: number;
-  startTimer: () => void;
-  stopTimer: () => void;
-  resetTimer: () => void;
-  intervalId: NodeJS.Timeout | null;
-}
-
-export const useTimerStore = create<TimerState>((set, get) => ({
-  elapsedTime: 0,
-  intervalId: null,
-  startTimer: () => {
-    if (!get().intervalId) {
-      const intervalId = setInterval(() => {
-        set((state) => ({ elapsedTime: state.elapsedTime + 1 }));
-      }, 1000);
-      set({ intervalId });
-    }
-  },
-  stopTimer: () => {
-    const { intervalId } = get();
-    if (intervalId) {
-      clearInterval(intervalId);
-      set({ intervalId: null });
-    }
-  },
-  resetTimer: () => {
-    set({ elapsedTime: 0 });
-  },
-}));

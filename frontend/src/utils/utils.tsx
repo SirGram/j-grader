@@ -18,3 +18,16 @@ export const formatElapsedTime = (timeInSeconds: number) => {
   if (minutes ===0) return `${seconds}s`;
   return `${minutes}m ${seconds}s`;
 };
+
+export function calculateStandardError(j: number, n: number, N: number): string {
+  // Calculate the sample proportion
+  const p: number = j / n;
+
+  // Calculate the finite population correction factor
+  const FPC: number = (N - n) / (N - 1);
+
+  // Calculate the standard error
+  const SE: number = Math.sqrt((p * (1 - p) / n) * FPC);
+
+  return (SE*100).toFixed(2);
+}
