@@ -233,8 +233,7 @@ function Results({ elapsedTime }: { elapsedTime: number }) {
           <div key={deck.name} className="flex gap-4  items-center">
             <span>{deck.name}</span>
             <Progress value={deck.correctCount } max={deck.sampleSize}/>
-           
-            
+                       
             <span>{calculateResultWithError(deck.correctCount!, deck.sampleSize!, deck.deckSize!, ((deck.correctCount! * 100) / deck.sampleSize!))}</span>
           </div>
         ))}
