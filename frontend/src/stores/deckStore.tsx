@@ -4,6 +4,7 @@ import { IDeck } from "../types/types";
 const initialPrecision = 15;
 const initialInputMode= true
 const initialIsRomajiInput= true
+const initialAnswerTime= 5
 
 interface IDeckStore {
   decks: IDeck[];
@@ -15,6 +16,8 @@ interface IDeckStore {
   setInputMode: (value: boolean) => void;
   isRomajiInput:boolean;
   setIsRomajiInput: (value: boolean) => void;
+  answerTime:number;
+  setAnswerTime:(value: number) => void;
 
 }
 
@@ -35,6 +38,8 @@ export const useDeckStore = create<IDeckStore>((set) => ({
   setInputMode: (value) => set({ inputMode: value }),
   isRomajiInput: initialIsRomajiInput,
   setIsRomajiInput: (value) => set({ isRomajiInput: value }),
+  answerTime: initialAnswerTime,
+  setAnswerTime: (value) => set({ answerTime: value }),
 }));
 
 

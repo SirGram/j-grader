@@ -10,7 +10,7 @@ import { IDeck, IDeckCard, IDeckCardWithState } from "./types/types";
 import DeckTable from "./components/DeckTable";
 import Precision from "./components/Precision";
 import {  calculateResultWithError,  formatElapsedTime, getRandomCards } from "./utils/utils";
-import { FaArrowTurnDown } from "react-icons/fa6";
+import { FaArrowTurnDown, FaPause, FaPlay } from "react-icons/fa6";
 import {  toRomaji } from "wanakana";
 import useTimer, { useCountDown } from "./hooks/hooks";
 import Progress from "./components/Progress";
@@ -207,7 +207,7 @@ function WordsCarrousel({ words }: { words: IDeckCardWithState[] }) {
         </button>
       )}
 
-<div className="absolute bottom-2 flex gap-1 right-2 ">
+<div className="absolute top-2 flex gap-1 right-2 ">
         <kbd className="kbd kbd-sm">◀︎</kbd>
         <kbd className="kbd kbd-sm">▶︎</kbd>
         </div>
@@ -243,49 +243,15 @@ function Results({ elapsedTime }: { elapsedTime: number }) {
   );
 }
 
-/* function CountDown({ isPlaying, answerTime }) {
-  const renderTime = ({ remainingTime }) => {
-    if (remainingTime === 0) {
-      return <div className="timer">Too late...</div>;
-    }
-
-    return (
-      <span className="countdown font-mono text-xl ">
-        <span
-          className="flex justify-center "
-          style={{ "--value": remainingTime }}
-        ></span>
-      </span>
-    );
-  };
-
-  return (
-    <CountdownCircleTimer
-      isPlaying={isPlaying}
-      duration={answerTime}
-      colors={["#F7B801", "#A30000", "#A30000"]}
-      colorsTime={[7, 5, 2, 0]}
-      strokeWidth={5}
-      trailStrokeWidth={5}
-      size={60}
-    >
-      {renderTime}
-    </CountdownCircleTimer>
-  );
-} */
-
-
 
 function Game() {
-  const { decks, setDecks, isRomajiInput, setIsRomajiInput, inputMode} = useDeckStore();
+  const { decks, setDecks, isRomajiInput, setIsRomajiInput, inputMode, answerTime} = useDeckStore();
 
   const { 
     startTimer,
     pauseTimer,
     seconds} = useTimer()
-    const answerTime = 5; 
-    
-  const  { startCountdown, stopCountdown, countdownSeconds } = useCountDown(answerTime)
+  const  { startCountdown,  countdownSeconds, isCountdownRunning, togglePause, resetCountdown, stopCountdown } = useCountDown(answerTime)
 
   const [decksEmpty, setDecksEmpty] = useState(false);
   const [deck, setDeck] = useState<IDeck | null>(null);
@@ -326,31 +292,49 @@ function Game() {
       setDeck(decks[deckIndex]);
       setWord(decks[deckIndex]?.cards[0] || null);
       startTimer()
-      startCountdown()
      
     }else{
+      console.log("could u pause")
       pauseTimer()
     }
   }, [decksEmpty]);
 
+  
+  useEffect(() => {
+    if(countdownSeconds === 0){
+      handleAnswer(false)
+    }
+    
+  }, [countdownSeconds]);
 
- 
-  console.log(countdownSeconds)
 
   useEffect(() => {
     setDecksEmpty(decks.every((deck) => deck.cards.length === 0));
+   
     
   }, [word]);
 
-  const handleAnswer = (isCorrect: boolean) => {
-    if (isCorrect && deck) {
-      const updatedDecks = decks;
-      updatedDecks[deckIndex].correctCount! += 1;
-      setDecks(updatedDecks);
+  useEffect(()=>{
+    if (answerTime !== 0){
+      resetCountdown()
+      startCountdown()
+  
+    if(decksEmpty)  stopCountdown()
     }
+
+  },[word, decksEmpty])
+
+  const handleAnswer = (isCorrect: boolean) => {
+  
     if (word) {
       if (isCorrect) {
         setWords(prevWords => [...prevWords, { ...word, state: "passed" }]);
+        if(deck){
+            const updatedDecks = decks;
+            updatedDecks[deckIndex].correctCount! += 1;
+            setDecks(updatedDecks);
+          
+        }
       } else {
         setFailedWordsNumber(prev=>prev + 1)
         setWords(prevWords => [...prevWords, { ...word, state: "failed" }]);
@@ -438,8 +422,13 @@ function Game() {
         <div className="relative">
 
       {wordComponent}
-      <div className="absolute right-1 top-1"><CircleProgress countdownSeconds={countdownSeconds} answerTime={answerTime}/></div>
-        </div>
+      {answerTime !== 0 &&
+      <button onClick={()=>togglePause()} className="absolute right-1 top-1">
+        
+        <CircleProgress countdownSeconds={countdownSeconds} answerTime={answerTime} isRunning = {isCountdownRunning}/>
+        
+        </button>}
+      </div>
       </div>
       </section>
       
@@ -449,16 +438,16 @@ function Game() {
 }
 
 export default function App() {
+  
+    const { decks, setDecks, precision, inputMode, setInputMode, answerTime, setAnswerTime } =
+      useDeckStore();
+
   const availableDecks = [dataN1, dataN2, dataN3, dataN4, dataN5];
   const [selectedDecksNames, setSelectedDecksNames] = useState<string[]>([]);
   const [gameStarted, setGameStarted] = useState(false);
-  const [answerTime, setAnswerTime] = useState(4);
 const answerTimeOptions = [0,3,4,5,6,7,10]
 const answerTimeLastOption = answerTimeOptions[answerTimeOptions.length -1]
 const answerTimeProgress = answerTime *100 / answerTimeLastOption
-
-  const { decks, setDecks, precision, inputMode, setInputMode } =
-    useDeckStore();
 
   const handleDeckSelection = (deckName: string) => {
     if (deckName === "all"){
@@ -518,6 +507,18 @@ const answerTimeProgress = answerTime *100 / answerTimeLastOption
     const currentIndex = answerTimeOptions.indexOf(answerTime);
     const nextIndex = (currentIndex + 1) % answerTimeOptions.length;
     setAnswerTime(answerTimeOptions[nextIndex]);
+  };
+
+  const getTimeRange = () => {
+    if (answerTime !== 0) {
+      return `${((totalCardCountSample * answerTime) / 60).toFixed(2)} min`;
+    } else {
+      return !inputMode
+        ? `${((totalCardCountSample * 2) / 60).toFixed(2)}~
+           ${((totalCardCountSample * 3) / 60).toFixed(2)} min`
+        : `${((totalCardCountSample * 4) / 60).toFixed(2)}~
+           ${((totalCardCountSample * 6) / 60).toFixed(2)} min`;
+    }
   };
 
 
@@ -587,13 +588,7 @@ const answerTimeProgress = answerTime *100 / answerTimeLastOption
               <div className="bg-base-200 w-fit p-4  rounded-box">
                 Estimated time:{" "}
                 <b>
-    {!inputMode ? (
-      `${((totalCardCountSample * 2) / 60).toFixed(2)}~
-      ${((totalCardCountSample * 3) / 60).toFixed(2)} min`
-    ) : (
-      `${((totalCardCountSample * 4) / 60).toFixed(2)}~
-      ${((totalCardCountSample * 6) / 60).toFixed(2)} min`
-    )}
+    {getTimeRange()}
   </b>
 </div>
             </div>

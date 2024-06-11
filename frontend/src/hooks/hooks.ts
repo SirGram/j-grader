@@ -1,61 +1,25 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
 export default function useTimer(initialTime=0) {
-  const [isRunning, setIsRunning] = useState(false);
   const [seconds, setSeconds] = useState(initialTime);
   let interval = useRef<NodeJS.Timeout | null>(null);
 
-  const onStop = useCallback(() => {
-    setIsRunning(false);
+  const onReset = () => {
+    if (interval.current)    clearInterval(interval.current);
     setSeconds(initialTime);
-    if (interval.current)    clearInterval(interval.current);
-  }, [setIsRunning, setSeconds, initialTime]);
+  }
   
-  const onPause = useCallback(() => {
-    setIsRunning(false);
+  const onPause = () => {
     if (interval.current)    clearInterval(interval.current);
-  }, [setIsRunning]);
+  }
 
-  const onStart = useCallback(() => {
-    setIsRunning(true);
+  const onStart = () => {
+    if (interval.current)    clearInterval(interval.current);
     interval.current = setInterval(() => {
       setSeconds((seconds:number) => seconds + 1);
     }, 1000);
-  }, [setIsRunning]);
-
-
-  return {
-    isRunning,
-    startTimer: onStart,
-    pauseTimer:onPause,
-    stop: onStop,
-    seconds
   };
-}
-
-
-export function useCountDown(timeInSeconds: number) {
-  const [isRunningCountdown, setIsRunningCountdown] = useState(false);
-  const [countdownSeconds, setCountdownSeconds] = useState(timeInSeconds);
-  let interval = useRef<NodeJS.Timeout | null>(null);
-
-  const onStop = useCallback(() => {
-    setIsRunningCountdown(false);
-    setCountdownSeconds(timeInSeconds);
-    if (interval.current)    clearInterval(interval.current);
-  }, [setIsRunningCountdown, setCountdownSeconds, timeInSeconds]);
   
-  const onPause = useCallback(() => {
-    setIsRunningCountdown(false);
-    if (interval.current)    clearInterval(interval.current);
-  }, [setIsRunningCountdown]);
-
-  const onStart = useCallback(() => {
-    setIsRunningCountdown(true);
-    interval.current = setInterval(() => {
-      setCountdownSeconds((countdownSeconds:number) => countdownSeconds - 1);
-    }, 1000);
-  }, [setIsRunningCountdown]);
 
   useEffect(() => {
     return () => {
@@ -67,10 +31,66 @@ export function useCountDown(timeInSeconds: number) {
 
 
   return {
-    isRunningCountdown,
+    startTimer: onStart,
+    pauseTimer:onPause,
+    resetTimer: onReset,
+    seconds
+  };
+}
+
+
+export function useCountDown(timeInSeconds: number) {
+  const [countdownSeconds, setCountdownSeconds] = useState(timeInSeconds);
+  const [isCountdownRunning, setIsCountdownRunning] = useState(true);
+  let interval = useRef<NodeJS.Timeout | null>(null);
+
+  const onReset = () => {
+    setCountdownSeconds(timeInSeconds);
+    if (interval.current)    clearInterval(interval.current);
+  }
+
+  const togglePause = () => {
+    setIsCountdownRunning(!isCountdownRunning)
+  }
+  
+
+  const decrementCountdown = () => {
+    setCountdownSeconds((prevSeconds) => {
+      if (prevSeconds === 0) {
+        if (interval.current )clearInterval(interval.current);
+        return 0;
+      }
+      return prevSeconds - 1;
+    });
+  };
+  
+  const onStart = useCallback(() => {
+    if (interval.current) clearInterval(interval.current);
+    if (isCountdownRunning)    interval.current = setInterval(decrementCountdown, 1000);
+
+  },[isCountdownRunning])
+
+
+  useEffect(() => {
+    if (isCountdownRunning) {
+      onStart();
+    } else if (interval.current) {
+      clearInterval(interval.current);
+      interval.current = null;
+    }
+
+    return () => {
+      if (interval.current) {
+        clearInterval(interval.current);
+      }
+    };
+  }, [isCountdownRunning, onStart]);
+
+
+  return {
     startCountdown: onStart,
-    pauseCountdown:onPause,
-    stopCountdown: onStop,
-    countdownSeconds
+    resetCountdown: onReset,
+    togglePause,
+    countdownSeconds, isCountdownRunning
   };
 }

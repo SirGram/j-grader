@@ -1,40 +1,29 @@
-import React, { useMemo } from 'react';
+import { useEffect, useState } from 'react';
+import { CountdownCircleTimer } from 'react-countdown-circle-timer'
+import { FaPause, FaPlay } from 'react-icons/fa6';
 
-export default function CircleProgress({ countdownSeconds, answerTime }: { countdownSeconds: number, answerTime: number }) {
-  const radius = 30;
-  const strokeWidth = 10;
-  const circumference = 2 * Math.PI * radius;
-  const progress = useMemo(() => (countdownSeconds / answerTime) * circumference, [countdownSeconds, answerTime]); 
+export default function CircleProgress({ countdownSeconds, answerTime, isRunning }: { countdownSeconds: number, answerTime: number, isRunning:boolean }) {
+    const [key, setKey] = useState<number>(0); // key to reset the timer
 
-  const strokeDashOffset = useMemo(() => {
-    return circumference - progress;
-  }, [progress, circumference]);
-
-  return (
-    <div className="relative" style={{ width: '40px', height: '40px'}}>
-      <svg width="100%" height="100%" viewBox="0 0 100 100" style={{ position: 'absolute', top: 0, left: 0 }}>
-        <circle
-          cx="50"
-          cy="50"
-          r={radius}
-          fill="none"
-          strokeWidth={strokeWidth}
-          stroke=""
-        />
-        <circle
-          cx="50"
-          cy="50"
-          r={radius}
-          fill="none"
-          strokeWidth={strokeWidth}
-          stroke="#5cb85c"
-          strokeDasharray={circumference}
-          strokeDashoffset={strokeDashOffset}
-          strokeLinecap="round"
-          transform="rotate(-90 50 50)"
-          style={{ transition: 'stroke-dashoffset 1s linear' }} // Apply transition
-        />
-      </svg>
-    </div>
-  );
+    useEffect(() => {
+        if (countdownSeconds <1){
+        setKey(prevKey => prevKey + 1);}
+    }, [countdownSeconds]);
+    return(
+        <div className='relative'>
+    <CountdownCircleTimer
+    key={key}
+    isPlaying={isRunning}
+    duration={answerTime}
+    colors={['#004777', '#F7B801', '#A30000' ]}
+    colorsTime={[7,  2, 0]}
+    strokeWidth={3}
+    trailColor={'transparent'}
+    size={24}
+  >
+    
+  </CountdownCircleTimer>
+  <div className="absolute  text-xs top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"> {!isRunning ?<FaPlay /> :<FaPause />}</div>  
+  </div>
+)
 }
