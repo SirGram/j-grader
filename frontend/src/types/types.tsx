@@ -13,10 +13,3 @@ export interface IDeck {
     sampleSize?:number;
     correctCount?:number 
 }
-export interface IDeckWithStateCard {
-    name:string;
-    cards:IDeckCardWithState[];
-    deckSize?:number;
-    sampleSize?:number;
-    correctCount?:number 
-}

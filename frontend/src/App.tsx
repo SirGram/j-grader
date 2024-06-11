@@ -6,14 +6,15 @@ import dataN2 from "./decks/n2.json";
 import dataN3 from "./decks/n3.json";
 import dataN4 from "./decks/n4.json";
 import dataN5 from "./decks/n5.json";
-import { IDeck, IDeckCard, IDeckCardWithState, IDeckWithStateCard } from "./types/types";
+import { IDeck, IDeckCard, IDeckCardWithState } from "./types/types";
 import DeckTable from "./components/DeckTable";
 import Precision from "./components/Precision";
-import {  calculateResultWithError, calculateStandardError, formatElapsedTime, getRandomCards } from "./utils/utils";
+import {  calculateResultWithError,  formatElapsedTime, getRandomCards } from "./utils/utils";
 import { FaArrowTurnDown } from "react-icons/fa6";
 import {  toRomaji } from "wanakana";
-import useTimer from "./hooks/hooks";
+import useTimer, { useCountDown } from "./hooks/hooks";
 import Progress from "./components/Progress";
+import CircleProgress from "./components/CircleProgress";
 
 interface WordCardProps {
   word: IDeckCard | null;
@@ -75,8 +76,8 @@ function WordCard({ word, onAnswer }: WordCardProps) {
 
   return (
     word && (
-      <article className="w-96 shadow-xl bg-primary-content rounded-lg overflow-hidden">
-        <div className="w-full h-40 text-5xl flex items-center justify-center">
+      <article className="w-96 shadow-xl  bg-primary-content rounded-lg overflow-hidden flex flex-col ">
+        <div className="w-full my-6 h-min text-5xl flex items-center justify-center">
           {word.question}
         </div>
         <footer className="flex flex-col h-min text-2xl">
@@ -84,7 +85,7 @@ function WordCard({ word, onAnswer }: WordCardProps) {
           {!inputMode ? (
             <>
             <button
-              className="bg-error w-full h-full hover:opacity-70 text-accent-content flex items-center justify-center"
+              className="bg-base-300 text-error w-full h-full hover:opacity-70  flex items-center justify-center"
               onClick={() => onAnswer(false)}
             >
               FAIL
@@ -92,7 +93,7 @@ function WordCard({ word, onAnswer }: WordCardProps) {
             </button>
            
               <button
-                className="bg-primary w-full h-full hover:opacity-70 text-accent-content flex items-center justify-center"
+                className="bg-base-200 w-full h-full hover:opacity-70 text-lime-300 flex items-center justify-center"
                 onClick={() => onAnswer(true)}
               >
                 PASS
@@ -102,9 +103,9 @@ function WordCard({ word, onAnswer }: WordCardProps) {
                 </span>
               </button></>
             ) : (
-              <div className="p-2 w-full">
-                <div className="flex flex-col">
-                  <span className="mb-1 text-sm w-full justify-end flex">Type <i>&nbsp;1&nbsp;</i>  for Fail</span>
+              <div className="p-2 w-full ">
+                <div className="flex flex-col items-end">
+        <kbd className="kbd kbd-sm mb-1 text-error border-error">1</kbd>
                 <input
                 key={word.question}
                   type="text"
@@ -133,7 +134,7 @@ function PastWordCard({ word }: { word: IDeckCardWithState | null }) {
         <span className="text-xl">{word?.answer.join(", ") || ""}</span>
         <span className={`text-5xl `}>{word?.question || ""}</span>
     </div>
-      <div className="bg-neutral-content w-full h-1 "></div>
+      <div className="bg-base-300 w-full h-1 "></div>
       <div className="w-full flex-col h-min bg-primary-content  p-4 text-5xl flex items-center justify-center ">
         <span className="text-xl">{word?.meaning || ""}</span>
       </div>
@@ -146,6 +147,20 @@ function WordsCarrousel({ words }: { words: IDeckCardWithState[] }) {
 
   useEffect(() => {
     setCurrentIndex(words.length - 1);
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'ArrowLeft') {
+        goToPrevious();
+      } else if (event.key === 'ArrowRight') {
+        goToNext();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
   }, [words]);
 
   const goToPrevious = () => {
@@ -174,13 +189,14 @@ function WordsCarrousel({ words }: { words: IDeckCardWithState[] }) {
         ))}
       </div>
 
-      {currentIndex > 0 && (
+      {currentIndex > 0 && (<>
         <button
           onClick={goToPrevious}
           className="btn btn-circle absolute top-9 left-2"
         >
           ❮
         </button>
+       </>
       )}
       {currentIndex < words.length - 1 && (
         <button
@@ -190,6 +206,12 @@ function WordsCarrousel({ words }: { words: IDeckCardWithState[] }) {
           ❯
         </button>
       )}
+
+<div className="absolute bottom-2 flex gap-1 right-2 ">
+        <kbd className="kbd kbd-sm">◀︎</kbd>
+        <kbd className="kbd kbd-sm">▶︎</kbd>
+        </div>
+
     </div>
   );
 }
@@ -261,6 +283,9 @@ function Game() {
     startTimer,
     pauseTimer,
     seconds} = useTimer()
+    const answerTime = 5; 
+    
+  const  { startCountdown, stopCountdown, countdownSeconds } = useCountDown(answerTime)
 
   const [decksEmpty, setDecksEmpty] = useState(false);
   const [deck, setDeck] = useState<IDeck | null>(null);
@@ -268,7 +293,7 @@ function Game() {
   const [word, setWord] = useState<IDeckCard | null>(null);
   const [words, setWords] = useState<IDeckCardWithState[]>([]);
   const [failedWordsNumber, setFailedWordsNumber] = useState(0)
-  /* const answerTime = 60; */
+
 
 
   const shiftDeck = () => {
@@ -301,14 +326,20 @@ function Game() {
       setDeck(decks[deckIndex]);
       setWord(decks[deckIndex]?.cards[0] || null);
       startTimer()
+      startCountdown()
      
     }else{
       pauseTimer()
     }
   }, [decksEmpty]);
 
+
+ 
+  console.log(countdownSeconds)
+
   useEffect(() => {
     setDecksEmpty(decks.every((deck) => deck.cards.length === 0));
+    
   }, [word]);
 
   const handleAnswer = (isCorrect: boolean) => {
@@ -321,6 +352,7 @@ function Game() {
       if (isCorrect) {
         setWords(prevWords => [...prevWords, { ...word, state: "passed" }]);
       } else {
+        setFailedWordsNumber(prev=>prev + 1)
         setWords(prevWords => [...prevWords, { ...word, state: "failed" }]);
       }
     }
@@ -333,20 +365,18 @@ function Game() {
     0
   );
 
-  const wordComponent = useMemo(() => <WordCard word={word} onAnswer={handleAnswer} isRomajiInput={isRomajiInput}/>, [word]);
+  const wordComponent = useMemo(() => <WordCard word={word} onAnswer={handleAnswer} isRomajiInput={isRomajiInput} />, [word]);
 
-  const failedWordsComponent = useMemo(() => <WordsCarrousel words={words} />, [words]);
+  const wordCarrouselComponent = useMemo(() => <WordsCarrousel words={words} />, [words]);
 
 
   return !decksEmpty ? (
-    <>
-      <div className="flex items-center gap-4">
-        <h1 className="w-full flex justify-center items-center text-4xl">
-          QUIZ
-        </h1>
+    <section className="flex flex-col lg:flex-row lg:gap-20 gap-4 items-center">
+      <div className=" bg-opacity-70 bg-base-200 p-4 rounded-lg backd">
+      <div className="flex items-center justify-center gap-4">
         
         <div
-          className="collapse bg-base-200 w-fit shrink-0 hover:bg-base-300"
+          className="collapse bg-base-300 w-fit mb-3 shrink-0 hover:bg-base-100"
           title="current deck"
         >
           <input type="checkbox" />
@@ -369,18 +399,29 @@ function Game() {
           </ul>
         </div>
       </div>
-      <h3>
-        <b>{remainingCards}</b> total remaining words
-      </h3>
-      <div className="relative flex flex-col gap-6 justify-center items-center">
-      {wordComponent}
-        {failedWordsComponent}
-        <div className="absolute left-2 top-2">
-          {/* <CountDown isPlaying={true} answerTime={answerTime} /> */}
-        </div>
+
+      <div className="stats stats-horizontal shadow text-center">
+  
+  <div className="stat ">
+  <div className="stat-title">Remaining words</div>
+    <div className="stat-value text-xl">{remainingCards}</div>
+    </div>
+  
+    <div className="stat">
+  <div className="stat-title">Failed</div>
+    <div className="stat-value text-xl">{failedWordsNumber}</div>
+    </div>
+  
+    <div className="stat">
+  <div className="stat-title">Passed</div>
+    <div className="stat-value text-xl">{words.length - failedWordsNumber}</div>
+    </div>
+    </div>
+
+      
       
         {inputMode &&
-      <label htmlFor="inputRomaji" className="flex gap-4 w-full justify-between">
+      <label htmlFor="inputRomaji" className="flex mt-6 w-full justify-around">
               {" "}
               Romaji Input
               <input
@@ -392,8 +433,16 @@ function Game() {
               />
             </label>}
       </div>
+      <div className="flex flex-col justify-center gap-10  items-center">
+        {wordCarrouselComponent}
+        <div className="relative">
+
+      {wordComponent}
+      <div className="absolute right-1 top-1"><CircleProgress countdownSeconds={countdownSeconds} answerTime={answerTime}/></div>
+        </div>
+      </div>
+      </section>
       
-    </>
   ) : (
     <Results elapsedTime={seconds} />
   );
@@ -403,18 +452,32 @@ export default function App() {
   const availableDecks = [dataN1, dataN2, dataN3, dataN4, dataN5];
   const [selectedDecksNames, setSelectedDecksNames] = useState<string[]>([]);
   const [gameStarted, setGameStarted] = useState(false);
+  const [answerTime, setAnswerTime] = useState(4);
+const answerTimeOptions = [0,3,4,5,6,7,10]
+const answerTimeLastOption = answerTimeOptions[answerTimeOptions.length -1]
+const answerTimeProgress = answerTime *100 / answerTimeLastOption
 
+  const { decks, setDecks, precision, inputMode, setInputMode } =
+    useDeckStore();
 
   const handleDeckSelection = (deckName: string) => {
+    if (deckName === "all"){
+      if (selectedDecksNames.length === availableDecks.length) {
+        setSelectedDecksNames([]);
+      } else {
+        setSelectedDecksNames(availableDecks.map(deck => deck.name));
+      }
+    }else{
+      
     setSelectedDecksNames((prevSelectedDecks) =>
       prevSelectedDecks.includes(deckName)
         ? prevSelectedDecks.filter((name) => name !== deckName)
         : [...prevSelectedDecks, deckName]
     );
+    
+  }
   };
 
-  const { decks, setDecks, precision, inputMode, setInputMode } =
-    useDeckStore();
 
   const startGame = () => {
     setGameStarted(true);
@@ -451,13 +514,20 @@ export default function App() {
   }, [selectedDecksNames, precision]);
   console.log(decks);
 
+  const handleNextAnswerTimeOption = () => {
+    const currentIndex = answerTimeOptions.indexOf(answerTime);
+    const nextIndex = (currentIndex + 1) % answerTimeOptions.length;
+    setAnswerTime(answerTimeOptions[nextIndex]);
+  };
+
+
 
   return (
     <main className="flex overx flex-col gap-6 min-h-screen justify-center items-center">
-      <header className="absolute text-9xl top-6 left-10">
+      <header className="absolute sm:text-5xl md:text-9xl top-0 left-0 -z-30">
         <h1>
           J-GRADER
-          <span className="ml-2 badge badge-outline badge-primary text-2xl p-4">
+          <span className="ml-2 badge badge-outline badge-primary md:text-2xl p-4">
             BETA
           </span>
         </h1>
@@ -479,6 +549,7 @@ export default function App() {
             <DeckTable
               availableDecks={availableDecks}
               handleChange={handleDeckSelection}
+              selectedDecksNames={selectedDecksNames}
             />
           </div>
           <div className="flex flex-col gap-4">
@@ -494,6 +565,15 @@ export default function App() {
                 onChange={() => setInputMode(!inputMode)}
               />
             </label>
+            <label htmlFor="inputType" className="flex w-full justify-between place-items-center">
+              {" "}
+              <span className={`${answerTime === 0 ? ' line-through' : ''} `}>
+        Answer Time
+      </span>
+  
+              <button onClick={handleNextAnswerTimeOption} className="radial-progress bg-base-200" style={{ "--value": answerTimeProgress.toString(), "--size": "4rem", "--thickness": "10px" }} role="progressbar">{answerTime}s</button>
+
+            </label>
 
             <div className="   flex w-full justify-end">
               <div className="bg-base-200 w-fit p-4  rounded-box">
@@ -507,7 +587,7 @@ export default function App() {
               <div className="bg-base-200 w-fit p-4  rounded-box">
                 Estimated time:{" "}
                 <b>
-    {inputMode ? (
+    {!inputMode ? (
       `${((totalCardCountSample * 2) / 60).toFixed(2)}~
       ${((totalCardCountSample * 3) / 60).toFixed(2)} min`
     ) : (
@@ -520,7 +600,7 @@ export default function App() {
             <button
               className={`btn w-full btn-primary text-xl `}
               onClick={startGame}
-              disabled={decks.length < 1}
+              disabled={decks.length < 1 || totalCardCountSample< 1}
             >
               START
             </button>

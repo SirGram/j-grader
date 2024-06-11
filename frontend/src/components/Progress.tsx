@@ -1,4 +1,5 @@
-export default function Progress({value, max}:{value:number, max:number}){
+export default function Progress({value, max}:{value:number| undefined, max:number | undefined}){
+    if (!value || !max )return
     const percent = value * 100/ max
     console.log(percent)
     return (
