@@ -2,13 +2,15 @@ import { useEffect, useState } from 'react';
 import { CountdownCircleTimer } from 'react-countdown-circle-timer'
 import { FaPause, FaPlay } from 'react-icons/fa6';
 
-export default function CircleProgress({ countdownSeconds, answerTime, isRunning }: { countdownSeconds: number, answerTime: number, isRunning:boolean }) {
+export default function CircleProgress({ countdownSeconds, answerTime, isRunning, buttonPressed, setButtonPressed }: { countdownSeconds: number, answerTime: number, isRunning:boolean, buttonPressed:boolean, setButtonPressed:(value:boolean)=>void }) {
     const [key, setKey] = useState<number>(0); // key to reset the timer
 
     useEffect(() => {
-        if (countdownSeconds <1){
+        if (countdownSeconds <1 || buttonPressed){
         setKey(prevKey => prevKey + 1);}
-    }, [countdownSeconds]);
+        setButtonPressed(false)
+    }, [countdownSeconds, buttonPressed]);
+
     return(
         <div className='relative'>
     <CountdownCircleTimer
@@ -18,7 +20,7 @@ export default function CircleProgress({ countdownSeconds, answerTime, isRunning
     colors={['#004777', '#F7B801', '#A30000' ]}
     colorsTime={[7,  2, 0]}
     strokeWidth={3}
-    trailColor={'transparent'}
+    trailColor="rgba(0, 0, 0, 0)"
     size={24}
   >
     

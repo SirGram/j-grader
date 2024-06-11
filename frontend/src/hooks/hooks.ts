@@ -48,6 +48,12 @@ export function useCountDown(timeInSeconds: number) {
     setCountdownSeconds(timeInSeconds);
     if (interval.current)    clearInterval(interval.current);
   }
+  const onStop = () => {
+    setCountdownSeconds(timeInSeconds);
+    setIsCountdownRunning(false)
+    if (interval.current)    clearInterval(interval.current);
+
+  }
 
   const togglePause = () => {
     setIsCountdownRunning(!isCountdownRunning)
@@ -90,6 +96,7 @@ export function useCountDown(timeInSeconds: number) {
   return {
     startCountdown: onStart,
     resetCountdown: onReset,
+    stopCountdown:onStop,
     togglePause,
     countdownSeconds, isCountdownRunning
   };

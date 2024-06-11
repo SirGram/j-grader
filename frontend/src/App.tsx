@@ -10,7 +10,7 @@ import { IDeck, IDeckCard, IDeckCardWithState } from "./types/types";
 import DeckTable from "./components/DeckTable";
 import Precision from "./components/Precision";
 import {  calculateResultWithError,  formatElapsedTime, getRandomCards } from "./utils/utils";
-import { FaArrowTurnDown, FaPause, FaPlay } from "react-icons/fa6";
+import { FaArrowTurnDown } from "react-icons/fa6";
 import {  toRomaji } from "wanakana";
 import useTimer, { useCountDown } from "./hooks/hooks";
 import Progress from "./components/Progress";
@@ -260,6 +260,8 @@ function Game() {
   const [words, setWords] = useState<IDeckCardWithState[]>([]);
   const [failedWordsNumber, setFailedWordsNumber] = useState(0)
 
+  const [buttonPressed, setButtonPressed] = useState<boolean>(false);
+
 
 
   const shiftDeck = () => {
@@ -309,8 +311,7 @@ function Game() {
 
 
   useEffect(() => {
-    setDecksEmpty(decks.every((deck) => deck.cards.length === 0));
-   
+    setDecksEmpty(decks.every((deck) => deck.cards.length === 0));   
     
   }, [word]);
 
@@ -339,6 +340,7 @@ function Game() {
         setFailedWordsNumber(prev=>prev + 1)
         setWords(prevWords => [...prevWords, { ...word, state: "failed" }]);
       }
+      setButtonPressed(true)
     }
     
     shiftCard();
@@ -425,7 +427,7 @@ function Game() {
       {answerTime !== 0 &&
       <button onClick={()=>togglePause()} className="absolute right-1 top-1">
         
-        <CircleProgress countdownSeconds={countdownSeconds} answerTime={answerTime} isRunning = {isCountdownRunning}/>
+        <CircleProgress countdownSeconds={countdownSeconds} answerTime={answerTime} isRunning = {isCountdownRunning} buttonPressed={buttonPressed} setButtonPressed={setButtonPressed}/>
         
         </button>}
       </div>
