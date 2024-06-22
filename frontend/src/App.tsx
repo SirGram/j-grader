@@ -19,7 +19,7 @@ import { Results } from "./components/Results";
 import ThemeSelector from "./components/ThemeSelector";
 import { BsArrowLeft } from "react-icons/bs";
 
-function Game({ restartGame }: { restartGame: () => void }) {
+function Game() {
   const {
     decks,
     setDecks,
@@ -391,10 +391,10 @@ export default function App() {
                   onClick={handleNextAnswerTimeOption}
                   className="radial-progress bg-base-200"
                   style={{
-                    "--value": answerTimeProgress.toString(),
+                    "--value": answerTimeProgress.toString() ,
                     "--size": "4rem",
                     "--thickness": "10px",
-                  }}
+                  }as React.CSSProperties}
                   role="progressbar"
                 >
                   {answerTime}s
@@ -432,7 +432,7 @@ export default function App() {
                 BACK
               </button>
           
-            <Game restartGame={restartGame} />
+            <Game />
           </>
         )}
       </main>
