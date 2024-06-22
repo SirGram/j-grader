@@ -11,9 +11,11 @@ export default function DeckTable({
   }) {
 
   const totalDeckSize = availableDecks.reduce((acc, deck) => acc + (deck.cards.length), 0);
+  const allSelected = availableDecks.every(deck => selectedDecksNames.includes(deck.name));
+
     return (
-      <table className="table rounded-box overflow-hidden bg-secondary-content text-center">
-        <thead>
+      <table className="table rounded-box overflow-hidden bg-secondary text-center">
+        <thead className=" text-secondary-content">
           <tr>
             <th>Deck Name</th>
             <th>Card Count</th>
@@ -46,6 +48,7 @@ export default function DeckTable({
                   type="checkbox"
                   className="checkbox"
                   onChange={() => handleChange("all")}
+                  checked={allSelected}
                 />
               </th>
             </tr>
