@@ -16,7 +16,7 @@ interface ThemeProviderProps {
 export function ThemeProvider({ children }: ThemeProviderProps) {
   const [currentTheme, setCurrentTheme] = useState<Theme>(() => {
     const savedTheme = localStorage.getItem('theme');
-    return savedTheme || "luxury"; // Return saved theme or default 
+    return savedTheme || "halloween"; // Return saved theme or default 
   });
 
   useEffect(() => {

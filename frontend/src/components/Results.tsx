@@ -7,10 +7,10 @@ export function Results({ elapsedTime }: { elapsedTime: number }) {
   console.log(decks);
 
   return (
-    <article className="bg-base-200  rounded-box p-4 overflow-hidden">
+    <article className="bg-base-200  rounded-box  overflow-hidden">
       
-      <h1 className="text-3xl mb-6 text-center font-thin">VOCABULARY KNOWLEDGE</h1>
-      <div className="gap-x-4 flex flex-col gap-2">
+      <h3 className="font-thin text-3xl mb-4 p-4 w-full text-center  bg-gradient-to-b from-base-200 to-base-300 ">VOCABULARY KNOWLEDGE</h3>
+      <div className="gap-x-4 flex flex-col gap-2 p-4">
         {decks.map((deck) => {
           const {result,  SE} = calculateResultWithError(
             deck.correctCount!,
@@ -31,8 +31,8 @@ export function Results({ elapsedTime }: { elapsedTime: number }) {
           );
         })}
       </div>
-      <div className="flex w-full justify-end mt-6">
-        <div className="bg-base-300 w-fit p-4 rounded-box ">
+      <div className="flex w-full justify-end mt-6  ">
+        <div className="bg-base-300 w-fit p-4 rounded-tl-xl ">
           Elapsed time: <b>{formatElapsedTime(elapsedTime)}</b>
         </div>
       </div>

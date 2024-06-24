@@ -18,6 +18,7 @@ import { WordCard } from "./components/WordCard";
 import { Results } from "./components/Results";
 import ThemeSelector from "./components/ThemeSelector";
 import { BsArrowLeft } from "react-icons/bs";
+import WordTable from "./components/WordTable";
 
 function Game() {
   const {
@@ -143,7 +144,7 @@ function Game() {
 
   return !decksEmpty ? (
     <section className="flex flex-col lg:flex-row lg:gap-20 gap-4 items-center">
-      <div className=" bg-opacity-70 bg-base-200 p-4 rounded-lg backd">
+      <div className=" bg-opacity-70 bg-base-200 rounded-lg ">
         <div className="flex items-center justify-center gap-4">
           <div
             className="collapse bg-base-100 w-fit mb-3 shrink-0 hover:bg-base-200"
@@ -228,9 +229,10 @@ function Game() {
       </div>
     </section>
   ) : (
-    <>
-      <Results elapsedTime={seconds} />
-    </>
+    <section className="flex flex-col gap-10 justify-center items-center">
+        <Results elapsedTime={seconds} />
+        <WordTable words={words} />
+    </section>
   );
 }
 
@@ -328,9 +330,9 @@ export default function App() {
   };
 
   return (
-    <>
-      <header className="w-full p-4 absolute sm:text-7xl md:text-8xl top-0 left-0 -z-30 ">
-        <div className="absolute inset-0 bg-[url('/bg.png')] bg-left-top bg-contain bg-no-repeat opacity-60  -z-20"></div>
+    <div className="min-h-screen flex flex-col">
+    <header className="w-full p-4 bg-[url('/bg.png')] bg-left-top bg-contain bg-no-repeat bg-opacity-60 relative md:text-5xl">
+      <div className="absolute inset-0 bg-[url('/bg.png')] bg-left-top bg-contain bg-no-repeat opacity-60  -z-20"></div>
         <h1 className="font-hiroshi relative z-10">
           j<span className="text-red-800">-GRADE</span>
           <span className="text-red-950">r</span>
@@ -344,7 +346,7 @@ export default function App() {
       </header>
       <ThemeSelector />
       <main
-        className={`flex  flex-col gap-6 min-h-screen justify-center items-center `}
+        className={`flex items-center w-full flex-1 h-full p-4 pb-10   flex-col gap-6  justify-center items-center `}
       >
         {!gameStarted ? (
           <div className="  bg-base-100  flex  gap-20 flex-col md:flex-row">
@@ -436,6 +438,6 @@ export default function App() {
           </>
         )}
       </main>
-    </>
+    </div>
   );
 }

@@ -5,6 +5,7 @@ import "./index.css";
 import "./wydr.ts";
 import { ThemeProvider } from "./context/ThemeContext";
 
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <ThemeProvider>

@@ -39,7 +39,7 @@ export default function ThemeSelector() {
   ].sort((a, b) => a.localeCompare(b));
 
   return (
-    <div className="fixed top-0 right-0">
+    <div className="absolute top-0 right-0">
       <select
         className="select w-full max-w-xs bg-base-200"
         onChange={(e) => setCurrentTheme(e.target.value)}
