@@ -1,0 +1,6285 @@
+{
+  "name": "JPDB 2.5K",
+  "cards": [
+    {
+      "question": "電話",
+      "answer": "でんわ",
+      "meaning": "telephone call, phone call, telephone (device), phone"
+    },
+    {
+      "question": "成長",
+      "answer": "せいちょう",
+      "meaning": "growth, development, growing up, becoming an adult, growth (of a company, the economy, etc.)"
+    },
+    {
+      "question": "鋭い",
+      "answer": "するどい",
+      "meaning": "sharp (blade), pointed, sharp (pain), stabbing, cutting (remark), stinging, pointed (question or loo"
+    },
+    {
+      "question": "証拠",
+      "answer": "しょうこ",
+      "meaning": "evidence, proof"
+    },
+    {
+      "question": "紹介",
+      "answer": "しょうかい",
+      "meaning": "introduction, presentation, referral, listing"
+    },
+    {
+      "question": "実際",
+      "answer": "じっさい",
+      "meaning": "practicality, practical, reality, actuality, actual conditions, bhutakoti (limit of reality)"
+    },
+    {
+      "question": "付く",
+      "answer": "つく,づく",
+      "meaning": "to be attached, to be connected with, to adhere, to stick, to cling, to remain imprinted, to scar, t"
+    },
+    {
+      "question": "超",
+      "answer": "ちょう",
+      "meaning": "super-, ultra-, hyper-, extreme, extremely, really, totally, absolutely, over, more than"
+    },
+    {
+      "question": "作業",
+      "answer": "さぎょう",
+      "meaning": "work, operation, manufacturing, fatigue duty"
+    },
+    {
+      "question": "重要",
+      "answer": "じゅうよう",
+      "meaning": "important, momentous, essential, principal, major"
+    },
+    {
+      "question": "鍵",
+      "answer": "かぎ,けん",
+      "meaning": "key, lock, key (to a problem), clue, key (of a piano, etc.)"
+    },
+    {
+      "question": "衝撃",
+      "answer": "しょうげき",
+      "meaning": "shock, impact, crash"
+    },
+    {
+      "question": "巻き込む",
+      "answer": "まきこむ",
+      "meaning": "to roll up, to enfold, to swallow up, to involve, to drag into"
+    },
+    {
+      "question": "差し出す",
+      "answer": "さしだす",
+      "meaning": "to present, to submit, to tender, to hold out"
+    },
+    {
+      "question": "何でも",
+      "answer": "なんでも",
+      "meaning": "any, anything, whatever, whatever one likes, everything, all, I am told, I hear, I understand, they"
+    },
+    {
+      "question": "軍",
+      "answer": "ぐん,いくさ",
+      "meaning": "army, armed forces, troops, military authorities, team, group, troupe, war, battle, campaign, fight,"
+    },
+    {
+      "question": "悔しい",
+      "answer": "くやしい",
+      "meaning": "vexing, annoying, frustrating, regrettable, mortifying"
+    },
+    {
+      "question": "二つ",
+      "answer": "ふたつ",
+      "meaning": "two"
+    },
+    {
+      "question": "抜く",
+      "answer": "ぬく",
+      "meaning": "to pull out, to draw out, to extract, to unplug, to weed, to omit, to leave out, to go without, to s"
+    },
+    {
+      "question": "破壊",
+      "answer": "はかい",
+      "meaning": "destruction, disruption, (application) crash"
+    },
+    {
+      "question": "運命",
+      "answer": "うんめい",
+      "meaning": "fate, destiny, lot"
+    },
+    {
+      "question": "術",
+      "answer": "じゅつ,すべ",
+      "meaning": "art, technique, means, way, trick, trap, plot, stratagem, magic, method"
+    },
+    {
+      "question": "案内",
+      "answer": "あんない,あない",
+      "meaning": "guidance, leading (the way), showing around, information, notice, notification, announcement (of one"
+    },
+    {
+      "question": "努力",
+      "answer": "どりょく",
+      "meaning": "effort, exertion, endeavour, endeavor, hard work, striving"
+    },
+    {
+      "question": "一言",
+      "answer": "ひとこと,いちげん,いちごん",
+      "meaning": "single word, a few words, brief comment"
+    },
+    {
+      "question": "心臓",
+      "answer": "しんぞう",
+      "meaning": "heart, guts, nerve, cheek, gall, spine, central part"
+    },
+    {
+      "question": "荷物",
+      "answer": "にもつ",
+      "meaning": "luggage, baggage, package, burden, payload (of a packet, cell, etc.)"
+    },
+    {
+      "question": "伸びる",
+      "answer": "のびる",
+      "meaning": "to stretch, to extend, to lengthen, to grow (of hair, height, grass, etc.), to straighten out, to be"
+    },
+    {
+      "question": "得意",
+      "answer": "とくい",
+      "meaning": "triumph, prosperity, pride, one's strong point, one's forte, one's specialty, frequent customer (cli"
+    },
+    {
+      "question": "両親",
+      "answer": "りょうしん,ふたおや",
+      "meaning": "parents, both parents"
+    },
+    {
+      "question": "量",
+      "answer": "りょう,はか",
+      "meaning": "quantity, amount, volume, capacity, portion (of food), generosity, magnanimity, tolerance, pramana,"
+    },
+    {
+      "question": "払う",
+      "answer": "はらう",
+      "meaning": "to pay (e.g. money, bill), to brush off, to wipe away, to clear away, to dust off, to cut off (e.g."
+    },
+    {
+      "question": "二度と",
+      "answer": "にどと",
+      "meaning": "never again"
+    },
+    {
+      "question": "辺り",
+      "answer": "あたり,ほとり,わたり",
+      "meaning": "(in the) neighbourhood, neighborhood, vicinity, nearby, surroundings, around, about, or thereabouts,"
+    },
+    {
+      "question": "開始",
+      "answer": "かいし",
+      "meaning": "start, commencement, beginning, initiation"
+    },
+    {
+      "question": "解放",
+      "answer": "かいほう",
+      "meaning": "release, unleashing, liberation, emancipation, setting free, deallocation (of computer memory)"
+    },
+    {
+      "question": "楽しみ",
+      "answer": "たのしみ",
+      "meaning": "enjoyment, pleasure, diversion, amusement, hobby, anticipation, looking forward to"
+    },
+    {
+      "question": "取れる",
+      "answer": "とれる",
+      "meaning": "to come off, to be removed, to disappear (of pain, a fever, etc.), to be caught, to be harvested, to"
+    },
+    {
+      "question": "建物",
+      "answer": "たてもの",
+      "meaning": "building"
+    },
+    {
+      "question": "扱い",
+      "answer": "あつかい",
+      "meaning": "treatment, service"
+    },
+    {
+      "question": "本来",
+      "answer": "ほんらい",
+      "meaning": "originally, primarily, essentially, intrinsically, naturally, by nature, in (and of) itself, proper,"
+    },
+    {
+      "question": "系",
+      "answer": "けい",
+      "meaning": "system, lineage, group, corollary, system (range of strata that correspond to a particular time peri"
+    },
+    {
+      "question": "扱う",
+      "answer": "あつかう",
+      "meaning": "to deal with (a person), to treat, to handle, to take care of, to entertain, to deal with (a problem"
+    },
+    {
+      "question": "口調",
+      "answer": "くちょう",
+      "meaning": "tone (e.g. of voice, etc.), (verbal) expression"
+    },
+    {
+      "question": "真面目",
+      "answer": "しんめんもく,しんめんぼく,まじめ",
+      "meaning": "one's true character, one's true self, one's true worth, serious, earnest, honest, sober, grave, ste"
+    },
+    {
+      "question": "更に",
+      "answer": "さらに",
+      "meaning": "furthermore, again, after all, more and more, moreover, even more"
+    },
+    {
+      "question": "影響",
+      "answer": "えいきょう",
+      "meaning": "influence, effect, to influence, to affect, to have an influence on, to impact, to have an effect on"
+    },
+    {
+      "question": "真っ赤",
+      "answer": "まっか",
+      "meaning": "bright red, deep red, flushed (of face), downright (e.g. lie), complete, utter"
+    },
+    {
+      "question": "発見",
+      "answer": "はっけん",
+      "meaning": "discovery, detection, finding"
+    },
+    {
+      "question": "支える",
+      "answer": "ささえる,つかえる,つっかえる",
+      "meaning": "to support, to prop, to sustain, to underlay, to hold up, to defend, to hold at bay, to stem, to che"
+    },
+    {
+      "question": "第一",
+      "answer": "だいいち",
+      "meaning": "first, foremost, number one, most important, best, greatest, most, above all, besides, in any case,"
+    },
+    {
+      "question": "机",
+      "answer": "つくえ,つき",
+      "meaning": "desk"
+    },
+    {
+      "question": "同士",
+      "answer": "どうし,どし",
+      "meaning": "fellow, mutual, companion, comrade"
+    },
+    {
+      "question": "遅れる",
+      "answer": "おくれる",
+      "meaning": "to be late, to be delayed, to fall behind schedule, to be overdue, to fall behind (in a race, one's"
+    },
+    {
+      "question": "車",
+      "answer": "くるま,しゃ",
+      "meaning": "car, automobile, vehicle, wheel"
+    },
+    {
+      "question": "飛び出す",
+      "answer": "とびだす",
+      "meaning": "to jump out, to rush out, to fly out, to appear (suddenly), to protrude, to project, to butt in, to"
+    },
+    {
+      "question": "事態",
+      "answer": "じたい",
+      "meaning": "situation, (present) state of affairs, circumstances"
+    },
+    {
+      "question": "味方",
+      "answer": "みかた",
+      "meaning": "friend, ally, supporter, taking sides with, supporting, standing by, backing up"
+    },
+    {
+      "question": "展開",
+      "answer": "てんかい",
+      "meaning": "development, evolution, progression, unfolding, (plot) twist, expansion, spreading out, extending, d"
+    },
+    {
+      "question": "学園",
+      "answer": "がくえん",
+      "meaning": "educational institution, school, academy, campus"
+    },
+    {
+      "question": "怪しい",
+      "answer": "あやしい",
+      "meaning": "suspicious, dubious, questionable, dodgy, shady, fishy, doubtful, unsure, uncertain, unlikely, impla"
+    },
+    {
+      "question": "型",
+      "answer": "かた,がた",
+      "meaning": "model, type (e.g. of machine, goods, etc.), type, style, pattern, mold (mould), template, kata (stan"
+    },
+    {
+      "question": "流れ",
+      "answer": "ながれ",
+      "meaning": "flow (of a fluid or gas), stream, current, flow (of people, things), passage (of time), tide, passin"
+    },
+    {
+      "question": "右手",
+      "answer": "みぎて",
+      "meaning": "right hand, right-hand side, right-hand direction, (on) the right"
+    },
+    {
+      "question": "残り",
+      "answer": "のこり",
+      "meaning": "remnant, residue, remaining, left-over"
+    },
+    {
+      "question": "偶然",
+      "answer": "ぐうぜん",
+      "meaning": "coincidence, chance, accident, fortuity, by chance, unexpectedly, accidentally, contingency (philoso"
+    },
+    {
+      "question": "柔らかい",
+      "answer": "やわらかい",
+      "meaning": "soft, tender, pliant, supple, limber, limp, gentle, mild, mellow, informal, light, flexible (e.g. th"
+    },
+    {
+      "question": "感触",
+      "answer": "かんしょく",
+      "meaning": "feel (i.e. tactile sensation), touch, feeling, sensation, texture (e.g. food, cloth)"
+    },
+    {
+      "question": "壊れる",
+      "answer": "こわれる",
+      "meaning": "to be broken, to break, to fall through, to come to nothing"
+    },
+    {
+      "question": "苦手",
+      "answer": "にがて",
+      "meaning": "poor (at), weak (in), not very good (at), not one's cup of tea, not one's favorite"
+    },
+    {
+      "question": "試す",
+      "answer": "ためす",
+      "meaning": "to attempt, to test, to try out"
+    },
+    {
+      "question": "立派",
+      "answer": "りっぱ",
+      "meaning": "splendid, fine, handsome, elegant, imposing, prominent, praiseworthy, creditable, worthy, legal, leg"
+    },
+    {
+      "question": "回す",
+      "answer": "まわす",
+      "meaning": "to turn, to rotate, to spin, to twist, to gyrate, to pass around, to send around, to hand around, to"
+    },
+    {
+      "question": "意見",
+      "answer": "いけん",
+      "meaning": "opinion, view, comment"
+    },
+    {
+      "question": "大量",
+      "answer": "たいりょう",
+      "meaning": "large quantity, massive (quantity), mass (e.g. mass production, mass transit, mass destruction)"
+    },
+    {
+      "question": "一歩",
+      "answer": "いっぽ",
+      "meaning": "(a) step, level, stage, small degree, small amount"
+    },
+    {
+      "question": "提案",
+      "answer": "ていあん",
+      "meaning": "proposal, proposition, suggestion"
+    },
+    {
+      "question": "責任",
+      "answer": "せきにん",
+      "meaning": "duty, responsibility (incl. supervision of staff), liability, onus"
+    },
+    {
+      "question": "違いない",
+      "answer": "ちがいない",
+      "meaning": "sure, no mistaking it, for certain, without doubt"
+    },
+    {
+      "question": "抑える",
+      "answer": "おさえる",
+      "meaning": "to keep within limits (e.g. spending), to restrain (e.g. emotions), to control, to curb, to hold in"
+    },
+    {
+      "question": "全力",
+      "answer": "ぜんりょく",
+      "meaning": "all one's power (strength, energy, efforts), one's utmost"
+    },
+    {
+      "question": "伸ばす",
+      "answer": "のばす",
+      "meaning": "to grow long (e.g. hair, nails), to lengthen, to extend, to stretch, to reach out, to hold out, to s"
+    },
+    {
+      "question": "王国",
+      "answer": "おうこく",
+      "meaning": "kingdom, monarchy"
+    },
+    {
+      "question": "抵抗",
+      "answer": "ていこう",
+      "meaning": "resistance, opposition, standing up to, reluctance, repulsion, repugnance, drag, friction, electrica"
+    },
+    {
+      "question": "混乱",
+      "answer": "こんらん",
+      "meaning": "disorder, chaos, confusion, mayhem"
+    },
+    {
+      "question": "条件",
+      "answer": "じょうけん",
+      "meaning": "condition, term, requirement, qualification, prerequisite"
+    },
+    {
+      "question": "為",
+      "answer": "ため,す",
+      "meaning": "good, advantage, benefit, welfare, sake, purpose, objective, aim, consequence, result, effect, affec"
+    },
+    {
+      "question": "迷惑",
+      "answer": "めいわく",
+      "meaning": "trouble, bother, annoyance, nuisance, inconvenience, to be troubled (by), to be bothered (by), to be"
+    },
+    {
+      "question": "例",
+      "answer": "れい,ためし",
+      "meaning": "custom, practice, habit, usual, said, aforementioned, instance, example, case, illustration, usage,"
+    },
+    {
+      "question": "頼る",
+      "answer": "たよる",
+      "meaning": "to rely on, to depend on, to count on, to turn to (for help)"
+    },
+    {
+      "question": "完璧",
+      "answer": "かんぺき",
+      "meaning": "perfect, complete, flawless"
+    },
+    {
+      "question": "日々",
+      "answer": "ひび,にちにち",
+      "meaning": "every day, daily, day after day, days (e.g. good old days)"
+    },
+    {
+      "question": "行為",
+      "answer": "こうい",
+      "meaning": "act, deed, conduct"
+    },
+    {
+      "question": "減る",
+      "answer": "へる",
+      "meaning": "to decrease (in size or number), to diminish, to abate"
+    },
+    {
+      "question": "嫌う",
+      "answer": "きらう",
+      "meaning": "to hate, to dislike, to loathe"
+    },
+    {
+      "question": "知り合い",
+      "answer": "しりあい",
+      "meaning": "acquaintance"
+    },
+    {
+      "question": "思考",
+      "answer": "しこう",
+      "meaning": "thought, consideration, thinking"
+    },
+    {
+      "question": "解決",
+      "answer": "かいけつ",
+      "meaning": "settlement, solution, resolution"
+    },
+    {
+      "question": "冷静",
+      "answer": "れいせい",
+      "meaning": "calmness, composure, coolness, serenity, presence of mind"
+    },
+    {
+      "question": "天",
+      "answer": "てん,あめ,あま",
+      "meaning": "sky, heaven, svarga (heaven-like realm visited as a stage of death and rebirth), deva (divine being"
+    },
+    {
+      "question": "直す",
+      "answer": "なおす",
+      "meaning": "to cure, to heal, to fix, to correct, to repair, to do over again, to replace, to put back as it was"
+    },
+    {
+      "question": "常に",
+      "answer": "つねに",
+      "meaning": "always, constantly"
+    },
+    {
+      "question": "犯人",
+      "answer": "はんにん",
+      "meaning": "offender, criminal, culprit"
+    },
+    {
+      "question": "訳",
+      "answer": "わけ,やく",
+      "meaning": "conclusion from reasoning, judgement or calculation based on something read or heard, reason, cause,"
+    },
+    {
+      "question": "許可",
+      "answer": "きょか",
+      "meaning": "permission, approval, authorization, license, to permit, to authorize"
+    },
+    {
+      "question": "閉じる",
+      "answer": "とじる",
+      "meaning": "to close (e.g. book, eyes, meeting, etc.), to shut"
+    },
+    {
+      "question": "重ねる",
+      "answer": "かさねる",
+      "meaning": "to pile up, to heap up, to stack up, to put on top of another, to repeat many times over, to go thro"
+    },
+    {
+      "question": "細い",
+      "answer": "ほそい,こまい",
+      "meaning": "thin, slender, fine, unlucky, small, minute, stingy, cheap"
+    },
+    {
+      "question": "目立つ",
+      "answer": "めだつ",
+      "meaning": "to be conspicuous, to stand out"
+    },
+    {
+      "question": "到着",
+      "answer": "とうちゃく",
+      "meaning": "arrival"
+    },
+    {
+      "question": "押さえる",
+      "answer": "おさえる",
+      "meaning": "to pin down, to hold down, to press down, to cover (esp. a part of one's body with one's hand), to c"
+    },
+    {
+      "question": "通う",
+      "answer": "かよう",
+      "meaning": "to go to and from (a place), to go back and forth between, to run between (e.g. bus, train, etc.), t"
+    },
+    {
+      "question": "殴る",
+      "answer": "なぐる",
+      "meaning": "to strike, to hit, to beat, to punch"
+    },
+    {
+      "question": "広げる",
+      "answer": "ひろげる",
+      "meaning": "to spread, to extend, to expand, to enlarge, to widen, to broaden, to unfold, to open, to unroll, to"
+    },
+    {
+      "question": "引っ張る",
+      "answer": "ひっぱる",
+      "meaning": "to pull, to draw, to pull tight, to string (lines), to run (cable), to stretch, to pull towards ones"
+    },
+    {
+      "question": "間に合う",
+      "answer": "まにあう",
+      "meaning": "to be in time (for), to serve (suit, meet) the purpose, to be good enough, to be enough, to manage,"
+    },
+    {
+      "question": "了解",
+      "answer": "りょうかい",
+      "meaning": "comprehension, consent, understanding, agreement, OK, roger (on two-way radio)"
+    },
+    {
+      "question": "番",
+      "answer": "ばん,つがい",
+      "meaning": "number (in a series), (one's) turn, watch, guard, lookout, rank, standing, position, bout, match, pi"
+    },
+    {
+      "question": "戦争",
+      "answer": "せんそう",
+      "meaning": "war, fighting, fierce competition"
+    },
+    {
+      "question": "寒い",
+      "answer": "さむい,さぶい",
+      "meaning": "cold (e.g. weather), uninteresting (esp. joke), lame, dull, weak, corny"
+    },
+    {
+      "question": "見事",
+      "answer": "みごと",
+      "meaning": "splendid, magnificent, excellent, fine, superb, beautiful, admirable, utter (esp. defeat), total, co"
+    },
+    {
+      "question": "右",
+      "answer": "みぎ",
+      "meaning": "right, right-hand side, afore-mentioned (esp. in vertical Japanese writing), foregoing, forgoing, ab"
+    },
+    {
+      "question": "恋人",
+      "answer": "こいびと",
+      "meaning": "lover, sweetheart, boyfriend, girlfriend"
+    },
+    {
+      "question": "一切",
+      "answer": "いっさい",
+      "meaning": "all, everything, entirety, the whole, absolutely (not), (not) at all, (none) whatsoever, without exc"
+    },
+    {
+      "question": "穴",
+      "answer": "あな,けつ",
+      "meaning": "hole, opening, perforation, pit, hollow, hole (in the ground, etc.), burrow, den, lair, holt, defici"
+    },
+    {
+      "question": "依頼",
+      "answer": "いらい",
+      "meaning": "request, commission, entrusting (with a matter), dependence, reliance"
+    },
+    {
+      "question": "中身",
+      "answer": "あてみ,なかみ",
+      "meaning": "blow to a vital point of a person's body, striking techniques (judo), contents, interior, substance,"
+    },
+    {
+      "question": "多少",
+      "answer": "たしょう",
+      "meaning": "more or less, somewhat, a little, a few, some, amount, quantity"
+    },
+    {
+      "question": "真実",
+      "answer": "しんじつ,しんじち",
+      "meaning": "truth, reality, truly, really, absolute truth"
+    },
+    {
+      "question": "見た目",
+      "answer": "みため",
+      "meaning": "appearance, (outward) looks, exterior appearance"
+    },
+    {
+      "question": "間違い",
+      "answer": "まちがい",
+      "meaning": "mistake, error, blunder, accident, mishap, trouble, improper conduct (e.g. between man and woman), i"
+    },
+    {
+      "question": "青い",
+      "answer": "あおい",
+      "meaning": "blue, azure, green, pale, gray, grey, unripe, inexperienced"
+    },
+    {
+      "question": "対応",
+      "answer": "たいおう",
+      "meaning": "correspondence (to), equivalence, suitability, coordination, matching, being appropriate (for), deal"
+    },
+    {
+      "question": "光る",
+      "answer": "ひかる",
+      "meaning": "to shine, to glitter, to be bright"
+    },
+    {
+      "question": "苦労",
+      "answer": "くろう",
+      "meaning": "trouble, hardship, difficulty, labour, labor, toil, pains, anxiety, worry, concern, cares"
+    },
+    {
+      "question": "魔物",
+      "answer": "まもの",
+      "meaning": "demon, devil, evil spirit, monster, goblin, apparition"
+    },
+    {
+      "question": "通じる",
+      "answer": "つうじる",
+      "meaning": "to be open (to traffic), to lead to, to communicate (with), to flow (liquid, current), to pass, to g"
+    },
+    {
+      "question": "罪",
+      "answer": "つみ,ざい",
+      "meaning": "crime, sin, wrongdoing, indiscretion, penalty, sentence, punishment, fault, responsibility, culpabil"
+    },
+    {
+      "question": "授業",
+      "answer": "じゅぎょう",
+      "meaning": "lesson, class work, teaching, instruction"
+    },
+    {
+      "question": "最悪",
+      "answer": "さいあく",
+      "meaning": "worst, horrible, horrid, awful, terrible, in the worst case, if worst comes to worst"
+    },
+    {
+      "question": "何故",
+      "answer": "なぜ,なにゆえ",
+      "meaning": "why, how"
+    },
+    {
+      "question": "差",
+      "answer": "さ,さし",
+      "meaning": "difference, variation, between (e.g. two people), face to face, hindrance, impediment, arrhythmic se"
+    },
+    {
+      "question": "信用",
+      "answer": "しんよう",
+      "meaning": "confidence, trust, faith, reputation, credit (finance)"
+    },
+    {
+      "question": "壊す",
+      "answer": "こわす",
+      "meaning": "to break, to destroy, to demolish, to wreck, to ruin, to spoil, to damage, to break (a bill, etc.)"
+    },
+    {
+      "question": "式",
+      "answer": "しき",
+      "meaning": "equation, formula, expression, ceremony, style, enforcement regulations (of the ritsuryo)"
+    },
+    {
+      "question": "人形",
+      "answer": "にんぎょう",
+      "meaning": "doll, puppet, figure"
+    },
+    {
+      "question": "第",
+      "answer": "だい",
+      "meaning": "prefix for forming ordinal numbers"
+    },
+    {
+      "question": "結ぶ",
+      "answer": "むすぶ",
+      "meaning": "to tie, to bind, to link, to bear (fruit), to close (e.g. deal), to confirm, to conclude, to connect"
+    },
+    {
+      "question": "計画",
+      "answer": "けいかく",
+      "meaning": "plan, project, schedule, scheme, program, programme"
+    },
+    {
+      "question": "囲む",
+      "answer": "かこむ,かごむ",
+      "meaning": "to surround, to encircle, to enclose, to fence, to wall in, to besiege, to lay siege to, to play (go"
+    },
+    {
+      "question": "知識",
+      "answer": "ちしき",
+      "meaning": "knowledge, information"
+    },
+    {
+      "question": "注意",
+      "answer": "ちゅうい",
+      "meaning": "caution, being careful, attention (heed), warning, advice"
+    },
+    {
+      "question": "言い方",
+      "answer": "いいかた",
+      "meaning": "way of saying (something), way of putting it, wording, phrasing, language, expression"
+    },
+    {
+      "question": "経つ",
+      "answer": "たつ",
+      "meaning": "to pass (of time), to elapse"
+    },
+    {
+      "question": "背",
+      "answer": "せい,せ",
+      "meaning": "height, stature, back, spine, reverse, rear side, ridge (of a mountain)"
+    },
+    {
+      "question": "問う",
+      "answer": "とう",
+      "meaning": "to ask, to inquire, to blame (someone) for, to accuse of, to pursue (question of responsibility), to"
+    },
+    {
+      "question": "恋",
+      "answer": "こい",
+      "meaning": "(romantic) love"
+    },
+    {
+      "question": "中心",
+      "answer": "ちゅうしん,なかご",
+      "meaning": "center, centre, middle, heart, core, focus, pivot, emphasis, balance, -centered, -centred, -focused,"
+    },
+    {
+      "question": "汗",
+      "answer": "あせ,かん",
+      "meaning": "sweat, perspiration, moisture, condensation, gulp, oops, khan (medieval ruler of a Tatary tribe)"
+    },
+    {
+      "question": "異常",
+      "answer": "いじょう",
+      "meaning": "strangeness, abnormality, disorder"
+    },
+    {
+      "question": "非常",
+      "answer": "ひじょう",
+      "meaning": "emergency, extraordinary, unusual"
+    },
+    {
+      "question": "膝",
+      "answer": "ひざ",
+      "meaning": "knee, lap, knee and thigh (while sitting)"
+    },
+    {
+      "question": "馬車",
+      "answer": "ばしゃ,うまぐるま,マーチョ",
+      "meaning": "coach (horse-drawn), carriage, wagon, cart"
+    },
+    {
+      "question": "役",
+      "answer": "えき,えだち,やく",
+      "meaning": "war, campaign, battle, unpaid work (ritsuryo system), forced labor, role, assignment, responsibility"
+    },
+    {
+      "question": "焦る",
+      "answer": "あせる",
+      "meaning": "to be in a hurry, to be impatient, to be anxious (to do), to fret, to get a fright, to panic, to get"
+    },
+    {
+      "question": "川",
+      "answer": "かわ,がわ",
+      "meaning": "river, stream, River, the ... river"
+    },
+    {
+      "question": "悪魔",
+      "answer": "あくま",
+      "meaning": "devil, demon, fiend, Satan, the Devil, Māra, evil spirits or forces that hinder one's path to enligh"
+    },
+    {
+      "question": "唯一",
+      "answer": "ゆいいつ,ゆいつ,ゆういつ",
+      "meaning": "only, sole, unique"
+    },
+    {
+      "question": "中央",
+      "answer": "ちゅうおう",
+      "meaning": "centre, center, middle, heart, metropolis, capital city, central government"
+    },
+    {
+      "question": "突っ込む",
+      "answer": "つっこむ",
+      "meaning": "to thrust (something) into (something), to cram, to stuff, to shove, to plunge into, to charge into,"
+    },
+    {
+      "question": "技術",
+      "answer": "ぎじゅつ",
+      "meaning": "technology, engineering, technique, skill, art, craft"
+    },
+    {
+      "question": "単純",
+      "answer": "たんじゅん",
+      "meaning": "simple, plain, uncomplicated, straightforward"
+    },
+    {
+      "question": "穏やか",
+      "answer": "おだやか",
+      "meaning": "calm, quiet, gentle, peaceful, mild, moderate, reasonable, amicable"
+    },
+    {
+      "question": "付ける",
+      "answer": "つける",
+      "meaning": "to attach, to join, to add, to append, to affix, to stick, to glue, to fasten, to sew on, to apply ("
+    },
+    {
+      "question": "撃つ",
+      "answer": "うつ,ぶつ",
+      "meaning": "to shoot (at), to attack, to defeat, to destroy, to avenge, to hit (a person), to strike, to beat, t"
+    },
+    {
+      "question": "拾う",
+      "answer": "ひろう",
+      "meaning": "to pick up, to find, to gather"
+    },
+    {
+      "question": "完成",
+      "answer": "かんせい",
+      "meaning": "complete, completion, perfection, accomplishment"
+    },
+    {
+      "question": "毒",
+      "answer": "どく",
+      "meaning": "poison, toxicant, harm, evil influence, ill will, spite, malice, abusive language"
+    },
+    {
+      "question": "馬",
+      "answer": "うま,いま,おま",
+      "meaning": "horse, horse racing, promoted bishop"
+    },
+    {
+      "question": "趣味",
+      "answer": "しゅみ",
+      "meaning": "hobby, pastime, tastes, preference, liking"
+    },
+    {
+      "question": "価値",
+      "answer": "かち",
+      "meaning": "value, worth, merit"
+    },
+    {
+      "question": "見守る",
+      "answer": "みまもる",
+      "meaning": "to watch over, to watch attentively"
+    },
+    {
+      "question": "安全",
+      "answer": "あんぜん,あんせん",
+      "meaning": "safety, security"
+    },
+    {
+      "question": "万",
+      "answer": "ばん,まん,よろず",
+      "meaning": "completely, absolutely, totally, 10,000, ten thousand, myriad, everything, all, various"
+    },
+    {
+      "question": "額",
+      "answer": "がく,ひたい",
+      "meaning": "(picture) frame, framed picture, amount (esp. of money), sum, forehead, brow"
+    },
+    {
+      "question": "殿下",
+      "answer": "でんか,てんが",
+      "meaning": "your Highness, his Highness, her Highness"
+    },
+    {
+      "question": "素敵",
+      "answer": "すてき",
+      "meaning": "lovely, wonderful, nice, great, fantastic, superb, cool"
+    },
+    {
+      "question": "正体",
+      "answer": "しょうたい",
+      "meaning": "true character, true form, true colors (colours), identity, truth (of a mystery, phenomenon, etc.),"
+    },
+    {
+      "question": "吸う",
+      "answer": "すう",
+      "meaning": "to smoke, to breathe in, to inhale, to suck, to sip, to slurp, to absorb, to soak up, to kiss"
+    },
+    {
+      "question": "護衛",
+      "answer": "ごえい",
+      "meaning": "guard, convoy, escort"
+    },
+    {
+      "question": "鳴る",
+      "answer": "なる",
+      "meaning": "to sound, to ring, to resound, to echo, to roar, to rumble"
+    },
+    {
+      "question": "研究",
+      "answer": "けんきゅう",
+      "meaning": "study, research, investigation"
+    },
+    {
+      "question": "別れる",
+      "answer": "わかれる",
+      "meaning": "to part (usu. of people), to part from, to part with, to be apart from, to separate (of a couple), t"
+    },
+    {
+      "question": "何者",
+      "answer": "なにもの",
+      "meaning": "who, what kind of person"
+    },
+    {
+      "question": "時点",
+      "answer": "じてん",
+      "meaning": "point in time, occasion"
+    },
+    {
+      "question": "拳",
+      "answer": "こぶし,けん",
+      "meaning": "fist, hand game (e.g. rock, paper, scissors)"
+    },
+    {
+      "question": "着替える",
+      "answer": "きがえる,きかえる",
+      "meaning": "to change one's clothes"
+    },
+    {
+      "question": "意思",
+      "answer": "いし",
+      "meaning": "intention, wish, purpose, mind (to do)"
+    },
+    {
+      "question": "箱",
+      "answer": "はこ",
+      "meaning": "box, case, chest, package, pack, crate, car (of a train, etc.), shamisen case, shamisen, public buil"
+    },
+    {
+      "question": "無言",
+      "answer": "むごん",
+      "meaning": "silence (not speaking), muteness"
+    },
+    {
+      "question": "構える",
+      "answer": "かまえる",
+      "meaning": "to set up (a house, store, etc.), to build, to establish, to run, to maintain, to have at the ready"
+    },
+    {
+      "question": "夏",
+      "answer": "なつ,か,げ",
+      "meaning": "summer, Xia dynasty (China, perhaps c. 2070-1600 BCE, perhaps mythological), Hsia dynasty, summer (o"
+    },
+    {
+      "question": "裏切る",
+      "answer": "うらぎる",
+      "meaning": "to betray, to turn traitor to, to double-cross"
+    },
+    {
+      "question": "焼く",
+      "answer": "やく",
+      "meaning": "to burn, to roast, to broil, to grill, to bake, to toast, to barbecue, to heat, to heat up, to make"
+    },
+    {
+      "question": "怪我",
+      "answer": "けが",
+      "meaning": "injury (to animate object), hurt"
+    },
+    {
+      "question": "今夜",
+      "answer": "こんや",
+      "meaning": "this evening, tonight"
+    },
+    {
+      "question": "大した",
+      "answer": "たいした",
+      "meaning": "considerable, great, important, significant, a big deal"
+    },
+    {
+      "question": "門",
+      "answer": "と,もん,かど",
+      "meaning": "shutter, window shutter, entrance (to a home), narrows, gate, branch of learning based on the teachi"
+    },
+    {
+      "question": "不可能",
+      "answer": "ふかのう",
+      "meaning": "impossible"
+    },
+    {
+      "question": "時には",
+      "answer": "ときには",
+      "meaning": "at times, occasionally"
+    },
+    {
+      "question": "発言",
+      "answer": "はつげん",
+      "meaning": "statement, remark, observation, utterance, speech, proposal"
+    },
+    {
+      "question": "自体",
+      "answer": "じたい",
+      "meaning": "itself, one's own body, oneself, originally, naturally, by nature, from the start"
+    },
+    {
+      "question": "正確",
+      "answer": "せいかく",
+      "meaning": "accurate, correct, precise, exact"
+    },
+    {
+      "question": "認識",
+      "answer": "にんしき",
+      "meaning": "recognition, awareness, perception, understanding, knowledge, cognition, cognizance, cognisance"
+    },
+    {
+      "question": "速度",
+      "answer": "そくど",
+      "meaning": "speed, velocity, pace, rate"
+    },
+    {
+      "question": "呆れる",
+      "answer": "あきれる",
+      "meaning": "to be amazed, to be shocked, to be astonished, to be astounded, to be disgusted, to be exasperated,"
+    },
+    {
+      "question": "謎",
+      "answer": "なぞ",
+      "meaning": "riddle, puzzle, enigma, mystery, enigmatic, mysterious"
+    },
+    {
+      "question": "文字",
+      "answer": "もじ,もんじ",
+      "meaning": "letter (of alphabet), character, writing"
+    },
+    {
+      "question": "吐く",
+      "answer": "つく,はく",
+      "meaning": "to breathe out, to breathe, to tell (a lie), to use (foul language), to vomit, to throw up, to spit"
+    },
+    {
+      "question": "鬼",
+      "answer": "おに,き,しこ",
+      "meaning": "ogre, demon, oni, spirit of a deceased person, ogre-like person (i.e. fierce, relentless, merciless,"
+    },
+    {
+      "question": "刺激",
+      "answer": "しげき",
+      "meaning": "stimulus, impetus, incentive, encouragement, motivation, provocation, excitement, thrill"
+    },
+    {
+      "question": "最も",
+      "answer": "もっとも,もとも",
+      "meaning": "most, extremely"
+    },
+    {
+      "question": "制服",
+      "answer": "せいふく",
+      "meaning": "uniform"
+    },
+    {
+      "question": "男の子",
+      "answer": "おとこのこ,おのこ",
+      "meaning": "boy, son, baby boy, young man, man"
+    },
+    {
+      "question": "化する",
+      "answer": "かする",
+      "meaning": "to change into, to convert into, to transform, to be reduced, to influence, to improve (someone)"
+    },
+    {
+      "question": "爆発",
+      "answer": "ばくはつ",
+      "meaning": "explosion, detonation, eruption, eruption (of discontent, etc.), outburst, outpouring"
+    },
+    {
+      "question": "訓練",
+      "answer": "くんれん",
+      "meaning": "training, drill, practice, discipline"
+    },
+    {
+      "question": "振り向く",
+      "answer": "ふりむく",
+      "meaning": "to turn one's face, to turn around, to look over one's shoulder"
+    },
+    {
+      "question": "脱ぐ",
+      "answer": "ぬぐ",
+      "meaning": "to take off (clothes, shoes, etc.), to undress"
+    },
+    {
+      "question": "室",
+      "answer": "しつ,むろ",
+      "meaning": "room, wife (of someone of high rank), scabbard, Chinese 'Encampment' constellation (one of the 28 ma"
+    },
+    {
+      "question": "信頼",
+      "answer": "しんらい",
+      "meaning": "reliance, trust, faith, confidence"
+    },
+    {
+      "question": "寄る",
+      "answer": "よる",
+      "meaning": "to approach, to draw near, to come near, to be close to, to gather (in one place), to come together,"
+    },
+    {
+      "question": "貸す",
+      "answer": "かす",
+      "meaning": "to lend, to loan, to rent out, to hire out"
+    },
+    {
+      "question": "赤",
+      "answer": "あか",
+      "meaning": "red, crimson, scarlet, red-containing colour (e.g. brown, pink, orange), Red (i.e. communist), red l"
+    },
+    {
+      "question": "大体",
+      "answer": "だいたい",
+      "meaning": "outline, main points, gist, substance, essence, generally, on the whole, mostly, almost, nearly, app"
+    },
+    {
+      "question": "少々",
+      "answer": "しょうしょう",
+      "meaning": "just a minute, small quantity"
+    },
+    {
+      "question": "有名",
+      "answer": "ゆうめい",
+      "meaning": "famous, fame"
+    },
+    {
+      "question": "船",
+      "answer": "ふね",
+      "meaning": "ship, boat, watercraft, vessel, seaplane, tank, tub, vat, trough, counter for boat-shaped containers"
+    },
+    {
+      "question": "転がる",
+      "answer": "ころがる",
+      "meaning": "to roll, to tumble, to fall over, to roll over, to lie down, to be scattered about, to be lying arou"
+    },
+    {
+      "question": "切れる",
+      "answer": "きれる",
+      "meaning": "to break, to snap, to be cut, to split, to crack, to be injured, to wear out, to be worn out, to bur"
+    },
+    {
+      "question": "話題",
+      "answer": "わだい",
+      "meaning": "topic, subject"
+    },
+    {
+      "question": "濡れる",
+      "answer": "ぬれる",
+      "meaning": "to get wet"
+    },
+    {
+      "question": "呼び出す",
+      "answer": "よびだす",
+      "meaning": "to summon, to call (e.g. phone), to convene, to decoy, to lure, to invoke (e.g. subroutine), to call"
+    },
+    {
+      "question": "確信",
+      "answer": "かくしん",
+      "meaning": "conviction, belief, confidence"
+    },
+    {
+      "question": "込める",
+      "answer": "こめる",
+      "meaning": "to load (a gun, etc.), to charge, to put into (e.g. emotion, effort), to include (e.g. tax in a sale"
+    },
+    {
+      "question": "自覚",
+      "answer": "じかく",
+      "meaning": "self-consciousness, self-awareness"
+    },
+    {
+      "question": "空く",
+      "answer": "すく,あく",
+      "meaning": "to become less crowded, to thin out, to get empty, to be hungry, to open (e.g. doors), to open (e.g."
+    },
+    {
+      "question": "警察",
+      "answer": "けいさつ",
+      "meaning": "police, police officer, police station"
+    },
+    {
+      "question": "悲鳴",
+      "answer": "ひめい",
+      "meaning": "shriek, scream"
+    },
+    {
+      "question": "捕まえる",
+      "answer": "つかまえる",
+      "meaning": "to catch, to capture, to arrest, to seize, to restrain, to catch hold of (someone), to stop (e.g. a"
+    },
+    {
+      "question": "早速",
+      "answer": "さっそく",
+      "meaning": "at once, immediately, without delay, promptly"
+    },
+    {
+      "question": "掃除",
+      "answer": "そうじ",
+      "meaning": "cleaning, sweeping, dusting, scrubbing"
+    },
+    {
+      "question": "指先",
+      "answer": "ゆびさき",
+      "meaning": "fingertip, finger, toe tip, toe"
+    },
+    {
+      "question": "硬い",
+      "answer": "かたい",
+      "meaning": "hard, solid, tough, stiff, tight, wooden, unpolished (e.g. writing), strong, firm (not viscous or ea"
+    },
+    {
+      "question": "応える",
+      "answer": "こたえる",
+      "meaning": "to respond, to answer, to meet (e.g. demands, expectations), to affect, to take a toll, to strike ho"
+    },
+    {
+      "question": "際",
+      "answer": "きわ,ぎわ,さい",
+      "meaning": "edge, brink, verge, side, time, moment of, on the occasion of, circumstances, juncture"
+    },
+    {
+      "question": "喋る",
+      "answer": "しゃべる",
+      "meaning": "to talk, to chat, to chatter"
+    },
+    {
+      "question": "漏らす",
+      "answer": "もらす",
+      "meaning": "to let leak, to reveal, to wet one's pants, to give utterance, to vent, to express, to omit, to leav"
+    },
+    {
+      "question": "不満",
+      "answer": "ふまん",
+      "meaning": "dissatisfaction, discontent, displeasure, complaint, unhappiness"
+    },
+    {
+      "question": "驚き",
+      "answer": "おどろき",
+      "meaning": "surprise, astonishment, wonder, amazement"
+    },
+    {
+      "question": "旅",
+      "answer": "たび,りょ",
+      "meaning": "travel, trip, journey, 500-man battalion (Zhou-dynasty Chinese army)"
+    },
+    {
+      "question": "絵",
+      "answer": "え",
+      "meaning": "picture, drawing, painting, sketch, image (TV, film, etc.), footage"
+    },
+    {
+      "question": "組む",
+      "answer": "くむ",
+      "meaning": "to cross (legs or arms), to link (arms), to put together, to construct, to assemble, to produce (e.g"
+    },
+    {
+      "question": "沈黙",
+      "answer": "ちんもく",
+      "meaning": "silence, being silent, quiet, hush, reticence, inaction"
+    },
+    {
+      "question": "貴方",
+      "answer": "きほう,あなた,あんた",
+      "meaning": "your home, your residence, you (referring to one's equal; epistolary style), you (referring to someo"
+    },
+    {
+      "question": "張る",
+      "answer": "はる,ばる",
+      "meaning": "to stick, to paste, to affix, to stretch, to spread, to strain, to tighten, to put up (tent), to for"
+    },
+    {
+      "question": "告白",
+      "answer": "こくはく",
+      "meaning": "confession, acknowledgement, acknowledgment, confession of love, professing one's feelings, confessi"
+    },
+    {
+      "question": "姫",
+      "answer": "ひめ",
+      "meaning": "young lady of noble birth, princess (esp. in Western contexts, tales, etc.), girl, small, cute, less"
+    },
+    {
+      "question": "舐める",
+      "answer": "なめる",
+      "meaning": "to lick, to lap, to suck, to taste, to experience (esp. a hardship), to look down on (someone), to m"
+    },
+    {
+      "question": "潰す",
+      "answer": "つぶす",
+      "meaning": "to smash, to crush, to flatten, to shut down, to put out of business, to force (a company) to close"
+    },
+    {
+      "question": "屋",
+      "answer": "や,おく",
+      "meaning": "(something) shop, somebody who sells (something) or works as (something), somebody with a (certain)"
+    },
+    {
+      "question": "含める",
+      "answer": "ふくめる",
+      "meaning": "to include (in a group or scope), to instruct, to make one understand, to include (a nuance), to put"
+    },
+    {
+      "question": "時期",
+      "answer": "じき",
+      "meaning": "time, season, period, phase, stage"
+    },
+    {
+      "question": "活動",
+      "answer": "かつどう",
+      "meaning": "activity (of a person, organization, animal, volcano, etc.), action, movie (esp. during the silent m"
+    },
+    {
+      "question": "育てる",
+      "answer": "そだてる",
+      "meaning": "to raise, to rear, to bring up, to train, to teach, to educate, to promote the growth of, to nurture"
+    },
+    {
+      "question": "優秀",
+      "answer": "ゆうしゅう",
+      "meaning": "superior, excellent, brilliant, outstanding"
+    },
+    {
+      "question": "一撃",
+      "answer": "いちげき",
+      "meaning": "blow, hit, poke"
+    },
+    {
+      "question": "一本",
+      "answer": "いっぽん",
+      "meaning": "one long cylindrical thing, one film, TV show, etc., one goal, home run, etc., one telephone call, o"
+    },
+    {
+      "question": "睨む",
+      "answer": "にらむ",
+      "meaning": "to glare at, to scowl at, to glower at, to stare intensely at, to examine carefully, to estimate, to"
+    },
+    {
+      "question": "予感",
+      "answer": "よかん",
+      "meaning": "presentiment, premonition, hunch, to have a premonition, to have a hunch"
+    },
+    {
+      "question": "解く",
+      "answer": "とく,ほどく",
+      "meaning": "to untie, to unfasten, to unwrap, to undo, to unbind, to unpack, to unsew, to unstitch, to solve, to"
+    },
+    {
+      "question": "元々",
+      "answer": "もともと",
+      "meaning": "originally, by nature, from the start"
+    },
+    {
+      "question": "溢れる",
+      "answer": "あぶれる,あふれる,こぼれる",
+      "meaning": "to fail (in getting a job), to miss out (at fishing, hunting, etc.), to be left out, to be crowded o"
+    },
+    {
+      "question": "発生",
+      "answer": "はっせい",
+      "meaning": "outbreak, spring forth, occurrence, incidence, generation (e.g. of power or heat), genesis, origin,"
+    },
+    {
+      "question": "微妙",
+      "answer": "びみょう,みみょう",
+      "meaning": "subtle, delicate, fine, difficult, complex, tricky, delicate (situation, position, etc.), close (e.g"
+    },
+    {
+      "question": "違い",
+      "answer": "ちがい",
+      "meaning": "difference, distinction, discrepancy, mistake, error"
+    },
+    {
+      "question": "直後",
+      "answer": "ちょくご",
+      "meaning": "immediately following"
+    },
+    {
+      "question": "地下",
+      "answer": "ちか",
+      "meaning": "basement, cellar, underground place, underground, below ground, secret, under cover, underground (ra"
+    },
+    {
+      "question": "香り",
+      "answer": "かおり",
+      "meaning": "aroma, fragrance, scent, smell"
+    },
+    {
+      "question": "効く",
+      "answer": "きく",
+      "meaning": "to be effective, to take effect, to be good (for), to work, to function well, to be possible (to do,"
+    },
+    {
+      "question": "使用",
+      "answer": "しよう",
+      "meaning": "use, application, employment, utilization, utilisation"
+    },
+    {
+      "question": "道具",
+      "answer": "どうぐ",
+      "meaning": "tool, implement, instrument, utensil, apparatus, device, means, furniture"
+    },
+    {
+      "question": "願い",
+      "answer": "ねがい",
+      "meaning": "desire, wish, hope, request, entreaty, plea, appeal, prayer, (written) application"
+    },
+    {
+      "question": "洗う",
+      "answer": "あらう",
+      "meaning": "to wash, to cleanse, to rinse, to inquire into, to investigate, to purify (one's heart), to lave (e."
+    },
+    {
+      "question": "手段",
+      "answer": "しゅだん",
+      "meaning": "means, way, measure"
+    },
+    {
+      "question": "誤解",
+      "answer": "ごかい",
+      "meaning": "misunderstanding"
+    },
+    {
+      "question": "応援",
+      "answer": "おうえん",
+      "meaning": "aid, assistance, help, reinforcement, rooting, barracking, support, cheering"
+    },
+    {
+      "question": "含む",
+      "answer": "ふくむ,くくむ",
+      "meaning": "to contain, to comprise, to have, to hold, to include, to embrace, to hold in the mouth, to bear in"
+    },
+    {
+      "question": "当時",
+      "answer": "とうじ",
+      "meaning": "at that time, in those days"
+    },
+    {
+      "question": "勝利",
+      "answer": "しょうり",
+      "meaning": "victory, triumph, conquest, success, win"
+    },
+    {
+      "question": "覆う",
+      "answer": "おおう",
+      "meaning": "to cover, to hide, to conceal, to wrap, to disguise"
+    },
+    {
+      "question": "今年",
+      "answer": "ことし,こんねん",
+      "meaning": "this year"
+    },
+    {
+      "question": "雪",
+      "answer": "ゆき",
+      "meaning": "snow"
+    },
+    {
+      "question": "円",
+      "answer": "えん,まる",
+      "meaning": "yen (Japanese monetary unit), circle, entirety, whole, full, complete, money, dough, moola, enclosur"
+    },
+    {
+      "question": "苦笑",
+      "answer": "くしょう",
+      "meaning": "bitter smile, wry smile, strained laugh, sarcastic laugh"
+    },
+    {
+      "question": "酷い",
+      "answer": "むごい,ひどい",
+      "meaning": "cruel, merciless, pitiless, brutal, atrocious, inhuman, tragic, horrible, terrible, dreadful, misera"
+    },
+    {
+      "question": "一方",
+      "answer": "いっぽう,ひとかた",
+      "meaning": "one (esp. of two), the other, one way, the other way, one direction, the other direction, one side,"
+    },
+    {
+      "question": "古い",
+      "answer": "ふるい",
+      "meaning": "old, aged, ancient, antiquated, antique, timeworn, long, since long ago, time-honored, of the distan"
+    },
+    {
+      "question": "機",
+      "answer": "はた,き",
+      "meaning": "loom, chance, opportunity, machine, aircraft, counter for aircraft, counter for remaining lives (in"
+    },
+    {
+      "question": "役に立つ",
+      "answer": "やくにたつ",
+      "meaning": "to be helpful, to be useful"
+    },
+    {
+      "question": "懐かしい",
+      "answer": "なつかしい",
+      "meaning": "dear (old), fondly-remembered, beloved, missed, nostalgic"
+    },
+    {
+      "question": "才能",
+      "answer": "さいのう",
+      "meaning": "talent, ability"
+    },
+    {
+      "question": "左",
+      "answer": "ひだり,さ",
+      "meaning": "left, left hand side, left (esp. in vertical Japanese writing), the following"
+    },
+    {
+      "question": "逃げ出す",
+      "answer": "にげだす",
+      "meaning": "to run away, to flee, to make off, to take to one's heels, to escape, to start to run away"
+    },
+    {
+      "question": "様々",
+      "answer": "さまざま,さまさま",
+      "meaning": "various, varied, diverse, all sorts of, our gracious (e.g. Queen), honorific that attaches to name o"
+    },
+    {
+      "question": "病院",
+      "answer": "びょういん",
+      "meaning": "hospital, clinic, doctor's office, doctor's surgery, infirmary"
+    },
+    {
+      "question": "比べる",
+      "answer": "くらべる",
+      "meaning": "to compare, to make a comparison, to compete, to vie"
+    },
+    {
+      "question": "氷",
+      "answer": "こおり,ひ,つらら",
+      "meaning": "ice, shaved ice (usually served with flavored simple syrup), hail, icicle"
+    },
+    {
+      "question": "狭い",
+      "answer": "せまい",
+      "meaning": "narrow, confined, small, cramped, limited, narrow-minded, confining"
+    },
+    {
+      "question": "神様",
+      "answer": "かみさま",
+      "meaning": "God, god, ace, king, superior person, god (amongst men)"
+    },
+    {
+      "question": "動揺",
+      "answer": "どうよう",
+      "meaning": "shaking, trembling, pitching, rolling, oscillation, disturbance, unrest, agitation, excitement, comm"
+    },
+    {
+      "question": "物語",
+      "answer": "ものがたり",
+      "meaning": "tale, story, legend"
+    },
+    {
+      "question": "文句",
+      "answer": "もんく",
+      "meaning": "complaint, grumbling, objection, phrase, words, expression"
+    },
+    {
+      "question": "至る",
+      "answer": "いたる",
+      "meaning": "to arrive at (e.g. a decision), to reach (a stage), to attain, to lead to (a place), to get to, in t"
+    },
+    {
+      "question": "魚",
+      "answer": "さかな,うお",
+      "meaning": "fish"
+    },
+    {
+      "question": "名乗る",
+      "answer": "なのる",
+      "meaning": "to give one's name (as), to introduce oneself (as), to claim to be, to call oneself, to wear the tit"
+    },
+    {
+      "question": "鳥",
+      "answer": "とり",
+      "meaning": "bird, bird meat (esp. chicken meat), fowl, poultry"
+    },
+    {
+      "question": "映る",
+      "answer": "うつる",
+      "meaning": "to be reflected, to harmonize with (harmonise), to come out (photo), to be projected, to be displaye"
+    },
+    {
+      "question": "一生",
+      "answer": "いっしょう",
+      "meaning": "whole life, a lifetime, all through life, one existence, a generation, an age, the whole world, the"
+    },
+    {
+      "question": "紙",
+      "answer": "かみ,し",
+      "meaning": "paper, newspaper"
+    },
+    {
+      "question": "降る",
+      "answer": "くだる,ふる",
+      "meaning": "to descend, to go down, to come down, to be handed down (of an order, judgment, etc.), to pass (of t"
+    },
+    {
+      "question": "申す",
+      "answer": "もうす",
+      "meaning": "to say, to be called, to do"
+    },
+    {
+      "question": "複雑",
+      "answer": "ふくざつ",
+      "meaning": "complex, complicated, intricate, mixed (feelings)"
+    },
+    {
+      "question": "恐らく",
+      "answer": "おそらく",
+      "meaning": "perhaps, likely, probably, I dare say"
+    },
+    {
+      "question": "投げる",
+      "answer": "なげる",
+      "meaning": "to throw, to hurl, to fling, to toss, to cast, to give up, to abandon, to throw away, to cast (a gla"
+    },
+    {
+      "question": "出来事",
+      "answer": "できごと,できこと",
+      "meaning": "incident, affair, happening, event"
+    },
+    {
+      "question": "発動",
+      "answer": "はつどう",
+      "meaning": "putting into operation, invocation"
+    },
+    {
+      "question": "部下",
+      "answer": "ぶか",
+      "meaning": "subordinate person"
+    },
+    {
+      "question": "実力",
+      "answer": "じつりょく",
+      "meaning": "(real) ability, true strength, merit, efficiency, competency, arms, force"
+    },
+    {
+      "question": "選択",
+      "answer": "せんたく",
+      "meaning": "selection, choice, option"
+    },
+    {
+      "question": "調査",
+      "answer": "ちょうさ",
+      "meaning": "investigation, examination, inquiry, enquiry, survey"
+    },
+    {
+      "question": "例えば",
+      "answer": "たとえば",
+      "meaning": "for example, for instance, e.g."
+    },
+    {
+      "question": "見送る",
+      "answer": "みおくる",
+      "meaning": "to see someone off (at a station, an airport, etc.), to escort (e.g. home), to follow something with"
+    },
+    {
+      "question": "見開く",
+      "answer": "みひらく",
+      "meaning": "to open one's eyes wide"
+    },
+    {
+      "question": "俺達",
+      "answer": "おれたち",
+      "meaning": "we, us"
+    },
+    {
+      "question": "従う",
+      "answer": "したがう",
+      "meaning": "to obey (an order, law, etc.), to abide by (a rule, custom, etc.), to follow, to observe, to conform"
+    },
+    {
+      "question": "通す",
+      "answer": "とおす",
+      "meaning": "to stick through, to force through, to spread throughout, to thoroughly diffuse, to make a path betw"
+    },
+    {
+      "question": "間違える",
+      "answer": "まちがえる",
+      "meaning": "to make a mistake (in), to commit an error (e.g. in calculation), to confuse, to mistake something f"
+    },
+    {
+      "question": "体力",
+      "answer": "たいりょく",
+      "meaning": "stamina, endurance, physical strength, resilience, resistance to disease, strength of an organizatio"
+    },
+    {
+      "question": "母さん",
+      "answer": "かあさん,かかさん",
+      "meaning": "mother, wife"
+    },
+    {
+      "question": "果たす",
+      "answer": "はたす",
+      "meaning": "to accomplish, to achieve, to carry out, to fulfill, to fulfil, to realize, to execute, to perform,"
+    },
+    {
+      "question": "騒ぐ",
+      "answer": "さわぐ",
+      "meaning": "to make noise, to make racket, to be noisy, to rustle, to swoosh, to make merry, to clamor, to clamo"
+    },
+    {
+      "question": "飛び込む",
+      "answer": "とびこむ",
+      "meaning": "to jump in, to leap in, to plunge into, to dive, to burst in, to barge in"
+    },
+    {
+      "question": "増す",
+      "answer": "ます",
+      "meaning": "to increase, to grow"
+    },
+    {
+      "question": "手にする",
+      "answer": "てにする",
+      "meaning": "to hold (in one's hand), to take (into one's hand), to own, to obtain"
+    },
+    {
+      "question": "思い出",
+      "answer": "おもいで",
+      "meaning": "memories, recollections, reminiscence"
+    },
+    {
+      "question": "天井",
+      "answer": "てんじょう",
+      "meaning": "ceiling, ceiling price, (price) ceiling"
+    },
+    {
+      "question": "兵士",
+      "answer": "へいし",
+      "meaning": "soldier"
+    },
+    {
+      "question": "満ちる",
+      "answer": "みちる",
+      "meaning": "to be full, to wax (e.g. moon), to rise (e.g. tide), to mature, to expire"
+    },
+    {
+      "question": "味わう",
+      "answer": "あじわう",
+      "meaning": "to taste, to savor, to savour, to relish, to appreciate, to enjoy, to digest, to experience, to go t"
+    },
+    {
+      "question": "背負う",
+      "answer": "せおう,しょう",
+      "meaning": "to carry on one's back, to be burdened with, to take responsibility for, to have (something) in the"
+    },
+    {
+      "question": "揃う",
+      "answer": "そろう",
+      "meaning": "to be complete, to be all present, to make a full set, to be satisfied (of conditions), to be equal,"
+    },
+    {
+      "question": "操る",
+      "answer": "あやつる",
+      "meaning": "to operate (e.g. a machine), to handle, to manage, to control, to maneuver, to steer, to have a good"
+    },
+    {
+      "question": "呼吸",
+      "answer": "こきゅう",
+      "meaning": "breathing, respiration, knack, trick, secret (of doing something), harmony, balance, synchronization"
+    },
+    {
+      "question": "真似",
+      "answer": "まね",
+      "meaning": "imitating, copying, mimicry, behavior, behaviour, action, conduct"
+    },
+    {
+      "question": "温かい",
+      "answer": "あたたかい,あったかい",
+      "meaning": "warm, mild, (pleasantly) hot, considerate, kind, genial"
+    },
+    {
+      "question": "偉い",
+      "answer": "えらい",
+      "meaning": "great, excellent, admirable, remarkable, distinguished, important, celebrated, famous, eminent, very"
+    },
+    {
+      "question": "違和感",
+      "answer": "いわかん",
+      "meaning": "uncomfortable feeling, feeling out of place, sense of discomfort, malaise, physical unease"
+    },
+    {
+      "question": "全",
+      "answer": "ぜん",
+      "meaning": "all, whole, entire, complete, total, pan-, complete (set), in total"
+    },
+    {
+      "question": "対象",
+      "answer": "たいしょう",
+      "meaning": "target, object (of worship, study, etc.), subject (of taxation, etc.)"
+    },
+    {
+      "question": "整える",
+      "answer": "ととのえる",
+      "meaning": "to put in order, to arrange, to tidy up, to straighten, to adjust, to fix, to get ready, to prepare,"
+    },
+    {
+      "question": "沈む",
+      "answer": "しずむ",
+      "meaning": "to sink, to go under, to submerge, to go down (e.g. sun), to set, to descend, to feel depressed, to"
+    },
+    {
+      "question": "地上",
+      "answer": "ちじょう",
+      "meaning": "above ground, surface, overground, earth, world"
+    },
+    {
+      "question": "用事",
+      "answer": "ようじ",
+      "meaning": "tasks, things to do, errand, business (to take care of), affairs, engagement"
+    },
+    {
+      "question": "反対",
+      "answer": "はんたい",
+      "meaning": "opposition, resistance, antagonism, hostility, objection, dissent, reverse, opposite, inverse, contr"
+    },
+    {
+      "question": "保つ",
+      "answer": "たもつ,もつ",
+      "meaning": "to keep, to preserve, to hold, to retain, to maintain, to sustain, to last, to endure, to keep well"
+    },
+    {
+      "question": "何だか",
+      "answer": "なんだか",
+      "meaning": "(a) little, somewhat, somehow"
+    },
+    {
+      "question": "歴史",
+      "answer": "れきし",
+      "meaning": "history"
+    },
+    {
+      "question": "島",
+      "answer": "しま,とう",
+      "meaning": "island, one's territory (e.g. of a sex worker, organized crime gang), one's turf, Island, insula, is"
+    },
+    {
+      "question": "竜",
+      "answer": "りゅう,たつ,りょう",
+      "meaning": "dragon (esp. a Chinese dragon), naga, semi-divine human-cobra chimera in Hindu and Buddhist mytholog"
+    },
+    {
+      "question": "実に",
+      "answer": "じつに,げに,まことに",
+      "meaning": "indeed, really, absolutely, truly, actually, very, quite"
+    },
+    {
+      "question": "恐れる",
+      "answer": "おそれる",
+      "meaning": "to fear, to be afraid of"
+    },
+    {
+      "question": "口元",
+      "answer": "くちもと",
+      "meaning": "mouth, lips, shape of the mouth, near an entrance, vicinity of an entrance"
+    },
+    {
+      "question": "鼻",
+      "answer": "はな",
+      "meaning": "nose"
+    },
+    {
+      "question": "担当",
+      "answer": "たんとう",
+      "meaning": "being in charge (of an area of responsibility), being responsible (for a work role, etc.)"
+    },
+    {
+      "question": "片手",
+      "answer": "かたて",
+      "meaning": "one hand"
+    },
+    {
+      "question": "幼い",
+      "answer": "おさない,いとけない",
+      "meaning": "very young, little, childish, immature"
+    },
+    {
+      "question": "学ぶ",
+      "answer": "まなぶ",
+      "meaning": "to study (in depth), to learn, to take lessons in"
+    },
+    {
+      "question": "強引",
+      "answer": "ごういん",
+      "meaning": "overbearing, coercive, pushy, forcible, high-handed"
+    },
+    {
+      "question": "盾",
+      "answer": "たて",
+      "meaning": "shield, buckler, escutcheon, pretext"
+    },
+    {
+      "question": "同じく",
+      "answer": "おなじく",
+      "meaning": "similarly, same (idea), same (name)"
+    },
+    {
+      "question": "漏れる",
+      "answer": "もれる",
+      "meaning": "to leak out, to escape, to come through, to shine through, to filter out, to find expression, to giv"
+    },
+    {
+      "question": "全体",
+      "answer": "ぜんたい",
+      "meaning": "whole, entirety, whatever (is the matter)"
+    },
+    {
+      "question": "先日",
+      "answer": "せんじつ",
+      "meaning": "the other day, a few days ago"
+    },
+    {
+      "question": "度",
+      "answer": "たび,ど",
+      "meaning": "time (three times, each time, etc.), times, degree (angle, temperature, scale, etc.), counter for oc"
+    },
+    {
+      "question": "太陽",
+      "answer": "たいよう",
+      "meaning": "sun"
+    },
+    {
+      "question": "甘える",
+      "answer": "あまえる",
+      "meaning": "to behave like a spoiled child, to fawn on, to take advantage of, to presume upon (e.g. another's be"
+    },
+    {
+      "question": "踏む",
+      "answer": "ふむ",
+      "meaning": "to step on, to tread on, to trample on, to set foot on (e.g. foreign soil), to stand on, to visit, t"
+    },
+    {
+      "question": "勇者",
+      "answer": "ゆうしゃ,ゆうじゃ",
+      "meaning": "hero, the brave, man of valour (valor)"
+    },
+    {
+      "question": "印象",
+      "answer": "いんしょう",
+      "meaning": "impression"
+    },
+    {
+      "question": "死体",
+      "answer": "したい",
+      "meaning": "dead body, corpse, cadaver, carcass"
+    },
+    {
+      "question": "感",
+      "answer": "かん",
+      "meaning": "feeling, sensation, emotion, admiration, impression, interjection"
+    },
+    {
+      "question": "支配",
+      "answer": "しはい",
+      "meaning": "domination, rule, control, direction, management, guidance, control (e.g. over one's emotions), dete"
+    },
+    {
+      "question": "把握",
+      "answer": "はあく",
+      "meaning": "grasp, catch, understanding"
+    },
+    {
+      "question": "現場",
+      "answer": "げんば,げんじょう",
+      "meaning": "actual spot, scene, scene of the crime, site, location, setting, shop floor, factory floor, (on) sit"
+    },
+    {
+      "question": "絶望",
+      "answer": "ぜつぼう",
+      "meaning": "despair, hopelessness"
+    },
+    {
+      "question": "察する",
+      "answer": "さっする",
+      "meaning": "to guess, to sense, to presume, to judge, to sympathize with, to sympathise with"
+    },
+    {
+      "question": "以来",
+      "answer": "いらい",
+      "meaning": "since, henceforth"
+    },
+    {
+      "question": "漂う",
+      "answer": "ただよう",
+      "meaning": "to drift, to float, to waft (e.g. a scent), to hang in the air, to be in the air (e.g. a feeling or"
+    },
+    {
+      "question": "探る",
+      "answer": "さぐる",
+      "meaning": "to feel around for, to fumble for, to grope for, to search for, to look for, to investigate, to prob"
+    },
+    {
+      "question": "最大",
+      "answer": "さいだい",
+      "meaning": "biggest, greatest, largest, maximum"
+    },
+    {
+      "question": "下げる",
+      "answer": "さげる",
+      "meaning": "to hang, to suspend, to wear (e.g. decoration), to lower, to reduce, to bring down, to demote, to mo"
+    },
+    {
+      "question": "捕まる",
+      "answer": "つかまる",
+      "meaning": "to be caught, to be arrested, to hold on to, to grasp, to find (e.g. proof), to get (e.g. a taxi), t"
+    },
+    {
+      "question": "戸惑う",
+      "answer": "とまどう",
+      "meaning": "to be bewildered, to be perplexed"
+    },
+    {
+      "question": "言い訳",
+      "answer": "いいわけ",
+      "meaning": "excuse, explanation"
+    },
+    {
+      "question": "証明",
+      "answer": "しょうめい",
+      "meaning": "proof, verification, certification"
+    },
+    {
+      "question": "参る",
+      "answer": "まいる",
+      "meaning": "to go, to come, to call, to be defeated, to collapse, to die, to be annoyed, to be nonplussed, to be"
+    },
+    {
+      "question": "震わせる",
+      "answer": "ふるわせる",
+      "meaning": "to (make something) quiver, to shake, to tremble, to vibrate"
+    },
+    {
+      "question": "見下ろす",
+      "answer": "みおろす",
+      "meaning": "to overlook, to command a view of, to look down on, to despise"
+    },
+    {
+      "question": "燃える",
+      "answer": "もえる",
+      "meaning": "to burn, to get fired up"
+    },
+    {
+      "question": "暴れる",
+      "answer": "あばれる",
+      "meaning": "to act violently, to rage, to struggle, to be riotous"
+    },
+    {
+      "question": "越える",
+      "answer": "こえる",
+      "meaning": "to cross over, to cross, to pass through, to pass over (out of), to go beyond, to go past, to exceed"
+    },
+    {
+      "question": "左手",
+      "answer": "ひだりて,ゆんで",
+      "meaning": "left hand, left-hand side, left-hand direction, (on) the left, one's left hand, bow hand"
+    },
+    {
+      "question": "精神",
+      "answer": "せいしん",
+      "meaning": "mind, spirit, soul, heart, ethos, attitude, mentality, will, intention, spirit (of a matter), essenc"
+    },
+    {
+      "question": "手を出す",
+      "answer": "てをだす",
+      "meaning": "to turn one's hand to, to reach out one's hand, to get involved in, to make a move on, to strike, to"
+    },
+    {
+      "question": "第二",
+      "answer": "だいに",
+      "meaning": "second"
+    },
+    {
+      "question": "男子",
+      "answer": "だんし",
+      "meaning": "youth, young man"
+    },
+    {
+      "question": "宣言",
+      "answer": "せんげん",
+      "meaning": "declaration, proclamation, announcement"
+    },
+    {
+      "question": "挟む",
+      "answer": "はさむ,さしはさむ",
+      "meaning": "to hold between (e.g. one's fingers, chopsticks), to grip (from both sides), to put between, to sand"
+    },
+    {
+      "question": "防ぐ",
+      "answer": "ふせぐ",
+      "meaning": "to defend against, to protect against, to prevent, to avert, to avoid"
+    },
+    {
+      "question": "本日",
+      "answer": "ほんじつ",
+      "meaning": "today, this day"
+    },
+    {
+      "question": "野郎",
+      "answer": "やろう",
+      "meaning": "guy, fellow, chap, buddy, bastard, asshole, arsehole, son of a bitch"
+    },
+    {
+      "question": "預ける",
+      "answer": "あずける",
+      "meaning": "to leave (in someone's keeping), to put (in someone's care), to place (in someone's custody), to ent"
+    },
+    {
+      "question": "限る",
+      "answer": "かぎる",
+      "meaning": "to restrict, to limit, to confine, to be restricted to, to be limited to, to be confined to, to be b"
+    },
+    {
+      "question": "責める",
+      "answer": "せめる",
+      "meaning": "to condemn, to blame, to criticize, to criticise, to reproach, to accuse, to urge, to press, to pest"
+    },
+    {
+      "question": "掛ける",
+      "answer": "かける",
+      "meaning": "to hang up (e.g. a coat, a picture on the wall), to let hang, to suspend (from), to hoist (e.g. sail"
+    },
+    {
+      "question": "仕掛ける",
+      "answer": "しかける",
+      "meaning": "to start, to begin, to commence, to challenge, to pick (a fight), to make (war), to draw (a reaction"
+    },
+    {
+      "question": "と言えば",
+      "answer": "といえば",
+      "meaning": "speaking of ..., when it comes to ..., as for ..., if one were to say ..."
+    },
+    {
+      "question": "崩れる",
+      "answer": "くずれる",
+      "meaning": "to collapse, to crumble, to get out of shape, to lose one's shape, to become disorganized, to become"
+    },
+    {
+      "question": "魔王",
+      "answer": "まおう",
+      "meaning": "Satan, the Devil, the Prince of Darkness, king of the demons who try to prevent people from doing go"
+    },
+    {
+      "question": "春",
+      "answer": "はる",
+      "meaning": "spring, springtime, New Year, prime (of one's life, etc.), adolescence, puberty, sexuality"
+    },
+    {
+      "question": "鏡",
+      "answer": "かがみ",
+      "meaning": "mirror, looking-glass, barrel head, page added at the beginning of a document mentioning its purpose"
+    },
+    {
+      "question": "貫く",
+      "answer": "つらぬく",
+      "meaning": "to go through, to pierce, to penetrate, to run through (e.g. a river through a city), to pass throug"
+    },
+    {
+      "question": "固まる",
+      "answer": "かたまる",
+      "meaning": "to harden, to solidify, to become firm, to become certain, to gather (together), to assemble, to hud"
+    },
+    {
+      "question": "秒",
+      "answer": "びょう",
+      "meaning": "second (unit of time), arc second"
+    },
+    {
+      "question": "平和",
+      "answer": "へいわ,ピンフ,ピンホー",
+      "meaning": "peace, harmony, concealed winning hand consisting of chows, a pair that isn't a value pair, and an o"
+    },
+    {
+      "question": "意志",
+      "answer": "いし",
+      "meaning": "will, volition, intention, intent, determination"
+    },
+    {
+      "question": "続き",
+      "answer": "つづき",
+      "meaning": "continuation, rest (of the story, work, etc.), next instalment, sequel, flow (e.g. of a piece of wri"
+    },
+    {
+      "question": "祈る",
+      "answer": "いのる",
+      "meaning": "to pray, to wish"
+    },
+    {
+      "question": "数日",
+      "answer": "すうじつ",
+      "meaning": "few days"
+    },
+    {
+      "question": "午後",
+      "answer": "ごご",
+      "meaning": "afternoon, p.m."
+    },
+    {
+      "question": "同様",
+      "answer": "どうよう",
+      "meaning": "same, similar, (just) like, equal"
+    },
+    {
+      "question": "外れる",
+      "answer": "はずれる",
+      "meaning": "to be disconnected, to get out of place, to be off, to be out (e.g. of gear), to miss the mark, to g"
+    },
+    {
+      "question": "歌う",
+      "answer": "うたう",
+      "meaning": "to sing, to sing (one's praises in a poem, etc.), to compose a poem, to recite a poem"
+    },
+    {
+      "question": "回",
+      "answer": "かい",
+      "meaning": "counter for occurrences, a time, an instance, inning (baseball), round, game, episode, chapter, inst"
+    },
+    {
+      "question": "固い",
+      "answer": "かたい",
+      "meaning": "hard, solid, tough, stiff, tight, wooden, unpolished (e.g. writing), strong, firm (not viscous or ea"
+    },
+    {
+      "question": "最強",
+      "answer": "さいきょう",
+      "meaning": "strongest"
+    },
+    {
+      "question": "弾く",
+      "answer": "はじく,ひく",
+      "meaning": "to flip, to snap, to flick, to repel, to use (an abacus), to calculate, to strum, to pluck the strin"
+    },
+    {
+      "question": "正解",
+      "answer": "せいかい",
+      "meaning": "correct, right, correct interpretation (answer, solution)"
+    },
+    {
+      "question": "覗く",
+      "answer": "のぞく",
+      "meaning": "to peek (through a keyhole, gap, etc.), to look down into (a ravine, etc.), to peek into (a shop, bo"
+    },
+    {
+      "question": "地獄",
+      "answer": "じごく",
+      "meaning": "hell"
+    },
+    {
+      "question": "年齢",
+      "answer": "ねんれい",
+      "meaning": "age, years"
+    },
+    {
+      "question": "病気",
+      "answer": "びょうき,やまいけ",
+      "meaning": "illness (usu. excluding minor ailments, e.g. colds), disease, sickness, weirdness, bad habit, bad be"
+    },
+    {
+      "question": "携帯",
+      "answer": "けいたい",
+      "meaning": "carrying (on one's person or in the hand), mobile phone, cell phone"
+    },
+    {
+      "question": "親父",
+      "answer": "おやじ,しんぷ",
+      "meaning": "one's father, old man, one's boss"
+    },
+    {
+      "question": "並べる",
+      "answer": "ならべる",
+      "meaning": "to line up, to set up, to arrange in a line, to enumerate, to itemize, to be equal (to), to compare"
+    },
+    {
+      "question": "契約",
+      "answer": "けいやく",
+      "meaning": "contract, compact, agreement"
+    },
+    {
+      "question": "永遠",
+      "answer": "えいえん",
+      "meaning": "eternity, perpetuity, permanence, immortality"
+    },
+    {
+      "question": "呪い",
+      "answer": "のろい,まじない",
+      "meaning": "curse, spell, malediction, charm, incantation"
+    },
+    {
+      "question": "組",
+      "answer": "くみ",
+      "meaning": "set (of items), group (of people), class (of students), company (esp. construction), family (i.e. ma"
+    },
+    {
+      "question": "眼",
+      "answer": "め,まなこ,がん",
+      "meaning": "eye, eyeball, eyesight, sight, vision, look, stare, gaze, glance, notice, attention, observation, ey"
+    },
+    {
+      "question": "踊る",
+      "answer": "おどる",
+      "meaning": "to dance (orig. a hopping dance)"
+    },
+    {
+      "question": "目覚める",
+      "answer": "めざめる",
+      "meaning": "to wake up, to awake, to awaken to (instinct, ability, perception, etc.), to become aware of, to bec"
+    },
+    {
+      "question": "事故",
+      "answer": "じこ,ことゆえ",
+      "meaning": "accident, incident, trouble, circumstances, reasons"
+    },
+    {
+      "question": "袋",
+      "answer": "ふくろ,たい",
+      "meaning": "bag, sack, pouch, skin of an orange (and other like fruits), dead end, plot of land surrounded by wa"
+    },
+    {
+      "question": "派手",
+      "answer": "はで",
+      "meaning": "showy, loud, gay, flashy, gaudy"
+    },
+    {
+      "question": "今更",
+      "answer": "いまさら",
+      "meaning": "now (when it is already much too late), at this stage, afresh, anew, again"
+    },
+    {
+      "question": "基本的",
+      "answer": "きほんてき",
+      "meaning": "fundamental, basic"
+    },
+    {
+      "question": "代",
+      "answer": "しろ,よ,だい",
+      "meaning": "substitution, material, price, margin (e.g. for stapling, etc.), area required for something, shiro"
+    },
+    {
+      "question": "油断",
+      "answer": "ゆだん",
+      "meaning": "negligence, carelessness, inattention, unpreparedness"
+    },
+    {
+      "question": "育つ",
+      "answer": "そだつ",
+      "meaning": "to be raised (e.g. child), to be brought up, to grow (up)"
+    },
+    {
+      "question": "発する",
+      "answer": "はっする",
+      "meaning": "to let out, to utter, to produce, to emit, to give forth, to discharge, to issue, to send, to give,"
+    },
+    {
+      "question": "終了",
+      "answer": "しゅうりょう",
+      "meaning": "end, close, termination"
+    },
+    {
+      "question": "足音",
+      "answer": "あしおと",
+      "meaning": "sound of footsteps, sense or sign that something is approaching"
+    },
+    {
+      "question": "決意",
+      "answer": "けつい",
+      "meaning": "decision, determination, resolution"
+    },
+    {
+      "question": "感心",
+      "answer": "かんしん",
+      "meaning": "admiration, being impressed, admirable, praiseworthy, astonishment, being appalled"
+    },
+    {
+      "question": "飲み込む",
+      "answer": "のみこむ",
+      "meaning": "to gulp down, to swallow deeply, to understand, to take in, to catch on to, to learn, to digest, to"
+    },
+    {
+      "question": "仮に",
+      "answer": "かりに",
+      "meaning": "supposing, even if, granting that, for argument's sake, temporarily, provisionally, for the time bei"
+    },
+    {
+      "question": "帰り",
+      "answer": "かえり",
+      "meaning": "return, coming back"
+    },
+    {
+      "question": "八",
+      "answer": "はち,や,パー",
+      "meaning": "eight"
+    },
+    {
+      "question": "王都",
+      "answer": "おうと",
+      "meaning": "royal capital, imperial capital"
+    },
+    {
+      "question": "染まる",
+      "answer": "そまる",
+      "meaning": "to be dyed, to be tainted, to be infected, to be stained, to be steeped"
+    },
+    {
+      "question": "部隊",
+      "answer": "ぶたい",
+      "meaning": "force, unit, corps, squad, troops, party"
+    },
+    {
+      "question": "笑い",
+      "answer": "わらい",
+      "meaning": "laugh, laughter, smile, sneer, sex aids (e.g. dildos, pornographic books, erotic woodblock prints, e"
+    },
+    {
+      "question": "買い物",
+      "answer": "かいもの,かいもん",
+      "meaning": "shopping, purchased goods"
+    },
+    {
+      "question": "歌",
+      "answer": "うた",
+      "meaning": "song, classical Japanese poetry (esp. tanka), modern poetry"
+    },
+    {
+      "question": "庭",
+      "answer": "にわ",
+      "meaning": "garden, yard, courtyard, field (of action), area"
+    },
+    {
+      "question": "生き物",
+      "answer": "いきもの",
+      "meaning": "living thing, living creature, animal, life"
+    },
+    {
+      "question": "特殊",
+      "answer": "とくしゅ",
+      "meaning": "special, particular, peculiar, unique"
+    },
+    {
+      "question": "崩す",
+      "answer": "くずす",
+      "meaning": "to destroy, to demolish, to pull down, to tear down, to level, to disturb, to put into disorder, to"
+    },
+    {
+      "question": "現状",
+      "answer": "げんじょう",
+      "meaning": "present condition, existing state, status quo, current state"
+    },
+    {
+      "question": "陛下",
+      "answer": "へいか",
+      "meaning": "Your Majesty, His Majesty, Her Majesty"
+    },
+    {
+      "question": "底",
+      "answer": "そこ,てい",
+      "meaning": "bottom, sole, base (logarithmic, exponential, number system), radix, base (triangle, cone, cylinder,"
+    },
+    {
+      "question": "学生",
+      "answer": "がくせい,がくしょう,がくそう",
+      "meaning": "student (esp. a university student), Heian-period student of government administration, Buddhist sch"
+    },
+    {
+      "question": "丁寧",
+      "answer": "ていねい",
+      "meaning": "polite, courteous, civil, careful, close, thorough, conscientious"
+    },
+    {
+      "question": "一枚",
+      "answer": "いちまい,ひとひら",
+      "meaning": "one thin flat object, one sheet, (one) leaf, (one) petal, piece (of paper), flake (of snow)"
+    },
+    {
+      "question": "範囲",
+      "answer": "はんい",
+      "meaning": "extent, scope, sphere, range, span"
+    },
+    {
+      "question": "美人",
+      "answer": "びじん",
+      "meaning": "beautiful woman"
+    },
+    {
+      "question": "技",
+      "answer": "わざ,ぎ",
+      "meaning": "technique, art, skill, move"
+    },
+    {
+      "question": "将来",
+      "answer": "しょうらい",
+      "meaning": "future (usually near), prospects"
+    },
+    {
+      "question": "記録",
+      "answer": "きろく",
+      "meaning": "record, minutes, document, record (e.g. in sports), results, score, to record, to document, to set a"
+    },
+    {
+      "question": "大人しい",
+      "answer": "おとなしい",
+      "meaning": "obedient, docile, quiet"
+    },
+    {
+      "question": "骨",
+      "answer": "こつ,ほね",
+      "meaning": "knack, skill, trick, secret, know-how, the ropes, hang, bone, skeleton, cremated remains (esp. the b"
+    },
+    {
+      "question": "目標",
+      "answer": "めじるし,もくひょう",
+      "meaning": "mark (for quick identification or recognition), sign, landmark, guide, trademark, mark, objective, t"
+    },
+    {
+      "question": "肉体",
+      "answer": "にくたい",
+      "meaning": "the body, the flesh, the outer man, one's physique"
+    },
+    {
+      "question": "怯える",
+      "answer": "おびえる",
+      "meaning": "to become frightened, to be frightened (of), to be scared (of)"
+    },
+    {
+      "question": "戦",
+      "answer": "いくさ,せん",
+      "meaning": "war, battle, campaign, fight, troops, forces, match, game, competition"
+    },
+    {
+      "question": "届ける",
+      "answer": "とどける",
+      "meaning": "to deliver, to forward, to send, to report, to notify, to file notice (to the authorities), to give"
+    },
+    {
+      "question": "冬",
+      "answer": "ふゆ",
+      "meaning": "winter"
+    },
+    {
+      "question": "足元",
+      "answer": "あしもと",
+      "meaning": "at one's feet, underfoot, one's step (as in 'watch your step'), gait, pace, step, most recent, curre"
+    },
+    {
+      "question": "捜す",
+      "answer": "さがす",
+      "meaning": "to search for, to look for, to hunt for, to seek, to search (a house, pocket, etc.), to search throu"
+    },
+    {
+      "question": "種類",
+      "answer": "しゅるい",
+      "meaning": "variety, kind, type, category, counter for kinds, species, etc."
+    },
+    {
+      "question": "満たす",
+      "answer": "みたす",
+      "meaning": "to satisfy (conditions, one's appetite, etc.), to meet (e.g. demands), to fulfill, to gratify, to fi"
+    },
+    {
+      "question": "景色",
+      "answer": "けしき,けいしょく",
+      "meaning": "scenery, scene, landscape"
+    },
+    {
+      "question": "父さん",
+      "answer": "とうさん",
+      "meaning": "father, dad, papa, pa, pop, daddy, dada"
+    },
+    {
+      "question": "勇気",
+      "answer": "ゆうき",
+      "meaning": "courage, bravery, valour, valor, nerve, boldness"
+    },
+    {
+      "question": "青",
+      "answer": "あお",
+      "meaning": "blue, azure, green, green light (traffic), black (horse coat color), blue 5-point card, immature, un"
+    },
+    {
+      "question": "強化",
+      "answer": "きょうか",
+      "meaning": "strengthening, intensifying, reinforcement, enhancement, solidification"
+    },
+    {
+      "question": "加える",
+      "answer": "くわえる",
+      "meaning": "to add, to add up, to sum up, to append, to annex, to increase, to gather (e.g. speed), to pick up,"
+    },
+    {
+      "question": "言い出す",
+      "answer": "いいだす",
+      "meaning": "to begin to say, to start talking, to broach (a matter), to bring up, to come out with, to be the fi"
+    },
+    {
+      "question": "収まる",
+      "answer": "おさまる",
+      "meaning": "to fit into (a box, frame, category, etc.), to be contained within, to fall within (e.g. a budget),"
+    },
+    {
+      "question": "組織",
+      "answer": "そしき,そしょく",
+      "meaning": "organization, organisation, formation, structure, construction, setup, constitution, system (e.g. ra"
+    },
+    {
+      "question": "隙間",
+      "answer": "すきま",
+      "meaning": "crevice, crack, gap, opening, clearance, spare moment, interval, break, pause, spare time, chink (in"
+    },
+    {
+      "question": "埋める",
+      "answer": "うずめる,うめる",
+      "meaning": "to cover, to bury (e.g. one's face in hands), to submerge, to fill (completely), to stuff, to pack,"
+    },
+    {
+      "question": "戦場",
+      "answer": "せんじょう,いくさば",
+      "meaning": "battlefield, battleground"
+    },
+    {
+      "question": "姿勢",
+      "answer": "しせい",
+      "meaning": "posture, pose, position, stance, carriage (of the body), attitude, approach"
+    },
+    {
+      "question": "次々",
+      "answer": "つぎつぎ",
+      "meaning": "in succession, one by one"
+    },
+    {
+      "question": "緑",
+      "answer": "みどり",
+      "meaning": "green, greenery (esp. fresh verdure)"
+    },
+    {
+      "question": "最低",
+      "answer": "さいてい",
+      "meaning": "least, lowest, minimum, worst, awful, horrible, nasty, disgusting, at the very least"
+    },
+    {
+      "question": "照れる",
+      "answer": "てれる",
+      "meaning": "to be shy, to be bashful, to feel awkward, to feel embarrassed"
+    },
+    {
+      "question": "見回す",
+      "answer": "みまわす",
+      "meaning": "to look around, to survey"
+    },
+    {
+      "question": "圧倒的",
+      "answer": "あっとうてき",
+      "meaning": "overwhelming"
+    },
+    {
+      "question": "評価",
+      "answer": "ひょうか",
+      "meaning": "valuation, appraisal, evaluation, assessment, estimation, rating, judging, appreciation, recognition"
+    },
+    {
+      "question": "承知",
+      "answer": "しょうち",
+      "meaning": "knowledge, awareness, consent, acceptance, assent, admitting, compliance, agreement, acknowledgment,"
+    },
+    {
+      "question": "婚約者",
+      "answer": "こんやくしゃ",
+      "meaning": "fiance, fiancee"
+    },
+    {
+      "question": "会社",
+      "answer": "かいしゃ",
+      "meaning": "company, corporation, workplace"
+    },
+    {
+      "question": "休憩",
+      "answer": "きゅうけい",
+      "meaning": "rest, break, recess, intermission"
+    },
+    {
+      "question": "お姉さん",
+      "answer": "おねえさん",
+      "meaning": "older sister, elder sister, young lady, miss, ma'am, older girl"
+    },
+    {
+      "question": "会",
+      "answer": "え,かい",
+      "meaning": "gathering (esp. Buddhist, festive, etc.), meeting, assembly, party, gathering, conference, athletic"
+    },
+    {
+      "question": "令嬢",
+      "answer": "れいじょう",
+      "meaning": "(your) daughter, young woman"
+    },
+    {
+      "question": "騒ぎ",
+      "answer": "さわぎ",
+      "meaning": "uproar, disturbance"
+    },
+    {
+      "question": "控える",
+      "answer": "ひかえる",
+      "meaning": "to be temperate in, to refrain, to abstain, to hold back, to restrain oneself from excessive ..., to"
+    },
+    {
+      "question": "役目",
+      "answer": "やくめ",
+      "meaning": "duty, role, function"
+    },
+    {
+      "question": "刺す",
+      "answer": "さす",
+      "meaning": "to pierce, to stab, to prick, to stick, to thrust, to sting, to bite, to sew, to stitch, to embroide"
+    },
+    {
+      "question": "今に",
+      "answer": "いまに",
+      "meaning": "before long, even now"
+    },
+    {
+      "question": "管理",
+      "answer": "かんり",
+      "meaning": "control, management (e.g. of a business)"
+    },
+    {
+      "question": "爪",
+      "answer": "つめ",
+      "meaning": "nail (e.g. fingernail, toenail), claw, talon, hoof, plectrum, pick, hook, clasp"
+    },
+    {
+      "question": "純粋",
+      "answer": "じゅんすい",
+      "meaning": "pure, true, genuine, unmixed"
+    },
+    {
+      "question": "自慢",
+      "answer": "じまん",
+      "meaning": "pride, boast"
+    },
+    {
+      "question": "玄関",
+      "answer": "げんかん",
+      "meaning": "entrance, front door, entryway, entranceway, entry hall, vestibule, porch, foyer, mud room"
+    },
+    {
+      "question": "泳ぐ",
+      "answer": "およぐ",
+      "meaning": "to swim"
+    },
+    {
+      "question": "集団",
+      "answer": "しゅうだん",
+      "meaning": "group, mass"
+    },
+    {
+      "question": "騙す",
+      "answer": "だます",
+      "meaning": "to trick, to cheat, to deceive, to coax, to wheedle, to soothe and humor (humour)"
+    },
+    {
+      "question": "糸",
+      "answer": "いと,し",
+      "meaning": "thread, yarn, string, 0.0001, one ten-thousandth"
+    },
+    {
+      "question": "亡くなる",
+      "answer": "なくなる",
+      "meaning": "to die"
+    },
+    {
+      "question": "蹴る",
+      "answer": "ける",
+      "meaning": "to kick, to refuse, to reject, to stamp (on the ground), to firmly press one's feet (against somethi"
+    },
+    {
+      "question": "促す",
+      "answer": "うながす",
+      "meaning": "to urge, to encourage, to press, to prompt, to draw (attention to), to stimulate (e.g. growth), to h"
+    },
+    {
+      "question": "苦しむ",
+      "answer": "くるしむ",
+      "meaning": "to suffer, to groan, to be worried"
+    },
+    {
+      "question": "世の中",
+      "answer": "よのなか",
+      "meaning": "society, the world, the times"
+    },
+    {
+      "question": "慎重",
+      "answer": "しんちょう",
+      "meaning": "careful, cautious, prudent, discreet, deliberate"
+    },
+    {
+      "question": "装備",
+      "answer": "そうび",
+      "meaning": "equipment"
+    },
+    {
+      "question": "逃がす",
+      "answer": "にがす",
+      "meaning": "to set free, to let go, to release, to miss (e.g. a chance), to lose, to let get away, to fail to ca"
+    },
+    {
+      "question": "防御",
+      "answer": "ぼうぎょ",
+      "meaning": "defense, defence, safeguard, protection"
+    },
+    {
+      "question": "動物",
+      "answer": "どうぶつ",
+      "meaning": "animal"
+    },
+    {
+      "question": "観察",
+      "answer": "かんさつ",
+      "meaning": "observation, survey, watching"
+    },
+    {
+      "question": "と言い",
+      "answer": "といい",
+      "meaning": "in terms of both ... and ..., from the perspective of ... as well as ..., whether it be ... or ...."
+    },
+    {
+      "question": "教師",
+      "answer": "きょうし",
+      "meaning": "teacher (classroom)"
+    },
+    {
+      "question": "機能",
+      "answer": "きのう",
+      "meaning": "function, facility, faculty, feature"
+    },
+    {
+      "question": "出発",
+      "answer": "しゅっぱつ",
+      "meaning": "departure"
+    },
+    {
+      "question": "次第",
+      "answer": "しだい",
+      "meaning": "depending on, as soon as, immediately (upon), in accordance with, order, program, programme, precede"
+    },
+    {
+      "question": "隊",
+      "answer": "たい",
+      "meaning": "party, group, crew, team, body, company (of troops), corps, unit, squad"
+    },
+    {
+      "question": "生み出す",
+      "answer": "うみだす",
+      "meaning": "to create, to bring forth, to produce, to invent, to think up and bring into being, to give birth to"
+    },
+    {
+      "question": "程",
+      "answer": "ほど",
+      "meaning": "extent, degree, measure, limit, bounds, (span of) time, (a) distance, the state of, the status of, t"
+    },
+    {
+      "question": "確保",
+      "answer": "かくほ",
+      "meaning": "securing, obtaining, ensuring, guarantee, maintaining, belay, belaying"
+    },
+    {
+      "question": "天使",
+      "answer": "てんし",
+      "meaning": "angel"
+    },
+    {
+      "question": "徐々に",
+      "answer": "じょじょに",
+      "meaning": "gradually, steadily, slowly, little by little, step by step, by degrees"
+    },
+    {
+      "question": "卒業",
+      "answer": "そつぎょう",
+      "meaning": "graduation, completion (of a course), moving on (from), outgrowing (something), leaving (a group, co"
+    },
+    {
+      "question": "表",
+      "answer": "おもて,ひょう",
+      "meaning": "surface, face (i.e. the visible side of an object), front (of a building, etc.), obverse side (i.e."
+    },
+    {
+      "question": "被害",
+      "answer": "ひがい",
+      "meaning": "(suffering) damage, injury, harm"
+    },
+    {
+      "question": "注ぐ",
+      "answer": "そそぐ,つぐ",
+      "meaning": "to pour (into), to sprinkle on (from above), to water (e.g. plants), to pour onto, to spray, to shed"
+    },
+    {
+      "question": "刻む",
+      "answer": "きざむ",
+      "meaning": "to mince, to cut fine, to chop up, to hash, to shred, to carve, to engrave, to chisel, to notch, to"
+    },
+    {
+      "question": "増やす",
+      "answer": "ふやす",
+      "meaning": "to increase, to add to, to augment"
+    },
+    {
+      "question": "強力",
+      "answer": "きょうりょく,ごうりき",
+      "meaning": "powerful, strong, herculean strength, mountain carrier-guide"
+    },
+    {
+      "question": "靴",
+      "answer": "くつ",
+      "meaning": "shoe, shoes, boots, footwear, footgear"
+    },
+    {
+      "question": "素早い",
+      "answer": "すばやい",
+      "meaning": "quick, swift, nimble, agile, quick (understanding, judgement, etc.), alert, prompt"
+    },
+    {
+      "question": "環境",
+      "answer": "かんきょう",
+      "meaning": "environment, circumstance"
+    },
+    {
+      "question": "下りる",
+      "answer": "おりる",
+      "meaning": "to descend (e.g. a mountain), to go down, to come down, to alight (e.g. from bus), to get off, to di"
+    },
+    {
+      "question": "寄せる",
+      "answer": "よせる",
+      "meaning": "to come near, to let someone approach, to bring near, to bring together, to collect, to gather, to d"
+    },
+    {
+      "question": "容赦",
+      "answer": "ようしゃ",
+      "meaning": "pardon, forgiveness, tolerance, overlooking, leniency, mercy, going easy (on someone)"
+    },
+    {
+      "question": "刃",
+      "answer": "は,やいば",
+      "meaning": "edge (of a knife or sword), prong (of an electrical plug), blade, sword, forged blade, wavy pattern"
+    },
+    {
+      "question": "青年",
+      "answer": "せいねん",
+      "meaning": "youth, young man"
+    },
+    {
+      "question": "脳",
+      "answer": "のう,なずき",
+      "meaning": "brain, brains, mind, skull, head"
+    },
+    {
+      "question": "共に",
+      "answer": "ともに",
+      "meaning": "together, jointly, at the same time, with, as ..., including, along with, both"
+    },
+    {
+      "question": "回収",
+      "answer": "かいしゅう",
+      "meaning": "collection, recovery, withdrawal, retrieval"
+    },
+    {
+      "question": "書類",
+      "answer": "しょるい",
+      "meaning": "document, official papers"
+    },
+    {
+      "question": "及ぶ",
+      "answer": "およぶ",
+      "meaning": "to reach, to amount to, to befall, to happen to, to extend, to go on (for, until), to be up to the t"
+    },
+    {
+      "question": "譲る",
+      "answer": "ゆずる",
+      "meaning": "to hand over, to transfer, to turn over, to assign, to convey, to bequeath, to give up (e.g. one's s"
+    },
+    {
+      "question": "稼ぐ",
+      "answer": "かせぐ",
+      "meaning": "to earn (income), to make (money), to score (points, victory), to gain (time), to play (for time), t"
+    },
+    {
+      "question": "実家",
+      "answer": "じっか",
+      "meaning": "(one's parents') home"
+    },
+    {
+      "question": "折れる",
+      "answer": "おれる",
+      "meaning": "to break, to be broken, to snap, to fracture, to be folded, to give in, to back down, to yield, to s"
+    },
+    {
+      "question": "笑い声",
+      "answer": "わらいごえ",
+      "meaning": "(sound of) laughter, laughing voice"
+    },
+    {
+      "question": "厄介",
+      "answer": "やっかい",
+      "meaning": "trouble, burden, nuisance, bother, worry, care, dependence, support, kindness, obligation, staying ("
+    },
+    {
+      "question": "具合",
+      "answer": "ぐあい,ぐわい",
+      "meaning": "condition, state, health, state (of health), way, manner, circumstance, luck, face, dignity, decency"
+    },
+    {
+      "question": "枚",
+      "answer": "まい,ひら,びら",
+      "meaning": "counter for flat objects (e.g. sheets of paper), counter for positions or roles, counter for food po"
+    },
+    {
+      "question": "鉄",
+      "answer": "かね,てつ,くろがね",
+      "meaning": "money, metal, iron (Fe), strong and hard (as iron), railway, railway enthusiast, iron"
+    },
+    {
+      "question": "今朝",
+      "answer": "けさ,こんちょう",
+      "meaning": "this morning"
+    },
+    {
+      "question": "槍",
+      "answer": "やり,ほこ",
+      "meaning": "spear, lance, javelin, jeering, long-handled Chinese spear, pike, weapon, arms, grip of a bow, parad"
+    },
+    {
+      "question": "翌日",
+      "answer": "よくじつ",
+      "meaning": "next day"
+    },
+    {
+      "question": "絡む",
+      "answer": "からむ",
+      "meaning": "to entangle, to entwine, to pick a quarrel, to find fault, to be involved with, to be influenced by,"
+    },
+    {
+      "question": "撮る",
+      "answer": "とる",
+      "meaning": "to take (a photo), to record (video, audio, etc.), to make (a film)"
+    },
+    {
+      "question": "宿",
+      "answer": "しゅく,やど",
+      "meaning": "outcasts common around the Kyoto region from the Kamakura period to the Edo period, lodging, relay s"
+    },
+    {
+      "question": "素材",
+      "answer": "そざい",
+      "meaning": "ingredient, (raw) material, resource, unprocessed timber, raw timber, subject matter, topic"
+    },
+    {
+      "question": "顔色",
+      "answer": "かおいろ,がんしょく",
+      "meaning": "complexion, one's colour, one's color, countenance, expression, one's face"
+    },
+    {
+      "question": "大学",
+      "answer": "だいがく",
+      "meaning": "university, college, former central university of Kyoto (established under the ritsuryo system for t"
+    },
+    {
+      "question": "吹く",
+      "answer": "ふく",
+      "meaning": "to blow (of the wind), to blow (one's breath), to breathe out, to blow on (hot tea, candles, etc.),"
+    },
+    {
+      "question": "監視",
+      "answer": "かんし",
+      "meaning": "monitoring, watching, observation, surveillance, guarding, supervision, lookout"
+    },
+    {
+      "question": "一年",
+      "answer": "いちねん,ひととし,ひととせ",
+      "meaning": "one year, some time ago"
+    },
+    {
+      "question": "堂々",
+      "answer": "どうどう",
+      "meaning": "magnificent, grand, impressive, dignified, majestic, imposing, stately, fair, square, open, unashame"
+    },
+    {
+      "question": "込む",
+      "answer": "こむ",
+      "meaning": "to be crowded, to be packed, to be complex, to go into, to put into, to remain (seated), to be plung"
+    },
+    {
+      "question": "囁く",
+      "answer": "ささやく",
+      "meaning": "to whisper, to murmur, to rumor, to rumour"
+    },
+    {
+      "question": "安い",
+      "answer": "やすい",
+      "meaning": "cheap, inexpensive, calm, peaceful, quiet"
+    },
+    {
+      "question": "手に入る",
+      "answer": "てにはいる",
+      "meaning": "to obtain, to come into possession of, to get hold of, to get one's hands on"
+    },
+    {
+      "question": "破る",
+      "answer": "やぶる",
+      "meaning": "to tear, to rip, to break, to destroy, to break through (cordon, opponent's defense, etc.), to breac"
+    },
+    {
+      "question": "幸い",
+      "answer": "さいわい",
+      "meaning": "happiness, blessedness, luck, fortune, felicity, luckily, fortunately"
+    },
+    {
+      "question": "安堵",
+      "answer": "あんど",
+      "meaning": "relief, reassurance, recognition of right to land ownership (by the shogunate, a feudal lord, etc.),"
+    },
+    {
+      "question": "奇跡",
+      "answer": "きせき",
+      "meaning": "miracle, wonder, marvel"
+    },
+    {
+      "question": "整う",
+      "answer": "ととのう",
+      "meaning": "to be ready, to be prepared, to be arranged, to be in order, to be put in order, to be well-ordered,"
+    },
+    {
+      "question": "治る",
+      "answer": "なおる",
+      "meaning": "to get better, to get well, to recover (from an illness), to be cured, to be restored, to heal"
+    },
+    {
+      "question": "感動",
+      "answer": "かんどう",
+      "meaning": "being deeply moved emotionally, excitement, passion, inspiration, deep emotion, strong impression"
+    },
+    {
+      "question": "北",
+      "answer": "きた,ペー",
+      "meaning": "north, the North, northern territories, North Korea, north wind, north wind tile, winning hand with"
+    },
+    {
+      "question": "細かい",
+      "answer": "こまかい",
+      "meaning": "small, fine, minute, minor, trivial, sensitive, attentive, careful, frugal, stingy"
+    },
+    {
+      "question": "閉める",
+      "answer": "しめる",
+      "meaning": "to close, to shut"
+    },
+    {
+      "question": "会場",
+      "answer": "かいじょう",
+      "meaning": "assembly hall, meeting place, venue, grounds"
+    },
+    {
+      "question": "試合",
+      "answer": "しあい",
+      "meaning": "match, game, bout, contest"
+    },
+    {
+      "question": "虫",
+      "answer": "むし",
+      "meaning": "insect, bug, cricket, moth, worm, roundworm, one's emotions, one's feelings, nervousness, fretfulnes"
+    },
+    {
+      "question": "巻く",
+      "answer": "まく",
+      "meaning": "to wind, to coil, to roll, to wear (e.g. turban, scarf), to envelope, to shroud, to outflank, to ski"
+    },
+    {
+      "question": "回避",
+      "answer": "かいひ",
+      "meaning": "evasion, avoidance"
+    },
+    {
+      "question": "生える",
+      "answer": "はえる",
+      "meaning": "to grow, to spring up, to sprout, to cut (teeth)"
+    },
+    {
+      "question": "接触",
+      "answer": "せっしょく",
+      "meaning": "touch, contact"
+    },
+    {
+      "question": "舞台",
+      "answer": "ぶたい",
+      "meaning": "stage (theatre, theater), scene or setting (e.g. of novel, play, etc.)"
+    },
+    {
+      "question": "説得",
+      "answer": "せっとく",
+      "meaning": "persuasion"
+    },
+    {
+      "question": "顔を出す",
+      "answer": "かおをだす",
+      "meaning": "to turn up, to make an appearance, to put in an appearance, to drop by"
+    },
+    {
+      "question": "施設",
+      "answer": "しせつ",
+      "meaning": "institution, establishment, facility, home (for elderly, orphans, etc.)"
+    },
+    {
+      "question": "威力",
+      "answer": "いりょく",
+      "meaning": "power, might, authority, influence"
+    },
+    {
+      "question": "礼",
+      "answer": "れい",
+      "meaning": "thanks, gratitude, manners, etiquette, bow, reward, gift, ceremony, ritual"
+    },
+    {
+      "question": "決定",
+      "answer": "けってい",
+      "meaning": "decision, determination"
+    },
+    {
+      "question": "斬る",
+      "answer": "きる",
+      "meaning": "to kill (a human) using a blade (sword, machete, knife, etc.), to slice (off), to lop (off), to cut"
+    },
+    {
+      "question": "浮く",
+      "answer": "うく",
+      "meaning": "to float, to become merry, to be cheerful, to become loose, to become unsteady, to feel out of it, t"
+    },
+    {
+      "question": "表現",
+      "answer": "ひょうげん",
+      "meaning": "expression, presentation, representation, notation"
+    },
+    {
+      "question": "品",
+      "answer": "しな,ほん,ひん",
+      "meaning": "article, item, thing, goods, stock, quality, flirtatiousness, coquetry, court rank, level, grade, ch"
+    },
+    {
+      "question": "教育",
+      "answer": "きょういく",
+      "meaning": "education, schooling, training, instruction, teaching, upbringing, culture, cultivation"
+    },
+    {
+      "question": "僅か",
+      "answer": "わずか",
+      "meaning": "(a) little, (a) few, slight, small (amount), trifling, meagre, meager, only, just, merely"
+    },
+    {
+      "question": "揺らす",
+      "answer": "ゆらす",
+      "meaning": "to rock, to shake, to swing"
+    },
+    {
+      "question": "暑い",
+      "answer": "あつい",
+      "meaning": "hot, warm, sultry, heated, passionate, impassioned, burning (desire, etc.), on everybody's mind, on"
+    },
+    {
+      "question": "魔女",
+      "answer": "まじょ",
+      "meaning": "witch"
+    },
+    {
+      "question": "気が付く",
+      "answer": "きがつく",
+      "meaning": "to notice, to become aware, to perceive, to realize, to realise, to be scrupulous, to be attentive,"
+    },
+    {
+      "question": "最中",
+      "answer": "さいちゅう,さなか,もなか",
+      "meaning": "(in) the middle of, (in) the midst of, (in) the course of, (at) the height of, wafer cake filled wit"
+    },
+    {
+      "question": "設定",
+      "answer": "せってい",
+      "meaning": "establishment, creation, posing (a problem), setting (movie, novel, etc.), scene, options setting, p"
+    },
+    {
+      "question": "訴える",
+      "answer": "うったえる",
+      "meaning": "to raise, to bring to (someone's attention), to appeal to (reason, emotions, etc.), to work on (one'"
+    },
+    {
+      "question": "誓う",
+      "answer": "ちかう",
+      "meaning": "to swear, to vow, to take an oath, to pledge"
+    },
+    {
+      "question": "顎",
+      "answer": "あご,がく,あぎと",
+      "meaning": "jaw, chin, barb (of a fishhook), gills, branchia"
+    },
+    {
+      "question": "謝罪",
+      "answer": "しゃざい",
+      "meaning": "apology"
+    },
+    {
+      "question": "教会",
+      "answer": "きょうかい",
+      "meaning": "church, congregation"
+    },
+    {
+      "question": "魔術",
+      "answer": "まじゅつ",
+      "meaning": "black magic, sorcery, magic tricks, juggling"
+    },
+    {
+      "question": "分ける",
+      "answer": "わける",
+      "meaning": "to divide (into), to split (into), to part, to separate, to divide up, to classify, to sort out, to"
+    },
+    {
+      "question": "心から",
+      "answer": "こころから,しんから",
+      "meaning": "from the bottom of one's heart, heartily, sincerely"
+    },
+    {
+      "question": "治療",
+      "answer": "ちりょう,じりょう",
+      "meaning": "(medical) treatment, care, therapy, cure, remedy"
+    },
+    {
+      "question": "居場所",
+      "answer": "いばしょ",
+      "meaning": "whereabouts, place, location, place where one belongs, where one fits in, place where one can be one"
+    },
+    {
+      "question": "要求",
+      "answer": "ようきゅう",
+      "meaning": "demand, firm request, requisition, requirement, desire"
+    },
+    {
+      "question": "感想",
+      "answer": "かんそう",
+      "meaning": "impressions, thoughts, feelings, reactions"
+    },
+    {
+      "question": "落ち込む",
+      "answer": "おちこむ",
+      "meaning": "to feel down, to feel sad, to be depressed, to be in low spirits, to be in a slump (business, econom"
+    },
+    {
+      "question": "塊",
+      "answer": "かたまり",
+      "meaning": "lump, mass, bundle, clump, clod, cluster, group, crowd, embodiment (of an idea, quality, feeling etc"
+    },
+    {
+      "question": "操作",
+      "answer": "そうさ",
+      "meaning": "operation, management, handling, manipulating (to one's benefit), manipulation, influencing"
+    },
+    {
+      "question": "公爵",
+      "answer": "こうしゃく",
+      "meaning": "prince, duke"
+    },
+    {
+      "question": "線",
+      "answer": "せん",
+      "meaning": "line, stripe, stria, line (e.g. telephone line), wire, ray (e.g. X-ray), beam, line (e.g. of a railr"
+    },
+    {
+      "question": "伝説",
+      "answer": "でんせつ",
+      "meaning": "tradition, legend, folklore"
+    },
+    {
+      "question": "割れる",
+      "answer": "われる",
+      "meaning": "to break, to be smashed, to split, to crack, to fissure, to be torn, to be divided (opinion, vote, e"
+    },
+    {
+      "question": "紅茶",
+      "answer": "こうちゃ",
+      "meaning": "black tea"
+    },
+    {
+      "question": "直前",
+      "answer": "ちょくぜん",
+      "meaning": "just before"
+    },
+    {
+      "question": "呆然",
+      "answer": "ぼうぜん",
+      "meaning": "dumbfounded, overcome with surprise, in blank amazement, in a daze"
+    },
+    {
+      "question": "内心",
+      "answer": "ないしん",
+      "meaning": "inner thoughts, real intention, inmost heart, one's mind, at heart, deep down, on the inside, inner"
+    },
+    {
+      "question": "基本",
+      "answer": "きほん",
+      "meaning": "basics, fundamentals, basis, foundation"
+    },
+    {
+      "question": "派",
+      "answer": "は",
+      "meaning": "clique, group, coterie, (political) faction, wing, party, camp, school, sect, denomination"
+    },
+    {
+      "question": "矢",
+      "answer": "や,さ",
+      "meaning": "arrow, wedge, chock"
+    },
+    {
+      "question": "濃い",
+      "answer": "こい",
+      "meaning": "deep (colour), dark, strong (flavour, smell, etc.), thick (consistency), dense, strong (possibility,"
+    },
+    {
+      "question": "下ろす",
+      "answer": "おろす",
+      "meaning": "to take down, to bring down, to lower (a hand, flag, shutter, etc.), to drop (an anchor, curtain, et"
+    },
+    {
+      "question": "昼",
+      "answer": "ひる",
+      "meaning": "noon, midday, daytime, lunch"
+    },
+    {
+      "question": "無茶",
+      "answer": "むちゃ,むっちゃ",
+      "meaning": "absurd, unreasonable, excessive, rash, very, extremely, excessively"
+    },
+    {
+      "question": "侵入",
+      "answer": "しんにゅう",
+      "meaning": "invasion, incursion, raid, aggression, intrusion, trespass, penetration"
+    },
+    {
+      "question": "突く",
+      "answer": "つく,つつく",
+      "meaning": "to prick, to stab, to poke, to prod, to push, to thrust, to nudge, to hit, to strike, to use (a cane"
+    },
+    {
+      "question": "悟る",
+      "answer": "さとる",
+      "meaning": "to perceive, to sense, to discern, to understand, to comprehend, to realize, to attain enlightenment"
+    },
+    {
+      "question": "通常",
+      "answer": "つうじょう",
+      "meaning": "usual, ordinary, normal, regular, general, common"
+    },
+    {
+      "question": "望み",
+      "answer": "のぞみ",
+      "meaning": "wish, desire, hope, prospect, expectation, (one's) hopes"
+    },
+    {
+      "question": "映画",
+      "answer": "えいが",
+      "meaning": "movie, film"
+    },
+    {
+      "question": "交渉",
+      "answer": "こうしょう",
+      "meaning": "negotiations, discussions, connection"
+    },
+    {
+      "question": "招く",
+      "answer": "まねく",
+      "meaning": "to invite, to ask, to beckon, to wave someone in, to gesture to, to call in, to send for, to summon,"
+    },
+    {
+      "question": "任務",
+      "answer": "にんむ",
+      "meaning": "duty, function, office, mission, task"
+    },
+    {
+      "question": "西",
+      "answer": "にし,せい,シャー",
+      "meaning": "west, Spain, Spanish (language), west wind tile, winning hand with a pung (or kong) of west wind til"
+    },
+    {
+      "question": "大勢",
+      "answer": "おおぜい,たいぜい,たいせい",
+      "meaning": "crowd of people, great number of people, in great numbers, general situation, general trend, general"
+    },
+    {
+      "question": "奇妙",
+      "answer": "きみょう",
+      "meaning": "strange, odd, peculiar, queer, curious"
+    },
+    {
+      "question": "預かる",
+      "answer": "あずかる",
+      "meaning": "to look after, to take care of, to keep, to hold on to, to keep in custody, to be put in charge of,"
+    },
+    {
+      "question": "放置",
+      "answer": "ほうち",
+      "meaning": "leaving as is, leaving alone, leaving to chance, neglecting, abandoning"
+    },
+    {
+      "question": "導く",
+      "answer": "みちびく",
+      "meaning": "to guide, to lead, to show the way, to conduct, to derive, to deduce"
+    },
+    {
+      "question": "逃れる",
+      "answer": "のがれる",
+      "meaning": "to escape"
+    },
+    {
+      "question": "人類",
+      "answer": "じんるい",
+      "meaning": "mankind, humanity"
+    },
+    {
+      "question": "国王",
+      "answer": "こくおう",
+      "meaning": "king, queen, monarch, sovereign, the Crown (as a focus of authority in the UK, etc.), the throne"
+    },
+    {
+      "question": "鎧",
+      "answer": "よろい",
+      "meaning": "armor, armour"
+    },
+    {
+      "question": "食べ物",
+      "answer": "たべもの",
+      "meaning": "food"
+    },
+    {
+      "question": "駆け寄る",
+      "answer": "かけよる",
+      "meaning": "to rush over, to run up to"
+    },
+    {
+      "question": "仲",
+      "answer": "なか,すあい",
+      "meaning": "relation, relationship, broker, brokerage, brokerage fee"
+    },
+    {
+      "question": "戦力",
+      "answer": "せんりょく",
+      "meaning": "war potential, military strength, fighting power, ability (to compete), capabilities, valuable asset"
+    },
+    {
+      "question": "捉える",
+      "answer": "とらえる",
+      "meaning": "to catch, to capture, to seize, to arrest, to grab, to catch hold of, to grasp (e.g. meaning), to pe"
+    },
+    {
+      "question": "反省",
+      "answer": "はんせい",
+      "meaning": "reflection, reconsideration, introspection, meditation, contemplation, regret, repentance, remorse,"
+    },
+    {
+      "question": "具",
+      "answer": "ぐ,つま",
+      "meaning": "tool, means, ingredients (added to soup, rice, etc.), counter for sets of armor, utensils, furniture"
+    },
+    {
+      "question": "狙い",
+      "answer": "ねらい",
+      "meaning": "aim"
+    },
+    {
+      "question": "狂う",
+      "answer": "くるう",
+      "meaning": "to go mad, to lose one's mind, to go crazy, to go insane, to get out of order, to go amiss, to malfu"
+    },
+    {
+      "question": "帝国",
+      "answer": "ていこく",
+      "meaning": "empire, imperial"
+    },
+    {
+      "question": "照らす",
+      "answer": "てらす",
+      "meaning": "to shine on, to illuminate, to compare (with), to refer to"
+    },
+    {
+      "question": "機械",
+      "answer": "きかい",
+      "meaning": "machine, mechanism, instrument, appliance, apparatus"
+    },
+    {
+      "question": "周辺",
+      "answer": "しゅうへん",
+      "meaning": "circumference, outskirts, environs, around, in the area of, in the vicinity of, (computer) periphera"
+    },
+    {
+      "question": "見逃す",
+      "answer": "みのがす",
+      "meaning": "to miss, to overlook, to fail to notice, to let pass (a matter), to overlook (e.g. a wrongdoing), to"
+    },
+    {
+      "question": "休み",
+      "answer": "やすみ",
+      "meaning": "rest, recess, respite, vacation, holiday, absence, suspension, dormancy (of a silkworm prior to moul"
+    },
+    {
+      "question": "夕食",
+      "answer": "ゆうしょく",
+      "meaning": "evening meal, dinner"
+    },
+    {
+      "question": "浴びる",
+      "answer": "あびる",
+      "meaning": "to dash over oneself (e.g. water), to take (e.g. shower), to bask in (e.g. the sun), to bathe in, to"
+    },
+    {
+      "question": "朝食",
+      "answer": "ちょうしょく,あさげ,あさけ",
+      "meaning": "breakfast"
+    },
+    {
+      "question": "時々",
+      "answer": "ときどき",
+      "meaning": "sometimes, at times"
+    },
+    {
+      "question": "不幸",
+      "answer": "ふこう",
+      "meaning": "unhappiness, sorrow, misfortune, disaster, accident, death (usu. of a relative), bereavement"
+    },
+    {
+      "question": "優先",
+      "answer": "ゆうせん",
+      "meaning": "preference, priority, precedence"
+    },
+    {
+      "question": "通路",
+      "answer": "つうろ",
+      "meaning": "passage, pathway, roadway, avenue, aisle"
+    },
+    {
+      "question": "師匠",
+      "answer": "ししょう",
+      "meaning": "master, teacher, stable master"
+    },
+    {
+      "question": "雲",
+      "answer": "くも",
+      "meaning": "cloud"
+    },
+    {
+      "question": "種",
+      "answer": "しゅ,たね,くさ",
+      "meaning": "kind, variety, (biological) species, (logical) species, seed (e.g. of a plant), pip, quality, tone,"
+    },
+    {
+      "question": "関する",
+      "answer": "かんする",
+      "meaning": "to concern, to be related"
+    },
+    {
+      "question": "処理",
+      "answer": "しょり",
+      "meaning": "processing, dealing with, treatment, disposition, disposal"
+    },
+    {
+      "question": "仕方",
+      "answer": "しかた",
+      "meaning": "way, method, means, resource, course"
+    },
+    {
+      "question": "接する",
+      "answer": "せっする",
+      "meaning": "to touch, to come in contact with, to border on, to adjoin, to be adjacent, to be close, to receive"
+    },
+    {
+      "question": "銃",
+      "answer": "じゅう",
+      "meaning": "gun, rifle, small arms"
+    },
+    {
+      "question": "高校",
+      "answer": "こうこう",
+      "meaning": "senior high school, high school"
+    },
+    {
+      "question": "交わす",
+      "answer": "かわす",
+      "meaning": "to exchange (messages, greetings, arguments, etc.), to intersect, to cross, to interlace, ... with o"
+    },
+    {
+      "question": "喜び",
+      "answer": "よろこび",
+      "meaning": "joy, delight, rapture, pleasure, gratification, rejoicing, congratulations, felicitations"
+    },
+    {
+      "question": "吐き出す",
+      "answer": "はきだす",
+      "meaning": "to vomit, to spit out"
+    },
+    {
+      "question": "精霊",
+      "answer": "せいれい,しょうりょう",
+      "meaning": "spirit, soul, ghost, spirit of the deceased"
+    },
+    {
+      "question": "覚え",
+      "answer": "おぼえ",
+      "meaning": "memory, sense, experience"
+    },
+    {
+      "question": "脱出",
+      "answer": "だっしゅつ",
+      "meaning": "escape, break-out, prolapse, proptosis"
+    },
+    {
+      "question": "材料",
+      "answer": "ざいりょう",
+      "meaning": "ingredients, material, material (for a novel, experiment, etc.), subject matter, data, basis (for a"
+    },
+    {
+      "question": "夕方",
+      "answer": "ゆうがた",
+      "meaning": "evening, dusk"
+    },
+    {
+      "question": "湧く",
+      "answer": "わく",
+      "meaning": "to well (up), to gush forth (of water), to spring out, to surge, to appear (esp. suddenly) (sweat, t"
+    },
+    {
+      "question": "歪む",
+      "answer": "ゆがむ,いがむ,ひずむ",
+      "meaning": "to warp, to bend, to contort, to be perverted, to be warped (of a view, mind, etc.), to be distorted"
+    },
+    {
+      "question": "鍛える",
+      "answer": "きたえる",
+      "meaning": "to forge, to temper, to drill, to train, to discipline"
+    },
+    {
+      "question": "縛る",
+      "answer": "しばる",
+      "meaning": "to tie, to bind, to fasten, to restrict (freedom), to tie down (with rules, regulations, etc.), to f"
+    },
+    {
+      "question": "羨ましい",
+      "answer": "うらやましい",
+      "meaning": "envious, jealous, enviable (position, etc.)"
+    },
+    {
+      "question": "詰まる",
+      "answer": "つまる",
+      "meaning": "to be packed (with), to be full (space, schedule, etc.), to be blocked (road, pipe, nose, etc.), to"
+    },
+    {
+      "question": "地球",
+      "answer": "ちきゅう",
+      "meaning": "Earth, the globe"
+    },
+    {
+      "question": "主張",
+      "answer": "しゅちょう",
+      "meaning": "claim, insistence, assertion, advocacy, emphasis, contention, opinion, tenet"
+    },
+    {
+      "question": "実感",
+      "answer": "じっかん",
+      "meaning": "real feeling, actual feeling, to actually feel, to have a real feeling (that ...), to experience per"
+    },
+    {
+      "question": "内側",
+      "answer": "うちがわ,ないそく",
+      "meaning": "inside, interior, inner part"
+    },
+    {
+      "question": "伯爵",
+      "answer": "はくしゃく",
+      "meaning": "count, earl"
+    },
+    {
+      "question": "二十",
+      "answer": "にじゅう,はた,はたち",
+      "meaning": "twenty, 20, 20 years old"
+    },
+    {
+      "question": "登場",
+      "answer": "とうじょう",
+      "meaning": "entry (on stage), appearance (on screen), entrance, introduction (into a market)"
+    },
+    {
+      "question": "返る",
+      "answer": "かえる",
+      "meaning": "to return, to come back, to go back, to turn over, to become extremely, to become completely"
+    },
+    {
+      "question": "一斉に",
+      "answer": "いっせいに",
+      "meaning": "simultaneously, all at once, in unison"
+    },
+    {
+      "question": "内部",
+      "answer": "ないぶ",
+      "meaning": "interior, inside, internal"
+    },
+    {
+      "question": "溶ける",
+      "answer": "とける",
+      "meaning": "to melt, to thaw, to fuse, to dissolve"
+    },
+    {
+      "question": "逆らう",
+      "answer": "さからう",
+      "meaning": "to go against, to oppose, to disobey, to defy"
+    },
+    {
+      "question": "命じる",
+      "answer": "めいじる",
+      "meaning": "to order, to command, to appoint"
+    },
+    {
+      "question": "暴走",
+      "answer": "ぼうそう",
+      "meaning": "acting rashly, running wildly, behaving recklessly, reckless driving, rampage, runaway (process), re"
+    },
+    {
+      "question": "複数",
+      "answer": "ふくすう",
+      "meaning": "plural, multiple, several"
+    },
+    {
+      "question": "困惑",
+      "answer": "こんわく",
+      "meaning": "bewilderment, perplexity, embarrassment, discomfiture, bafflement"
+    },
+    {
+      "question": "食堂",
+      "answer": "しょくどう,じきどう",
+      "meaning": "dining room, dining hall, cafeteria, canteen, messroom, restaurant, eatery, snack bar, diner, dining"
+    },
+    {
+      "question": "草",
+      "answer": "くさ,そう",
+      "meaning": "grass, weed, herb, thatch, ninja, not genuine, substandard, LOL, haha, draft, rough copy, highly cur"
+    },
+    {
+      "question": "具体的",
+      "answer": "ぐたいてき",
+      "meaning": "concrete, definite, specific, material, substantial"
+    },
+    {
+      "question": "主人",
+      "answer": "しゅじん,あるじ",
+      "meaning": "head (of a household), proprietor (of a store), proprietress, landlord, landlady, one's husband, (on"
+    },
+    {
+      "question": "四人",
+      "answer": "よにん,よったり,よたり",
+      "meaning": "four people"
+    },
+    {
+      "question": "膨らむ",
+      "answer": "ふくらむ",
+      "meaning": "to expand, to swell (out), to get big, to become inflated"
+    },
+    {
+      "question": "発",
+      "answer": "はつ,ハツ",
+      "meaning": "departure, departing (from ...), departing (at time ...), sending, sent (by ...), sent (at ...), eng"
+    },
+    {
+      "question": "尽くす",
+      "answer": "つくす",
+      "meaning": "to exhaust, to run out, to devote, to serve (a person), to befriend, to do to exhaustion"
+    },
+    {
+      "question": "野菜",
+      "answer": "やさい",
+      "meaning": "vegetable"
+    },
+    {
+      "question": "知れる",
+      "answer": "しれる",
+      "meaning": "to become known, to come to light, to be discovered, to be known, to be understood, to obviously not"
+    },
+    {
+      "question": "結論",
+      "answer": "けつろん",
+      "meaning": "conclusion"
+    },
+    {
+      "question": "復活",
+      "answer": "ふっかつ",
+      "meaning": "revival (e.g. musical), come-back, restoration, rebirth, resurrection"
+    },
+    {
+      "question": "片付ける",
+      "answer": "かたづける",
+      "meaning": "to tidy up, to put in order, to straighten up, to put away, to settle (problem), to clear (dispute),"
+    },
+    {
+      "question": "映像",
+      "answer": "えいぞう",
+      "meaning": "image (on a screen), picture (e.g. on a TV), video, film, footage, reflection, image (in one's mind)"
+    },
+    {
+      "question": "出現",
+      "answer": "しゅつげん",
+      "meaning": "appearance, arrival, make one's appearance"
+    },
+    {
+      "question": "脚",
+      "answer": "あし,きゃく",
+      "meaning": "foot, paw, arm (of an octopus, squid, etc.), leg, gait, pace, bottom structural component (i.e. radi"
+    },
+    {
+      "question": "段階",
+      "answer": "だんかい,きざはし,きだはし",
+      "meaning": "grade, level, stage, class, phase, steps, order, gradation, stairs, stairs at the front of a noh sta"
+    },
+    {
+      "question": "禁止",
+      "answer": "きんし",
+      "meaning": "prohibition, inhibition, ban"
+    },
+    {
+      "question": "聖",
+      "answer": "せい,ひじり",
+      "meaning": "Saint, St., S., sacred, holy, pure, highly virtuous monk, monk, Buddhist solitary, Buddhist missiona"
+    },
+    {
+      "question": "恋愛",
+      "answer": "れんあい",
+      "meaning": "love, love-making, passion, emotion, affections"
+    },
+    {
+      "question": "指摘",
+      "answer": "してき",
+      "meaning": "pointing out, identification"
+    },
+    {
+      "question": "好み",
+      "answer": "このみ,よしみ,ごのみ",
+      "meaning": "liking, taste, choice, friendship, friendly relations, connection, relation, intimacy, being fond of"
+    },
+    {
+      "question": "会議",
+      "answer": "かいぎ",
+      "meaning": "meeting, conference, session, assembly, council, convention, congress"
+    },
+    {
+      "question": "罠",
+      "answer": "わな",
+      "meaning": "snare, trap (for catching wild game, etc.), trap (i.e. ruse, subterfuge, etc.)"
+    },
+    {
+      "question": "同意",
+      "answer": "どうい",
+      "meaning": "agreement, consent, approval, assent, same opinion, same view, same meaning"
+    },
+    {
+      "question": "都市",
+      "answer": "とし",
+      "meaning": "town, city, municipal, urban"
+    },
+    {
+      "question": "貴重",
+      "answer": "きちょう",
+      "meaning": "precious, valuable"
+    },
+    {
+      "question": "振り回す",
+      "answer": "ふりまわす",
+      "meaning": "to wield, to brandish, to flourish, to wave (about), to swing, to display (one's knowledge), to show"
+    },
+    {
+      "question": "夢中",
+      "answer": "むちゅう",
+      "meaning": "absorbed in, immersed in, crazy about, obsessed with, devoted to, forgetting oneself, daze, trance,"
+    },
+    {
+      "question": "法",
+      "answer": "ほう",
+      "meaning": "law, act, principle, method, mood, dharma"
+    },
+    {
+      "question": "百",
+      "answer": "ひゃく,もも",
+      "meaning": "100, hundred"
+    },
+    {
+      "question": "互いに",
+      "answer": "たがいに",
+      "meaning": "mutually, with each other, reciprocally, together"
+    },
+    {
+      "question": "試験",
+      "answer": "しけん",
+      "meaning": "examination, exam, test, trial, experiment"
+    },
+    {
+      "question": "無意識",
+      "answer": "むいしき",
+      "meaning": "unconsciousness, unconscious, involuntary, automatic, mechanical, unintentional, spontaneous, the un"
+    },
+    {
+      "question": "解ける",
+      "answer": "とける,ほどける",
+      "meaning": "to be solved, to be resolved, to loosen, to come untied, to come undone, to be removed (of restricti"
+    },
+    {
+      "question": "挑む",
+      "answer": "いどむ",
+      "meaning": "to challenge to (a fight, game, etc.), to throw down the gauntlet, to contend for, to tackle (e.g. a"
+    },
+    {
+      "question": "異なる",
+      "answer": "ことなる",
+      "meaning": "to differ, to vary, to disagree"
+    },
+    {
+      "question": "重なる",
+      "answer": "かさなる,おもなる",
+      "meaning": "to be piled up, to lie on top of one another, to come one after another, to happen over and over, to"
+    },
+    {
+      "question": "地図",
+      "answer": "ちず",
+      "meaning": "map"
+    },
+    {
+      "question": "近寄る",
+      "answer": "ちかよる",
+      "meaning": "to approach, to draw near"
+    },
+    {
+      "question": "実験",
+      "answer": "じっけん",
+      "meaning": "experiment"
+    },
+    {
+      "question": "鳴らす",
+      "answer": "ならす",
+      "meaning": "to ring, to sound, to chime, to beat, to snort (nose), to snap (fingers), to crack (joints), to be p"
+    },
+    {
+      "question": "愚か",
+      "answer": "おろか",
+      "meaning": "foolish, stupid"
+    },
+    {
+      "question": "結界",
+      "answer": "けっかい",
+      "meaning": "(fixing) boundaries for religious practices, prohibition (of items, people, spirits, etc. that would"
+    },
+    {
+      "question": "親友",
+      "answer": "しんゆう",
+      "meaning": "close friend, bosom (old, intimate) friend, buddy, crony, chum"
+    },
+    {
+      "question": "泊まる",
+      "answer": "とまる",
+      "meaning": "to stay at (e.g. hotel), to be docked, to be berthed, to be moored"
+    },
+    {
+      "question": "天才",
+      "answer": "てんさい",
+      "meaning": "genius, prodigy, natural gift"
+    },
+    {
+      "question": "音楽",
+      "answer": "おんがく",
+      "meaning": "music"
+    },
+    {
+      "question": "隊長",
+      "answer": "たいちょう",
+      "meaning": "commanding officer"
+    },
+    {
+      "question": "産む",
+      "answer": "うむ",
+      "meaning": "to give birth, to bear (child), to lay (eggs), to produce, to yield, to give rise to, to deliver"
+    },
+    {
+      "question": "三十",
+      "answer": "さんじゅう,みそ",
+      "meaning": "thirty, 30"
+    },
+    {
+      "question": "乱暴",
+      "answer": "らんぼう",
+      "meaning": "violence, assault, running riot, rough (e.g. handling), reckless, careless, coarse, rude, unreasonab"
+    },
+    {
+      "question": "完了",
+      "answer": "かんりょう,ワンラ",
+      "meaning": "completion, conclusion, perfect (tense, form, aspect), end"
+    },
+    {
+      "question": "生き残る",
+      "answer": "いきのこる",
+      "meaning": "to survive"
+    },
+    {
+      "question": "匹",
+      "answer": "ひき,き",
+      "meaning": "counter for small animals, counter for rolls of cloth (two han in size), roll of cloth, counter for"
+    },
+    {
+      "question": "事になる",
+      "answer": "ことになる",
+      "meaning": "to have been decided (so) that, to have been arranged (so) that, to be the result (of), to be the ou"
+    },
+    {
+      "question": "翼",
+      "answer": "つばさ,よく",
+      "meaning": "wing, Chinese 'Wings' constellation (one of the 28 mansions), counter for birds or bird wings"
+    },
+    {
+      "question": "資料",
+      "answer": "しりょう",
+      "meaning": "materials, data, document"
+    },
+    {
+      "question": "何やら",
+      "answer": "なにやら",
+      "meaning": "something, some kind of, for some reason"
+    },
+    {
+      "question": "親しい",
+      "answer": "したしい,ちかしい",
+      "meaning": "close (e.g. friend), familiar, friendly, intimate, familiar (e.g. story), well-known (to one), close"
+    },
+    {
+      "question": "正式",
+      "answer": "せいしき",
+      "meaning": "due form, official, formality"
+    },
+    {
+      "question": "半",
+      "answer": "はん",
+      "meaning": "half, semi-, half-past, odd number, unit of land area (595.8 m^2)"
+    },
+    {
+      "question": "計算",
+      "answer": "けいさん",
+      "meaning": "calculation, reckoning, count, forecast"
+    },
+    {
+      "question": "個人",
+      "answer": "こじん",
+      "meaning": "individual, private person, personal, private"
+    },
+    {
+      "question": "正面",
+      "answer": "しょうめん,まとも",
+      "meaning": "front, frontage, facade, main, the front, honesty, uprightness, directness, decency, normality"
+    },
+    {
+      "question": "途端",
+      "answer": "とたん",
+      "meaning": "just (now, at the moment, etc.), just as, in the act of, as soon as, at the moment that"
+    },
+    {
+      "question": "乗り込む",
+      "answer": "のりこむ",
+      "meaning": "to board, to embark on, to get into (a car), to man (a ship), to help (someone) into, to march into,"
+    },
+    {
+      "question": "盗む",
+      "answer": "ぬすむ",
+      "meaning": "to steal"
+    },
+    {
+      "question": "発揮",
+      "answer": "はっき",
+      "meaning": "show (of power, ability, etc.), exhibition, demonstration, display, manifestation"
+    },
+    {
+      "question": "何故か",
+      "answer": "なぜか",
+      "meaning": "somehow, for some reason, without knowing why"
+    },
+    {
+      "question": "辞める",
+      "answer": "やめる",
+      "meaning": "to resign, to retire, to quit, to leave (one's job, etc.)"
+    },
+    {
+      "question": "荒い",
+      "answer": "あらい",
+      "meaning": "rough, wild, violent, rude, coarse, harsh, fierce, heavy (e.g. breathing), immoderate, extravagant,"
+    },
+    {
+      "question": "一発",
+      "answer": "いっぱつ",
+      "meaning": "shot, charge, explosion, blow, punch, home run, try, attempt, win on the first go-around after calli"
+    },
+    {
+      "question": "代表",
+      "answer": "だいひょう",
+      "meaning": "representative, representation, delegation, type, example, model, switchboard number, main number"
+    },
+    {
+      "question": "意図",
+      "answer": "いと",
+      "meaning": "intention, aim, design"
+    },
+    {
+      "question": "男女",
+      "answer": "だんじょ,なんにょ,おとこおんな",
+      "meaning": "men and women, man and woman, both sexes, both genders, masculine woman, mannish woman, feminine man"
+    },
+    {
+      "question": "便利",
+      "answer": "べんり",
+      "meaning": "convenient, handy, useful"
+    },
+    {
+      "question": "伏せる",
+      "answer": "ふせる",
+      "meaning": "to turn over (face down), to lay face down, to lay upside down, to point downwards (eyes, head, etc."
+    },
+    {
+      "question": "宝石",
+      "answer": "ほうせき",
+      "meaning": "gem, jewel, precious stone"
+    },
+    {
+      "question": "衣装",
+      "answer": "いしょう",
+      "meaning": "clothing, costume, outfit, garment, dress"
+    },
+    {
+      "question": "駅",
+      "answer": "えき",
+      "meaning": "railway station, train station, staging post on a highway (in pre-modern Japan), counter for railway"
+    },
+    {
+      "question": "合図",
+      "answer": "あいず",
+      "meaning": "sign, signal, cue"
+    },
+    {
+      "question": "兄さん",
+      "answer": "にいさん,あにさん",
+      "meaning": "older brother, elder brother, brother (as older-brother figure in friendly and or work relationship)"
+    },
+    {
+      "question": "一回",
+      "answer": "いっかい",
+      "meaning": "once, one time, one round, one game, one bout, one heat, one inning"
+    },
+    {
+      "question": "布団",
+      "answer": "ふとん",
+      "meaning": "futon, Japanese bedding consisting of a mattress and a duvet, round cushion used for Zen meditation"
+    },
+    {
+      "question": "一生懸命",
+      "answer": "いっしょうけんめい",
+      "meaning": "very hard, with utmost effort, with all one's might, for dear life"
+    },
+    {
+      "question": "お姉",
+      "answer": "おねえ",
+      "meaning": "elder sister, effeminate man"
+    },
+    {
+      "question": "喧嘩",
+      "answer": "けんか",
+      "meaning": "quarrel, brawl, fight, squabble, scuffle, argument"
+    },
+    {
+      "question": "王女",
+      "answer": "おうじょ,おうにょ",
+      "meaning": "princess"
+    },
+    {
+      "question": "公園",
+      "answer": "こうえん",
+      "meaning": "(public) park"
+    },
+    {
+      "question": "遊び",
+      "answer": "あそび,すさび",
+      "meaning": "playing, play (margin between on and off, gap before pressing button or lever has an effect), amusem"
+    },
+    {
+      "question": "嫉妬",
+      "answer": "しっと",
+      "meaning": "jealousy, envy"
+    },
+    {
+      "question": "下着",
+      "answer": "したぎ",
+      "meaning": "underwear"
+    },
+    {
+      "question": "老人",
+      "answer": "ろうじん",
+      "meaning": "old person, senior citizen, the aged, the elderly"
+    },
+    {
+      "question": "女王",
+      "answer": "じょおう,じょうおう,にょおう",
+      "meaning": "queen, female champion"
+    },
+    {
+      "question": "合流",
+      "answer": "ごうりゅう",
+      "meaning": "confluence (of rivers), merge (of traffic), conflux, junction, joining, union (e.g. of forces), link"
+    },
+    {
+      "question": "汚れる",
+      "answer": "けがれる,よごれる",
+      "meaning": "to be violated, to be corrupted, to be polluted, to be stained, to get dirty, to become dirty, to be"
+    },
+    {
+      "question": "唐突",
+      "answer": "とうとつ",
+      "meaning": "abrupt, sudden"
+    },
+    {
+      "question": "常識",
+      "answer": "じょうしき",
+      "meaning": "common sense, good sense, common knowledge, general knowledge, common practice, accepted practice, s"
+    },
+    {
+      "question": "台詞",
+      "answer": "せりふ,だいし",
+      "meaning": "speech, words, one's lines, remarks"
+    },
+    {
+      "question": "都合",
+      "answer": "つごう",
+      "meaning": "circumstances, condition, convenience, to arrange, to manage, to lend money, to raise money, in all,"
+    },
+    {
+      "question": "待機",
+      "answer": "たいき",
+      "meaning": "standing by, awaiting an opportunity, being on alert"
+    },
+    {
+      "question": "一週間",
+      "answer": "いっしゅうかん",
+      "meaning": "one week"
+    },
+    {
+      "question": "封印",
+      "answer": "ふういん",
+      "meaning": "seal, to seal (e.g. a letter), to affix a seal, to seal up"
+    },
+    {
+      "question": "号",
+      "answer": "ごう",
+      "meaning": "number, edition, make, model, issue, part of that group, sobriquet, pen-name, size (of printing type"
+    },
+    {
+      "question": "仕草",
+      "answer": "しぐさ",
+      "meaning": "gesture, movement, action, behavior, behaviour, bearing, mannerism, acting, performance"
+    },
+    {
+      "question": "級",
+      "answer": "きゅう",
+      "meaning": "class (e.g. school), grade, rank, kyū, kyu, junior rank in martial arts, go, shogi, etc."
+    },
+    {
+      "question": "眼差し",
+      "answer": "まなざし",
+      "meaning": "(a) look, gaze"
+    },
+    {
+      "question": "召喚",
+      "answer": "しょうかん",
+      "meaning": "summons, summonsing, citation, subpoena, arraigning, calling, summoning"
+    },
+    {
+      "question": "放す",
+      "answer": "はなす",
+      "meaning": "to release, to let go, to free, to set free, to let loose, to turn loose, to add (pieces of eggplant"
+    },
+    {
+      "question": "積む",
+      "answer": "つむ",
+      "meaning": "to pile up, to stack, to load (car, ship, etc.), to pack, to acquire, to accumulate"
+    },
+    {
+      "question": "婚約",
+      "answer": "こんやく",
+      "meaning": "engagement, betrothal"
+    },
+    {
+      "question": "注文",
+      "answer": "ちゅうもん,ちゅうぶん",
+      "meaning": "order (for an item), request, demand, condition, annotation, explanatory note"
+    },
+    {
+      "question": "過ぎ",
+      "answer": "すぎ",
+      "meaning": "past, after, too (much), over- (e.g. eating)"
+    },
+    {
+      "question": "岩",
+      "answer": "いわ",
+      "meaning": "rock, boulder, crag, cliff, anchor"
+    },
+    {
+      "question": "無数",
+      "answer": "むすう",
+      "meaning": "innumerable, countless, numberless"
+    },
+    {
+      "question": "選択肢",
+      "answer": "せんたくし",
+      "meaning": "choices, alternatives, options"
+    },
+    {
+      "question": "遮る",
+      "answer": "さえぎる,さいぎる",
+      "meaning": "to interrupt, to obstruct (a view, someone's way, etc.), to block (light, wind, etc.), to intercept,"
+    },
+    {
+      "question": "見渡す",
+      "answer": "みわたす",
+      "meaning": "to look out over, to survey (scene), to take an extensive view of"
+    },
+    {
+      "question": "手伝い",
+      "answer": "てつだい",
+      "meaning": "helper, assistant, help"
+    },
+    {
+      "question": "舞う",
+      "answer": "まう",
+      "meaning": "to dance (orig. a whirling dance), to flutter about, to revolve"
+    },
+    {
+      "question": "風呂",
+      "answer": "ふろ",
+      "meaning": "bath, bathing, bathtub, bathroom, bathhouse, public bath, room for drying lacquerware, base (wooden"
+    },
+    {
+      "question": "お互いに",
+      "answer": "おたがいに",
+      "meaning": "mutually, with each other, reciprocally, together, both"
+    },
+    {
+      "question": "戦士",
+      "answer": "せんし",
+      "meaning": "soldier, combatant, warrior"
+    },
+    {
+      "question": "活躍",
+      "answer": "かつやく",
+      "meaning": "activity (esp. energetic), great efforts, conspicuous service, to flourish, to participate actively,"
+    },
+    {
+      "question": "台",
+      "answer": "だい,うてな,たい",
+      "meaning": "stand, rack, table, bench, podium, pedestal, platform, stage, support, holder, counter for machines,"
+    },
+    {
+      "question": "大地",
+      "answer": "だいち",
+      "meaning": "ground, earth, the solid earth, the (vast) land"
+    },
+    {
+      "question": "眠い",
+      "answer": "ねむい",
+      "meaning": "sleepy, drowsy, somnolent"
+    },
+    {
+      "question": "変態",
+      "answer": "へんたい",
+      "meaning": "transformation, abnormality, sexual perversion, pervert, metamorphosis, transition, modification"
+    },
+    {
+      "question": "振るう",
+      "answer": "ふるう",
+      "meaning": "to swing, to wield (physically), to exert, to exercise (e.g. power, ability), to exhibit, to display"
+    },
+    {
+      "question": "何年",
+      "answer": "なんねん",
+      "meaning": "how many years, how long, what year"
+    },
+    {
+      "question": "攻める",
+      "answer": "せめる",
+      "meaning": "to attack, to assault, to assail"
+    },
+    {
+      "question": "半ば",
+      "answer": "なかば",
+      "meaning": "middle, halfway, midway, half (of), one half, half (e.g. done, jokingly), party, in part, partially,"
+    },
+    {
+      "question": "昼間",
+      "answer": "ひるま,ちゅうかん",
+      "meaning": "daytime, during the day, time from sunrise until sunset, diurnal period"
+    },
+    {
+      "question": "力強い",
+      "answer": "ちからづよい",
+      "meaning": "powerful, strong, forceful, vigorous, reassuring, encouraging"
+    },
+    {
+      "question": "作品",
+      "answer": "さくひん",
+      "meaning": "work (e.g. book, film, composition, etc.), opus, performance, production"
+    },
+    {
+      "question": "飾る",
+      "answer": "かざる",
+      "meaning": "to decorate, to ornament, to adorn, to display, to exhibit, to put on show, to arrange, to mark (e.g"
+    },
+    {
+      "question": "被害者",
+      "answer": "ひがいしゃ",
+      "meaning": "victim, injured party, sufferer"
+    },
+    {
+      "question": "時計",
+      "answer": "とけい,ときはかり",
+      "meaning": "clock, watch, timepiece"
+    },
+    {
+      "question": "倍",
+      "answer": "ばい",
+      "meaning": "twice, double, times, -fold, 1-nth, 1 to n, 1 in n"
+    },
+    {
+      "question": "刀",
+      "answer": "かたな,とう",
+      "meaning": "sword (esp. Japanese single-edged), katana, scalpel, chisel, burin, graver, knife money (knife-shape"
+    },
+    {
+      "question": "対処",
+      "answer": "たいしょ",
+      "meaning": "dealing with, coping with"
+    },
+    {
+      "question": "叶う",
+      "answer": "かなう",
+      "meaning": "to come true (of a wish, prayer, etc.), to be realized, to be fulfilled, to suit (e.g. a purpose), t"
+    },
+    {
+      "question": "権利",
+      "answer": "けんり",
+      "meaning": "right, privilege"
+    },
+    {
+      "question": "脇",
+      "answer": "わき,かたわら",
+      "meaning": "armpit, under one's arm, side, flank, beside, close to, near, by, aside, to the side, away, out of t"
+    },
+    {
+      "question": "嬢",
+      "answer": "じょう",
+      "meaning": "unmarried woman, Miss, -ess, -ette"
+    },
+    {
+      "question": "空中",
+      "answer": "くうちゅう",
+      "meaning": "sky, air, mid-air"
+    },
+    {
+      "question": "奴隷",
+      "answer": "どれい",
+      "meaning": "slave, servant, slavery"
+    },
+    {
+      "question": "移す",
+      "answer": "うつす",
+      "meaning": "to change, to swap, to substitute, to transfer, to change the object of one's interest or focus, to"
+    },
+    {
+      "question": "一同",
+      "answer": "いちどう",
+      "meaning": "all present, all concerned, all of us"
+    },
+    {
+      "question": "言い切る",
+      "answer": "いいきる",
+      "meaning": "to declare, to assert, to state definitively, to finish saying, to say it all, to finish one's sente"
+    },
+    {
+      "question": "連続",
+      "answer": "れんぞく",
+      "meaning": "continuation, succession, series"
+    },
+    {
+      "question": "化け物",
+      "answer": "ばけもの,ばけもん",
+      "meaning": "goblin, apparition, monster, ghost, phantom, spectre, specter"
+    },
+    {
+      "question": "再会",
+      "answer": "さいかい",
+      "meaning": "another meeting, meeting again, reunion"
+    },
+    {
+      "question": "字",
+      "answer": "あざ,じ,あざな",
+      "meaning": "section of village, character (esp. kanji), letter, written text, handwriting, penmanship, the ... w"
+    },
+    {
+      "question": "精一杯",
+      "answer": "せいいっぱい",
+      "meaning": "the best one can do, one's best effort, with all one's might, to the best of one's ability"
+    },
+    {
+      "question": "所属",
+      "answer": "しょぞく",
+      "meaning": "belonging to (a group, organization, etc.), affiliation (with), being attached to, being under the c"
+    },
+    {
+      "question": "痛む",
+      "answer": "いたむ",
+      "meaning": "to hurt, to ache, to feel a pain, to be injured, to be spoiled (e.g. food), to be damaged"
+    },
+    {
+      "question": "隅",
+      "answer": "すみ,すま",
+      "meaning": "corner, nook, recess"
+    },
+    {
+      "question": "単に",
+      "answer": "たんに",
+      "meaning": "simply, merely, only, solely"
+    },
+    {
+      "question": "南",
+      "answer": "みなみ,ナン",
+      "meaning": "south, south wind tile, winning hand with a pung (or kong) of south wind tiles"
+    },
+    {
+      "question": "自分自身",
+      "answer": "じぶんじしん",
+      "meaning": "oneself, myself"
+    },
+    {
+      "question": "跳ねる",
+      "answer": "はねる",
+      "meaning": "to jump, to leap, to prance, to spring up, to bound, to hop, to break up, to close, to come to an en"
+    },
+    {
+      "question": "負う",
+      "answer": "おう",
+      "meaning": "to bear, to carry on one's back, to take responsibility for, to accept a duty, to receive (wound), t"
+    },
+    {
+      "question": "開発",
+      "answer": "かいはつ,かいほつ",
+      "meaning": "development, exploitation"
+    },
+    {
+      "question": "転ぶ",
+      "answer": "ころぶ,まろぶ",
+      "meaning": "to fall down, to fall over, to turn out, to play out, to abandon Christianity (and convert to Buddhi"
+    },
+    {
+      "question": "達する",
+      "answer": "たっする",
+      "meaning": "to reach, to get to, to arrive at"
+    },
+    {
+      "question": "体勢",
+      "answer": "たいせい",
+      "meaning": "posture, stance"
+    },
+    {
+      "question": "向き合う",
+      "answer": "むきあう",
+      "meaning": "to be opposite, to face each other, to confront (an issue), to face"
+    },
+    {
+      "question": "飽きる",
+      "answer": "あきる",
+      "meaning": "to get tired of, to lose interest in, to be fed up with, to have enough"
+    },
+    {
+      "question": "筋肉",
+      "answer": "きんにく,すじにく",
+      "meaning": "muscle, sinewy meat"
+    },
+    {
+      "question": "晴れる",
+      "answer": "はれる",
+      "meaning": "to clear up, to clear away, to be sunny, to stop raining, to refresh (e.g. spirits), to be cleared ("
+    },
+    {
+      "question": "輝き",
+      "answer": "かがやき",
+      "meaning": "brightness, brilliance, brilliancy, radiance, glitter"
+    },
+    {
+      "question": "混じる",
+      "answer": "まじる,こんじる",
+      "meaning": "to be mixed, to be blended with, to be combined, to associate with, to mingle with, to interest, to"
+    },
+    {
+      "question": "各",
+      "answer": "かく,おのおの",
+      "meaning": "each, every, all, you (plural)"
+    },
+    {
+      "question": "維持",
+      "answer": "いじ",
+      "meaning": "maintenance, preservation, improvement"
+    },
+    {
+      "question": "対策",
+      "answer": "たいさく",
+      "meaning": "measure, step, countermeasure, counterplan, countermove, strategy, preparation (e.g. for a test)"
+    },
+    {
+      "question": "汚い",
+      "answer": "きたない",
+      "meaning": "dirty, filthy, foul, unclean, disordered, messy, untidy, poor (e.g. handwriting), indecent (language"
+    },
+    {
+      "question": "恨む",
+      "answer": "うらむ",
+      "meaning": "to bear a grudge against, to resent, to blame, to curse, to feel bitter towards, to regret"
+    },
+    {
+      "question": "問い",
+      "answer": "とい",
+      "meaning": "question, query"
+    },
+    {
+      "question": "三つ",
+      "answer": "みっつ,みつ",
+      "meaning": "three, three years of age"
+    },
+    {
+      "question": "拭く",
+      "answer": "ふく",
+      "meaning": "to wipe, to dry"
+    },
+    {
+      "question": "吸い込む",
+      "answer": "すいこむ",
+      "meaning": "to inhale, to breathe in, to suck up, to imbibe, to absorb, to soak up"
+    },
+    {
+      "question": "持ち主",
+      "answer": "もちぬし",
+      "meaning": "owner, proprietor, possessor (e.g. of talent, beauty, etc.)"
+    },
+    {
+      "question": "互い",
+      "answer": "たがい",
+      "meaning": "each other, one another"
+    },
+    {
+      "question": "前回",
+      "answer": "ぜんかい",
+      "meaning": "previous time, last time, previous installment, previous instalment, previous session"
+    },
+    {
+      "question": "生物",
+      "answer": "せいぶつ,なまもの",
+      "meaning": "living thing, organism, creature, life, biology, raw food, perishables"
+    },
+    {
+      "question": "交換",
+      "answer": "こうかん",
+      "meaning": "exchange, interchange, switching, reciprocity, barter, substitution, replacement, clearing (of check"
+    },
+    {
+      "question": "登る",
+      "answer": "のぼる",
+      "meaning": "to ascend, to go up, to climb, to ascend (as a natural process, e.g. the Sun), to rise, to go to (th"
+    },
+    {
+      "question": "真っ白",
+      "answer": "まっしろ",
+      "meaning": "pure white, blank (e.g. mind, paper)"
+    },
+    {
+      "question": "英雄",
+      "answer": "えいゆう",
+      "meaning": "hero, heroine, great person, Eroica Symphony (Beethoven, 1804), Heroic Polonaise (Chopin)"
+    },
+    {
+      "question": "歯",
+      "answer": "は,よわい,し",
+      "meaning": "tooth, (one's) age, age, years"
+    },
+    {
+      "question": "昨夜",
+      "answer": "ゆうべ,さくや,ゆんべ",
+      "meaning": "last night, yesterday evening"
+    },
+    {
+      "question": "波",
+      "answer": "なみ,ぽ,は",
+      "meaning": "wave, ups and downs, Poland, counter for waves (of a repeated occurrence)"
+    },
+    {
+      "question": "真っ直ぐ",
+      "answer": "まっすぐ",
+      "meaning": "straight (ahead), direct, upright, erect, straightforward, honest, frank"
+    },
+    {
+      "question": "体調",
+      "answer": "たいちょう",
+      "meaning": "physical condition, state of health"
+    },
+    {
+      "question": "狼",
+      "answer": "おおかみ,おおかめ,おいぬ",
+      "meaning": "wolf (Canis lupus), wolf in sheep's clothing, womanizer"
+    },
+    {
+      "question": "夫婦",
+      "answer": "ふうふ,めおと,みょうと",
+      "meaning": "married couple, husband and wife, man and wife, his and hers, pair of objects, one larger (for man),"
+    },
+    {
+      "question": "日常",
+      "answer": "にちじょう",
+      "meaning": "everyday, daily, ordinary, usual, routine, regular"
+    },
+    {
+      "question": "勘弁",
+      "answer": "かんべん",
+      "meaning": "pardon, forgiveness, forbearance"
+    },
+    {
+      "question": "染める",
+      "answer": "そめる",
+      "meaning": "to dye, to colour, to color"
+    },
+    {
+      "question": "整理",
+      "answer": "せいり",
+      "meaning": "sorting, arrangement, organization, putting in order, adjustment, regulation, liquidation, settlemen"
+    },
+    {
+      "question": "室内",
+      "answer": "しつない",
+      "meaning": "indoor, inside the room"
+    },
+    {
+      "question": "拭う",
+      "answer": "ぬぐう",
+      "meaning": "to wipe, to mop up, to get rid of (an impression, feeling, blemish, etc.), to dispel (e.g. shame), t"
+    },
+    {
+      "question": "追加",
+      "answer": "ついか",
+      "meaning": "addition, supplement, appending, appendix"
+    },
+    {
+      "question": "順調",
+      "answer": "じゅんちょう",
+      "meaning": "favourable, favorable, doing well, OK, all right"
+    },
+    {
+      "question": "伺う",
+      "answer": "うかがう",
+      "meaning": "to ask, to inquire, to hear, to be told, to implore (a god for an oracle), to seek direction (from y"
+    },
+    {
+      "question": "証",
+      "answer": "しるし,あかし,しょう",
+      "meaning": "mark, sign, symbol, emblem, badge, crest, flag, evidence, proof, token (of gratitude, affection, etc"
+    },
+    {
+      "question": "犯す",
+      "answer": "おかす",
+      "meaning": "to commit (e.g. crime), to perpetrate, to make (e.g. mistake), to break (e.g. rule), to violate, to"
+    },
+    {
+      "question": "手元",
+      "answer": "てもと",
+      "meaning": "at hand, on hand, nearby, close at hand, way of moving one's arms, skill, money at hand, pocket mone"
+    },
+    {
+      "question": "渡る",
+      "answer": "わたる",
+      "meaning": "to cross over, to go across, to extend, to cover, to range, to span"
+    },
+    {
+      "question": "話し合う",
+      "answer": "はなしあう",
+      "meaning": "to discuss, to talk together"
+    },
+    {
+      "question": "去年",
+      "answer": "きょねん,こぞ",
+      "meaning": "last year"
+    },
+    {
+      "question": "不機嫌",
+      "answer": "ふきげん",
+      "meaning": "pout, displeasure, ill humor, ill humour, sullenness"
+    },
+    {
+      "question": "彼氏",
+      "answer": "かれし",
+      "meaning": "boyfriend, he, him"
+    },
+    {
+      "question": "散歩",
+      "answer": "さんぽ",
+      "meaning": "walk, stroll"
+    },
+    {
+      "question": "辿り着く",
+      "answer": "たどりつく",
+      "meaning": "to arrive at (after a struggle), to finally reach, to find one's way to, to finally hit on (e.g. an"
+    },
+    {
+      "question": "嫌がる",
+      "answer": "いやがる",
+      "meaning": "to hate, to dislike"
+    },
+    {
+      "question": "手足",
+      "answer": "てあし",
+      "meaning": "hands and feet, limbs"
+    },
+    {
+      "question": "回転",
+      "answer": "かいてん",
+      "meaning": "rotation (usu. around something), revolution, turning"
+    },
+    {
+      "question": "王族",
+      "answer": "おうぞく",
+      "meaning": "royalty"
+    },
+    {
+      "question": "一方的",
+      "answer": "いっぽうてき",
+      "meaning": "one-sided, unilateral, arbitrary"
+    },
+    {
+      "question": "掲げる",
+      "answer": "かかげる",
+      "meaning": "to put up (a notice, sign, etc.), to hang out (e.g. a banner), to fly (e.g. a flag), to hoist, to ra"
+    },
+    {
+      "question": "雇う",
+      "answer": "やとう",
+      "meaning": "to employ, to hire, to charter"
+    },
+    {
+      "question": "誕生日",
+      "answer": "たんじょうび",
+      "meaning": "birthday"
+    },
+    {
+      "question": "詰める",
+      "answer": "つめる",
+      "meaning": "to stuff into, to jam, to cram, to pack, to fill, to plug, to stop up, to shorten, to move closer to"
+    },
+    {
+      "question": "拘束",
+      "answer": "こうそく",
+      "meaning": "restriction, restraint, binding, constraint"
+    },
+    {
+      "question": "民",
+      "answer": "たみ,みん",
+      "meaning": "people, citizens, subjects, folk, citizen, resident, person, user (of a website, esp. as a collectiv"
+    },
+    {
+      "question": "先端",
+      "answer": "せんたん",
+      "meaning": "pointed end, tip, point, cusp (of a leaf, crescent moon, etc.), apex (of a curve), forefront, vangua"
+    },
+    {
+      "question": "橋",
+      "answer": "はし,きょう",
+      "meaning": "bridge, pons (pontes), pons Varolii, pontine, part of the brain stem (links the medulla oblongata an"
+    },
+    {
+      "question": "役割",
+      "answer": "やくわり",
+      "meaning": "part, assigning (allotment of) parts, role, duties"
+    },
+    {
+      "question": "手のひら",
+      "answer": "てのひら",
+      "meaning": "palm (of one's hand)"
+    },
+    {
+      "question": "先程",
+      "answer": "さきほど",
+      "meaning": "a short while ago, a moment ago, just now, some time ago"
+    },
+    {
+      "question": "杖",
+      "answer": "つえ,じょう",
+      "meaning": "cane, walking stick, staff, wand, severe caning (60-100 times)"
+    },
+    {
+      "question": "加わる",
+      "answer": "くわわる",
+      "meaning": "to be added to, to be appended, to join in (e.g. a group of friends), to participate, to increase (e"
+    },
+    {
+      "question": "尊敬",
+      "answer": "そんけい",
+      "meaning": "respect, esteem, reverence, honour, honor"
+    },
+    {
+      "question": "調整",
+      "answer": "ちょうせい",
+      "meaning": "adjustment, regulation, coordination, reconciliation, tuning, fixing, tailoring"
+    },
+    {
+      "question": "俯く",
+      "answer": "うつむく",
+      "meaning": "to hang one's head, to look down, to cast one's eyes downward"
+    },
+    {
+      "question": "理想",
+      "answer": "りそう",
+      "meaning": "ideal, ideals"
+    },
+    {
+      "question": "頭上",
+      "answer": "ずじょう",
+      "meaning": "overhead, above one's head, high in the sky"
+    },
+    {
+      "question": "駆ける",
+      "answer": "かける",
+      "meaning": "to run, to dash, to race, to gallop (on horseback), to canter, to advance (against one's enemy), to"
+    },
+    {
+      "question": "資格",
+      "answer": "しかく",
+      "meaning": "qualifications, requirements, capabilities"
+    },
+    {
+      "question": "半年",
+      "answer": "はんとし,はんねん",
+      "meaning": "half a year, six months"
+    },
+    {
+      "question": "万が一",
+      "answer": "まんがいち,まんがいつ",
+      "meaning": "if by any chance, just in case, in the worst case, in the unlikely event that, 10000 to 1"
+    },
+    {
+      "question": "発表",
+      "answer": "はっぴょう",
+      "meaning": "announcement, publication, presenting, statement, communique, making known, breaking (news story), e"
+    },
+    {
+      "question": "退屈",
+      "answer": "たいくつ",
+      "meaning": "tedium, boredom, dullness, to feel bored, to get bored with, to get tired of"
+    },
+    {
+      "question": "真ん中",
+      "answer": "まんなか",
+      "meaning": "middle, centre, center, midpoint, heart"
+    },
+    {
+      "question": "不自然",
+      "answer": "ふしぜん",
+      "meaning": "unnatural, artificial, affected, strained"
+    },
+    {
+      "question": "強烈",
+      "answer": "きょうれつ",
+      "meaning": "strong, intense, severe"
+    },
+    {
+      "question": "予想外",
+      "answer": "よそうがい",
+      "meaning": "unexpected, unforeseen, strange"
+    },
+    {
+      "question": "食らう",
+      "answer": "くらう",
+      "meaning": "to eat, to drink, to wolf, to knock back, to receive (e.g. a blow), to be on the receiving end (of s"
+    },
+    {
+      "question": "無",
+      "answer": "む,ぶ",
+      "meaning": "nothing, naught, nought, nil, zero, un-, non-, bad ..., poor ..."
+    },
+    {
+      "question": "皿",
+      "answer": "さら",
+      "meaning": "plate, dish, platter, disc, serving, helping, course, kanji radical 108 (at the bottom)"
+    },
+    {
+      "question": "見覚え",
+      "answer": "みおぼえ",
+      "meaning": "remembrance, recollection, recognition"
+    },
+    {
+      "question": "反論",
+      "answer": "はんろん",
+      "meaning": "objection, refutation, rebuttal, counterargument"
+    },
+    {
+      "question": "攻略",
+      "answer": "こうりゃく",
+      "meaning": "capture (of enemy territory), taking (by storm), conquest, attack, assault, defeating (an opponent),"
+    },
+    {
+      "question": "東京",
+      "answer": "とうきょう,とうけい",
+      "meaning": "Tokyo"
+    },
+    {
+      "question": "後方",
+      "answer": "こうほう",
+      "meaning": "behind, in the rear, in back"
+    },
+    {
+      "question": "案外",
+      "answer": "あんがい",
+      "meaning": "unexpectedly, surprisingly, unexpected, unanticipated, unforeseen, surprising"
+    },
+    {
+      "question": "同情",
+      "answer": "どうじょう",
+      "meaning": "sympathy, compassion, pity"
+    },
+    {
+      "question": "突き出す",
+      "answer": "つきだす",
+      "meaning": "to push out, to project, to stick out, to hand over (e.g. to the police)"
+    },
+    {
+      "question": "候補",
+      "answer": "こうほ",
+      "meaning": "candidate, contender, prospect, pick, choice, list, candidacy, candidature, nomination"
+    },
+    {
+      "question": "勝ち",
+      "answer": "かち,がち",
+      "meaning": "win, victory, apt to (do), liable to, prone to, inclined to, tend to, predominantly, mostly, having"
+    },
+    {
+      "question": "大声",
+      "answer": "おおごえ,たいせい",
+      "meaning": "loud voice"
+    },
+    {
+      "question": "主に",
+      "answer": "おもに",
+      "meaning": "mainly, primarily"
+    },
+    {
+      "question": "代わる",
+      "answer": "かわる",
+      "meaning": "to succeed, to relieve, to replace, to take the place of, to substitute for, to take over for, to re"
+    },
+    {
+      "question": "姉さん",
+      "answer": "ねえさん,あねさん",
+      "meaning": "older sister, elder sister, young lady, miss, ma'am"
+    },
+    {
+      "question": "追い出す",
+      "answer": "おいだす",
+      "meaning": "to expel, to drive out"
+    },
+    {
+      "question": "散る",
+      "answer": "ちる",
+      "meaning": "to fall (e.g. blossoms, leaves), to scatter, to be dispersed, to disappear, to dissolve, to break up"
+    },
+    {
+      "question": "移る",
+      "answer": "うつる",
+      "meaning": "to move (house), to transfer (department), to change the target of interest or concern, to elapse (p"
+    },
+    {
+      "question": "群れ",
+      "answer": "むれ",
+      "meaning": "group, crowd, flock, herd, bevy, school, swarm, cluster (e.g. of stars), clump, pack (e.g. of dogs)"
+    },
+    {
+      "question": "黒髪",
+      "answer": "くろかみ,こくはつ",
+      "meaning": "black hair"
+    },
+    {
+      "question": "危機",
+      "answer": "きき",
+      "meaning": "crisis, critical situation, emergency, pinch"
+    },
+    {
+      "question": "片方",
+      "answer": "かたほう",
+      "meaning": "one side, one party, counterpart, the other side, the other party, one of a pair, fellow, mate"
+    },
+    {
+      "question": "以降",
+      "answer": "いこう",
+      "meaning": "on and after, as from, hereafter, thereafter, since"
+    },
+    {
+      "question": "犠牲",
+      "answer": "ぎせい,いけにえ",
+      "meaning": "sacrifice, victim, scapegoat, sacrifice (to the gods)"
+    },
+    {
+      "question": "優れる",
+      "answer": "すぐれる",
+      "meaning": "to surpass, to outstrip, to excel"
+    },
+    {
+      "question": "抜け出す",
+      "answer": "ぬけだす",
+      "meaning": "to slip out, to sneak away, to break free, to get through (a difficult situation), to break into the"
+    },
+    {
+      "question": "金髪",
+      "answer": "きんぱつ",
+      "meaning": "blond hair"
+    },
+    {
+      "question": "付き",
+      "answer": "つき,づき",
+      "meaning": "furnished with, including, attached to, impression, appearance, luck, sociality, under, assistant (e"
+    },
+    {
+      "question": "不意",
+      "answer": "ふい",
+      "meaning": "sudden, abrupt, unexpected, unforeseen"
+    },
+    {
+      "question": "憧れる",
+      "answer": "あこがれる",
+      "meaning": "to long for, to yearn after, to admire, to be attracted by"
+    },
+    {
+      "question": "今頃",
+      "answer": "いまごろ",
+      "meaning": "about this time"
+    },
+    {
+      "question": "身分",
+      "answer": "みぶん",
+      "meaning": "social position, social status"
+    },
+    {
+      "question": "乱れる",
+      "answer": "みだれる",
+      "meaning": "to be disordered, to be disarranged, to be disarrayed, to be disheveled, to be dishevelled, to be di"
+    },
+    {
+      "question": "獲物",
+      "answer": "えもの",
+      "meaning": "prey, catch, kill, game, spoils, trophy, loot, plunder"
+    },
+    {
+      "question": "以下",
+      "answer": "いか,いげ",
+      "meaning": "not exceeding, and downward, ... and below, below (e.g. standard), under (e.g. a level), the below-m"
+    },
+    {
+      "question": "玉",
+      "answer": "たま,ぎょく",
+      "meaning": "ball, sphere, globe, orb, bead (of sweat, dew, etc.), drop, droplet, ball (in sports), pile (of nood"
+    },
+    {
+      "question": "放課後",
+      "answer": "ほうかご",
+      "meaning": "after school (at the end of the day)"
+    },
+    {
+      "question": "塞ぐ",
+      "answer": "ふさぐ",
+      "meaning": "to stop up, to close up, to block (up), to plug up, to shut up, to cover (ears, eyes, etc.), to clos"
+    },
+    {
+      "question": "始末",
+      "answer": "しまつ",
+      "meaning": "management, dealing with, settlement, cleaning up, disposal, course of events, circumstances, partic"
+    },
+    {
+      "question": "始まり",
+      "answer": "はじまり",
+      "meaning": "origin, beginning"
+    },
+    {
+      "question": "見捨てる",
+      "answer": "みすてる",
+      "meaning": "to abandon, to fail, to desert, to forsake"
+    },
+    {
+      "question": "事前",
+      "answer": "じぜん",
+      "meaning": "prior, beforehand, in advance, before the fact, ex ante"
+    },
+    {
+      "question": "復讐",
+      "answer": "ふくしゅう",
+      "meaning": "revenge"
+    },
+    {
+      "question": "宙",
+      "answer": "ちゅう",
+      "meaning": "space, air, midair, (from) memory, (by) heart"
+    },
+    {
+      "question": "太い",
+      "answer": "ふとい",
+      "meaning": "fat, thick, deep (of a voice), sonorous, daring, shameless, brazen, audacious"
+    },
+    {
+      "question": "明かり",
+      "answer": "あかり",
+      "meaning": "light, illumination, glow, gleam, lamp"
+    },
+    {
+      "question": "夢を見る",
+      "answer": "ゆめをみる",
+      "meaning": "to dream (i.e. while asleep), to have a dream, to dream (of the future), to have a fleeting experien"
+    },
+    {
+      "question": "宇宙",
+      "answer": "うちゅう",
+      "meaning": "universe, cosmos, space"
+    },
+    {
+      "question": "返答",
+      "answer": "へんとう",
+      "meaning": "reply, answer"
+    },
+    {
+      "question": "注目",
+      "answer": "ちゅうもく",
+      "meaning": "notice, attention, observation"
+    },
+    {
+      "question": "襲撃",
+      "answer": "しゅうげき",
+      "meaning": "attack, charge, raid"
+    },
+    {
+      "question": "手前",
+      "answer": "てまえ,てめえ",
+      "meaning": "before oneself, in front of one, nearby, a bit before reaching (a location), this side (of a locatio"
+    },
+    {
+      "question": "屋上",
+      "answer": "おくじょう",
+      "meaning": "rooftop"
+    },
+    {
+      "question": "大会",
+      "answer": "たいかい",
+      "meaning": "mass meeting, convention, rally, conference, assembly, gathering, tournament, competition, contest,"
+    },
+    {
+      "question": "不気味",
+      "answer": "ぶきみ",
+      "meaning": "weird, ominous, eerie, uncanny, ghastly"
+    },
+    {
+      "question": "兄弟",
+      "answer": "きょうだい,けいてい",
+      "meaning": "siblings, brothers and sisters, brothers, siblings-in-law, brothers-in-law, sisters-in-law, mate, fr"
+    },
+    {
+      "question": "立ち去る",
+      "answer": "たちさる",
+      "meaning": "to leave, to depart, to take one's leave"
+    },
+    {
+      "question": "背筋",
+      "answer": "せすじ,はいきん",
+      "meaning": "spine, line of the backbone, seam down the back (of clothing), muscles of the back, back muscles"
+    },
+    {
+      "question": "乾く",
+      "answer": "かわく",
+      "meaning": "to get dry"
+    },
+    {
+      "question": "癖",
+      "answer": "くせ,へき",
+      "meaning": "habit (often a bad habit, i.e. vice), tendency, peculiarity, idiosyncrasy, mannerism, crease, wrinkl"
+    },
+    {
+      "question": "嵐",
+      "answer": "あらし",
+      "meaning": "storm, tempest, uproar, hullabaloo, storm (e.g. of protest), winds (e.g. of change)"
+    },
+    {
+      "question": "果たして",
+      "answer": "はたして",
+      "meaning": "as was expected, just as one thought, sure enough, really, actually, ever"
+    },
+    {
+      "question": "滑る",
+      "answer": "すべる,ぬめる,なめる",
+      "meaning": "to glide, to slide (e.g. on skis), to slip, to fail (an examination), to bomb (when telling a joke),"
+    },
+    {
+      "question": "対",
+      "answer": "たい,つい",
+      "meaning": "opposite, opposition, versus, vs., v., to (e.g. 'winning a game five to three'), equal footing, equa"
+    },
+    {
+      "question": "妄想",
+      "answer": "もうそう,ぼうそう",
+      "meaning": "wild idea, delusion"
+    },
+    {
+      "question": "迷い",
+      "answer": "まよい",
+      "meaning": "hesitation, bewilderment, perplexity, doubt, indecision, illusion, delusion, inability to reach enli"
+    },
+    {
+      "question": "魔法使い",
+      "answer": "まほうつかい",
+      "meaning": "magician, wizard, sorcerer, witch"
+    },
+    {
+      "question": "年間",
+      "answer": "ねんかん",
+      "meaning": "(period of) a year, during an era"
+    },
+    {
+      "question": "族",
+      "answer": "ぞく,ぞう,やから",
+      "meaning": "tribe, clan, band, family, (taxonomical) tribe, group (of the periodic table), party (of people), se"
+    },
+    {
+      "question": "師",
+      "answer": "し",
+      "meaning": "teacher, master, one's mentor, religious leader, specialist, five-battalion brigade comprising 2500"
+    },
+    {
+      "question": "画面",
+      "answer": "がめん",
+      "meaning": "screen (of a TV, computer, etc.), image (on a screen), picture, scene, surface of a painting (pictur"
+    },
+    {
+      "question": "冷める",
+      "answer": "さめる",
+      "meaning": "to cool down, to get cold, to cool off (excitement, temper, etc.), to subside, to dampen, to fade, t"
+    },
+    {
+      "question": "警備",
+      "answer": "けいび",
+      "meaning": "defense, defence, guard, policing, security"
+    },
+    {
+      "question": "寸前",
+      "answer": "すんぜん",
+      "meaning": "just before, on the verge of, on the brink of, just in front of, just ahead of"
+    },
+    {
+      "question": "儀式",
+      "answer": "ぎしき",
+      "meaning": "ceremony, rite, ritual, service"
+    },
+    {
+      "question": "使用人",
+      "answer": "しようにん",
+      "meaning": "employee, servant"
+    },
+    {
+      "question": "治す",
+      "answer": "なおす",
+      "meaning": "to cure, to heal, to fix, to correct, to repair, to do over again, to replace, to put back as it was"
+    },
+    {
+      "question": "塔",
+      "answer": "とう",
+      "meaning": "tower, steeple, spire, stupa, pagoda, dagoba"
+    },
+    {
+      "question": "妖精",
+      "answer": "ようせい",
+      "meaning": "fairy, sprite, elf"
+    },
+    {
+      "question": "店員",
+      "answer": "てんいん,ていいん",
+      "meaning": "employee (of a store), shop assistant, clerk, salesperson"
+    },
+    {
+      "question": "お兄さん",
+      "answer": "おにいさん",
+      "meaning": "older brother, elder brother, young man, buddy, fella, laddie"
+    },
+    {
+      "question": "叶える",
+      "answer": "かなえる",
+      "meaning": "to grant (request, wish), to answer (prayer), to fulfill (conditions), to meet (requirements)"
+    },
+    {
+      "question": "快感",
+      "answer": "かいかん",
+      "meaning": "pleasant feeling, pleasant sensation, pleasure"
+    },
+    {
+      "question": "聞かす",
+      "answer": "きかす",
+      "meaning": "to let (someone) hear, to tell (e.g. a story), to inform (of), to make (someone) listen, to make (so"
+    },
+    {
+      "question": "討伐",
+      "answer": "とうばつ",
+      "meaning": "subjugation (using military force), suppression, subduing"
+    },
+    {
+      "question": "疲れ",
+      "answer": "つかれ,づかれ",
+      "meaning": "tiredness, fatigue, weariness (from), exhaustion"
+    },
+    {
+      "question": "曖昧",
+      "answer": "あいまい",
+      "meaning": "vague, ambiguous, unclear, fuzzy"
+    },
+    {
+      "question": "人影",
+      "answer": "ひとかげ,じんえい",
+      "meaning": "figure of a person, figures of people, shadow of a person"
+    },
+    {
+      "question": "単なる",
+      "answer": "たんなる",
+      "meaning": "mere, simple, sheer"
+    },
+    {
+      "question": "一旦",
+      "answer": "いったん",
+      "meaning": "once, for a short time, briefly, temporarily, one morning"
+    },
+    {
+      "question": "屋根",
+      "answer": "やね",
+      "meaning": "roof"
+    },
+    {
+      "question": "停止",
+      "answer": "ていし,ちょうじ",
+      "meaning": "stoppage, coming to a stop, halt, standstill, ceasing (movement, activity, etc.), suspension (of ope"
+    },
+    {
+      "question": "施す",
+      "answer": "ほどこす",
+      "meaning": "to give (time, money, goods), to donate, to do, to perform, to conduct, to apply (processing, makeup"
+    },
+    {
+      "question": "誇る",
+      "answer": "ほこる",
+      "meaning": "to boast of, to be proud of, to take pride in"
+    },
+    {
+      "question": "祝福",
+      "answer": "しゅくふく",
+      "meaning": "blessing"
+    },
+    {
+      "question": "魅力",
+      "answer": "みりょく",
+      "meaning": "charm, fascination, glamour, glamor, attraction, appeal"
+    },
+    {
+      "question": "指輪",
+      "answer": "ゆびわ",
+      "meaning": "(finger) ring"
+    },
+    {
+      "question": "覗き込む",
+      "answer": "のぞきこむ",
+      "meaning": "to look into, to peer in"
+    },
+    {
+      "question": "医者",
+      "answer": "いしゃ",
+      "meaning": "(medical) doctor, physician"
+    },
+    {
+      "question": "事がある",
+      "answer": "ことがある",
+      "meaning": "(for something) to have occurred, to have done (something), (for something) to happen on occasion"
+    },
+    {
+      "question": "砂",
+      "answer": "すな,いさご",
+      "meaning": "sand, grit"
+    },
+    {
+      "question": "霧",
+      "answer": "きり",
+      "meaning": "fog, mist, spray"
+    },
+    {
+      "question": "踏み込む",
+      "answer": "ふみこむ",
+      "meaning": "to step into (e.g. someone else's territory), to break into, to raid, to come to grips with, to get"
+    },
+    {
+      "question": "突破",
+      "answer": "とっぱ",
+      "meaning": "breaking through, breakthrough, penetration, surmounting, overcoming, exceeding, passing"
+    },
+    {
+      "question": "纏う",
+      "answer": "まとう",
+      "meaning": "to put on, to wear, to be clad in"
+    },
+    {
+      "question": "胸元",
+      "answer": "むなもと",
+      "meaning": "breast, chest, pit of the stomach, solar plexus, epigastrium"
+    },
+    {
+      "question": "惜しい",
+      "answer": "おしい",
+      "meaning": "regrettable, disappointing, unfortunate, precious, dear, valuable, too good for, deserving better, a"
+    },
+    {
+      "question": "成果",
+      "answer": "せいか",
+      "meaning": "(good) result, outcome, fruits (of one's labors), product, accomplishment"
+    },
+    {
+      "question": "加速",
+      "answer": "かそく",
+      "meaning": "acceleration, speeding up"
+    },
+    {
+      "question": "苦痛",
+      "answer": "くつう",
+      "meaning": "pain, agony, bitterness"
+    },
+    {
+      "question": "運動",
+      "answer": "うんどう",
+      "meaning": "exercise, physical training, work-out, appeal, campaign, drive, crusade, movement, lobbying, motion"
+    },
+    {
+      "question": "属性",
+      "answer": "ぞくせい",
+      "meaning": "attribute, property, context, element, character class, type, fetish, etc."
+    },
+    {
+      "question": "目にする",
+      "answer": "めにする",
+      "meaning": "to see, to witness, to observe, to catch sight of, to get a glimpse of, to encounter"
+    },
+    {
+      "question": "方々",
+      "answer": "かたがた,ほうぼう",
+      "meaning": "people, (all) persons, everyone, ladies and gentlemen, you (usu. plural), various, here and there, t"
+    },
+    {
+      "question": "眉",
+      "answer": "まゆ,まみえ",
+      "meaning": "eyebrow, eyebrows"
+    },
+    {
+      "question": "千",
+      "answer": "せん,ち",
+      "meaning": "1,000, thousand"
+    },
+    {
+      "question": "再開",
+      "answer": "さいかい",
+      "meaning": "reopening, resumption, restarting"
+    },
+    {
+      "question": "設置",
+      "answer": "せっち",
+      "meaning": "establishment, institution, installation (of a machine or equipment)"
+    },
+    {
+      "question": "広場",
+      "answer": "ひろば",
+      "meaning": "public square, square, plaza, piazza, forum, open space, clearing"
+    },
+    {
+      "question": "拒否",
+      "answer": "きょひ",
+      "meaning": "refusal, rejection, denial, veto"
+    },
+    {
+      "question": "流石に",
+      "answer": "さすがに",
+      "meaning": "as one would expect, naturally, indeed, still, all the same, after all"
+    },
+    {
+      "question": "両方",
+      "answer": "りょうほう",
+      "meaning": "both, both sides, both parties"
+    },
+    {
+      "question": "歓迎",
+      "answer": "かんげい",
+      "meaning": "welcome, reception"
+    },
+    {
+      "question": "姿を現す",
+      "answer": "すがたをあらわす",
+      "meaning": "to make an appearance, to show up"
+    },
+    {
+      "question": "商品",
+      "answer": "しょうひん",
+      "meaning": "commodity, article of commerce, goods, stock, merchandise"
+    },
+    {
+      "question": "演技",
+      "answer": "えんぎ",
+      "meaning": "acting, performance"
+    },
+    {
+      "question": "悲しみ",
+      "answer": "かなしみ",
+      "meaning": "sadness, sorrow, grief"
+    },
+    {
+      "question": "制御",
+      "answer": "せいぎょ",
+      "meaning": "control (of a machine, device, etc.), control (over an opponent, one's emotions, etc.), governing, m"
+    },
+    {
+      "question": "若者",
+      "answer": "わかもの",
+      "meaning": "young man, young woman, young people, youth, youngsters"
+    },
+    {
+      "question": "入り込む",
+      "answer": "はいりこむ,いりこむ",
+      "meaning": "to go into, to come into, to penetrate, to get in, to step in (a house), to become complicated"
+    },
+    {
+      "question": "牙",
+      "answer": "きば,き,げ",
+      "meaning": "tusk, fang, tooth, ivory"
+    },
+    {
+      "question": "暗闇",
+      "answer": "くらやみ",
+      "meaning": "darkness, the dark"
+    },
+    {
+      "question": "再生",
+      "answer": "さいせい",
+      "meaning": "resuscitation, regeneration, restoration to life, reformation, rehabilitation, playback, regeneratio"
+    },
+    {
+      "question": "悩み",
+      "answer": "なやみ",
+      "meaning": "trouble, troubles, worry, distress, sorrows, anguish, agony, problem"
+    },
+    {
+      "question": "解除",
+      "answer": "かいじょ",
+      "meaning": "cancellation, rescinding, release, calling off, lifting (sanctions), delisting"
+    },
+    {
+      "question": "窺う",
+      "answer": "うかがう",
+      "meaning": "to peep (through), to peek, to examine (esp. covertly), to await (one's chance), to guess, to infer,"
+    },
+    {
+      "question": "動作",
+      "answer": "どうさ",
+      "meaning": "action, movements, motions, bearing, behaviour, behavior, execution, actuation, operation, manners"
+    },
+    {
+      "question": "乙女",
+      "answer": "おとめ",
+      "meaning": "little girl, maiden, young lady, female usually between 7 and 18 years old"
+    },
+    {
+      "question": "三日",
+      "answer": "みっか",
+      "meaning": "third day of the month, three days"
+    },
+    {
+      "question": "充分",
+      "answer": "じゅうぶん",
+      "meaning": "enough, sufficient, plenty, adequate, satisfactory, sufficiently, fully, thoroughly, well, perfectly"
+    },
+    {
+      "question": "手首",
+      "answer": "てくび",
+      "meaning": "wrist"
+    },
+    {
+      "question": "表示",
+      "answer": "ひょうじ",
+      "meaning": "indication, expression, showing, manifestation, demonstration, display, displaying, representation,"
+    },
+    {
+      "question": "冷える",
+      "answer": "ひえる",
+      "meaning": "to grow cold (from room temperature, e.g. in refrigerator), to get chilly, to cool down"
+    },
+    {
+      "question": "変更",
+      "answer": "へんこう",
+      "meaning": "change, modification, alteration, revision, amendment"
+    },
+    {
+      "question": "除く",
+      "answer": "のぞく",
+      "meaning": "to remove, to eliminate, to eradicate, to exclude, to except"
+    },
+    {
+      "question": "外見",
+      "answer": "がいけん,そとみ",
+      "meaning": "outward appearance"
+    },
+    {
+      "question": "中には",
+      "answer": "なかには",
+      "meaning": "among (them), of (them)"
+    },
+    {
+      "question": "会長",
+      "answer": "かいちょう",
+      "meaning": "president (of a society), chairman"
+    },
+    {
+      "question": "陥る",
+      "answer": "おちいる",
+      "meaning": "to fall into (e.g. a hole), to fall into (chaos, depression, dilemma, illness, etc.), to fall into ("
+    },
+    {
+      "question": "社会",
+      "answer": "しゃかい",
+      "meaning": "society, public, community, the world, social studies"
+    },
+    {
+      "question": "化",
+      "answer": "か",
+      "meaning": "action of making something, -ification"
+    },
+    {
+      "question": "奥さん",
+      "answer": "おくさん",
+      "meaning": "wife, your wife, his wife, married lady, madam"
+    },
+    {
+      "question": "怪物",
+      "answer": "かいぶつ",
+      "meaning": "monster"
+    },
+    {
+      "question": "体験",
+      "answer": "たいけん",
+      "meaning": "(practical) experience, personal experience, hands-on experience, first-hand experience"
+    },
+    {
+      "question": "保証",
+      "answer": "ほしょう",
+      "meaning": "guarantee, security, assurance, pledge, warranty"
+    },
+    {
+      "question": "削る",
+      "answer": "けずる,はつる",
+      "meaning": "to shave (wood, leather, etc.), to sharpen (e.g. pencil), to plane, to whittle, to pare, to scrape o"
+    },
+    {
+      "question": "兄貴",
+      "answer": "あにき",
+      "meaning": "elder brother, one's senior, older man, man older than oneself"
+    },
+    {
+      "question": "報酬",
+      "answer": "ほうしゅう",
+      "meaning": "remuneration, recompense, reward, toll"
+    },
+    {
+      "question": "理屈",
+      "answer": "りくつ",
+      "meaning": "theory, reason"
+    },
+    {
+      "question": "尻尾",
+      "answer": "しっぽ,しりお",
+      "meaning": "tail (animal), tail end, tip"
+    },
+    {
+      "question": "一時",
+      "answer": "ひととき,いっとき,いちじ",
+      "meaning": "a (short) time, a while, moment, one time (in the past), a period, former times, two-hour period, on"
+    },
+    {
+      "question": "王宮",
+      "answer": "おうきゅう",
+      "meaning": "royal palace"
+    },
+    {
+      "question": "割る",
+      "answer": "わる",
+      "meaning": "to divide, to cut, to halve, to separate, to split, to rip, to break, to crack, to smash, to dilute,"
+    },
+    {
+      "question": "相応しい",
+      "answer": "ふさわしい",
+      "meaning": "appropriate, adequate, suitable, fitting, worthy"
+    },
+    {
+      "question": "務める",
+      "answer": "つとめる",
+      "meaning": "to work (for), to be employed (at), to serve (in), to serve (as), to act (as), to fill (the position"
+    },
+    {
+      "question": "浅い",
+      "answer": "あさい",
+      "meaning": "shallow, superficial, slight (wound), light (sleep), pale (colour), inadequate (knowledge), short (t"
+    },
+    {
+      "question": "唱える",
+      "answer": "となえる",
+      "meaning": "to recite, to chant, to cry, to yell, to shout, to advocate, to advance, to preach, to insist"
+    },
+    {
+      "question": "付近",
+      "answer": "ふきん",
+      "meaning": "neighbourhood, neighborhood, vicinity, environs, approaching"
+    },
+    {
+      "question": "不明",
+      "answer": "ふめい",
+      "meaning": "unclear, obscure, indistinct, uncertain, ambiguous, unknown, unidentified, ignorance, lack of wisdom"
+    },
+    {
+      "question": "応じる",
+      "answer": "おうじる",
+      "meaning": "to respond, to satisfy, to accept, to comply with, to apply for"
+    },
+    {
+      "question": "一杯",
+      "answer": "いっぱい",
+      "meaning": "amount necessary to fill a container (e.g. cupful, spoonful, etc.), drink (usu. alcoholic), full, on"
+    },
+    {
+      "question": "崩壊",
+      "answer": "ほうかい",
+      "meaning": "collapse, crumbling, breaking down, caving in, (radioactive) decay, disintegration"
+    },
+    {
+      "question": "宿る",
+      "answer": "やどる",
+      "meaning": "to dwell, to live, to remain, to stay at, to take shelter at, to stop at, to lodge at, to be pregnan"
+    },
+    {
+      "question": "特徴",
+      "answer": "とくちょう",
+      "meaning": "feature, trait, characteristic, peculiarity, distinction"
+    },
+    {
+      "question": "安定",
+      "answer": "あんてい",
+      "meaning": "stability, steadiness, equilibrium"
+    },
+    {
+      "question": "推測",
+      "answer": "すいそく",
+      "meaning": "guess, conjecture"
+    },
+    {
+      "question": "逸らす",
+      "answer": "そらす",
+      "meaning": "to turn away (one's eyes, face, etc.), to avert, to divert (e.g. one's attention), to evade (e.g. a"
+    },
+    {
+      "question": "陣",
+      "answer": "じん",
+      "meaning": "battle formation, camp, encampment, position, group, gang, party, corps, war, battle, campaign"
+    },
+    {
+      "question": "幻",
+      "answer": "まぼろし",
+      "meaning": "phantom, vision, illusion, dream, apparition"
+    },
+    {
+      "question": "年上",
+      "answer": "としうえ",
+      "meaning": "older, senior"
+    },
+    {
+      "question": "消滅",
+      "answer": "しょうめつ",
+      "meaning": "extinction, extinguishment, disappearance, vanishing, termination, lapse, annihilation"
+    },
+    {
+      "question": "規模",
+      "answer": "きぼ",
+      "meaning": "scale, scope, plan, structure"
+    },
+    {
+      "question": "訪ねる",
+      "answer": "たずねる",
+      "meaning": "to visit, to call on, to pay a visit to"
+    },
+    {
+      "question": "値段",
+      "answer": "ねだん",
+      "meaning": "price, cost"
+    },
+    {
+      "question": "耳元",
+      "answer": "みみもと",
+      "meaning": "close to the ear"
+    },
+    {
+      "question": "接近",
+      "answer": "せっきん",
+      "meaning": "getting closer, drawing nearer, approaching, being not much different, being near (age, skill, etc.)"
+    },
+    {
+      "question": "負け",
+      "answer": "まけ",
+      "meaning": "defeat, loss, losing (a game), failing to live up to (one's name, looks, etc.), discount, loss (on a"
+    },
+    {
+      "question": "拍手",
+      "answer": "はくしゅ,かしわで",
+      "meaning": "clapping hands, applause, clapping one's hands in prayer (at a shrine)"
+    },
+    {
+      "question": "兄様",
+      "answer": "にいさま",
+      "meaning": "older brother"
+    },
+    {
+      "question": "聴く",
+      "answer": "きく",
+      "meaning": "to hear, to listen (e.g. to music), to ask, to enquire, to query, to hear about, to hear of, to lear"
+    },
+    {
+      "question": "添える",
+      "answer": "そえる",
+      "meaning": "to garnish, to accompany (as a card does a gift), to add to as support, to prop up, to accompany (as"
+    },
+    {
+      "question": "聖女",
+      "answer": "せいじょ",
+      "meaning": "saint, holy woman"
+    },
+    {
+      "question": "地味",
+      "answer": "じみ,ちみ",
+      "meaning": "plain, simple, subdued, sober, reserved (behaviour, attitude, etc.), modest, quiet, unobtrusive, qui"
+    },
+    {
+      "question": "約",
+      "answer": "やく",
+      "meaning": "approximately, about, promise, appointment, engagement, shortening, reduction, simplification, contr"
+    },
+    {
+      "question": "故郷",
+      "answer": "ふるさと,こきょう",
+      "meaning": "home town, birthplace, native place, one's old home, ruins, historic remains"
+    },
+    {
+      "question": "貴女",
+      "answer": "あなた,きじょ",
+      "meaning": "you (referring to someone of equal or lower status), noblewoman, lady, you"
+    },
+    {
+      "question": "仮面",
+      "answer": "かめん",
+      "meaning": "mask, disguise, guise"
+    },
+    {
+      "question": "腐る",
+      "answer": "くさる",
+      "meaning": "to rot, to go bad, to decay, to spoil, to fester, to decompose, to turn sour (e.g. milk), to corrode"
+    },
+    {
+      "question": "伴う",
+      "answer": "ともなう",
+      "meaning": "to accompany, to go hand in hand with, to be consequent upon, to be accompanied by, to bring with, t"
+    },
+    {
+      "question": "帯びる",
+      "answer": "おびる",
+      "meaning": "to wear (sword, decoration, etc.), to carry, to be entrusted (e.g. with a mission), to take on, to h"
+    },
+    {
+      "question": "無表情",
+      "answer": "むひょうじょう",
+      "meaning": "lack of expression, blank look (on one's face)"
+    },
+    {
+      "question": "小声",
+      "answer": "こごえ",
+      "meaning": "low voice, whisper"
+    },
+    {
+      "question": "枝",
+      "answer": "えだ,し",
+      "meaning": "branch, bow, bough, twig, limb, counter for long, thin things (i.e. swords)"
+    },
+    {
+      "question": "遭遇",
+      "answer": "そうぐう",
+      "meaning": "encounter, being confronted with (e.g. difficulty), meeting with (e.g. accident)"
+    },
+    {
+      "question": "淡い",
+      "answer": "あわい",
+      "meaning": "light, faint, pale, fleeting"
+    },
+    {
+      "question": "季節",
+      "answer": "きせつ",
+      "meaning": "season, time of year"
+    },
+    {
+      "question": "捕らえる",
+      "answer": "とらえる",
+      "meaning": "to catch, to capture, to seize, to arrest, to grab, to catch hold of, to grasp (e.g. meaning), to pe"
+    },
+    {
+      "question": "巡る",
+      "answer": "めぐる",
+      "meaning": "to go around, to return, to surround, to concern (usu. of disputes)"
+    },
+    {
+      "question": "前方",
+      "answer": "ぜんぽう,まえかた",
+      "meaning": "forward, frontward, ahead, rectangular front, previously, some time ago"
+    },
+    {
+      "question": "正義",
+      "answer": "せいぎ",
+      "meaning": "justice, right, righteousness, correct meaning, correct explanation"
+    },
+    {
+      "question": "作り",
+      "answer": "つくり,づくり",
+      "meaning": "making, producing, manufacturing, building, construction, make, structure, appearance (attire, make-"
+    },
+    {
+      "question": "目が合う",
+      "answer": "めがあう",
+      "meaning": "for two people's eyes to meet, catching someone's eye, making eye contact, meeting a person's gaze"
+    },
+    {
+      "question": "歓声",
+      "answer": "かんせい",
+      "meaning": "cheer, shout of joy"
+    },
+    {
+      "question": "指定",
+      "answer": "してい",
+      "meaning": "designation, specification, assignment, appointment, pointing at"
+    },
+    {
+      "question": "柔らか",
+      "answer": "やわらか",
+      "meaning": "soft, tender, limp, subdued (colour or light) (color), gentle, meek"
+    },
+    {
+      "question": "生かす",
+      "answer": "いかす",
+      "meaning": "to make (the best) use of, to put to good use, to leverage (skills, attributes, experience, etc.), t"
+    },
+    {
+      "question": "継ぐ",
+      "answer": "つぐ",
+      "meaning": "to succeed (a person, to a position, etc.), to inherit, to take over, to follow, to patch (clothes),"
+    },
+    {
+      "question": "丸",
+      "answer": "まる,がん",
+      "meaning": "circle, entirety, whole, full, complete, money, dough, moola, enclosure inside a castle's walls, sof"
+    },
+    {
+      "question": "跡",
+      "answer": "あと,せき",
+      "meaning": "trace, tracks, mark, sign, site, remains, ruins, scar"
+    },
+    {
+      "question": "想定",
+      "answer": "そうてい",
+      "meaning": "hypothesis, supposition, assumption"
+    },
+    {
+      "question": "領地",
+      "answer": "りょうち",
+      "meaning": "territory, dominion, grounds (e.g. school)"
+    },
+    {
+      "question": "配置",
+      "answer": "はいち",
+      "meaning": "arrangement (of resources), deployment, stationing, posting, disposition, configuration, layout"
+    },
+    {
+      "question": "逃す",
+      "answer": "のがす",
+      "meaning": "to miss (e.g. a chance), to lose, to let get away, to set free, to let go, to fail to ..."
+    },
+    {
+      "question": "使い",
+      "answer": "つかい",
+      "meaning": "errand, mission, going as envoy, messenger, bearer, errand boy, errand girl, familiar spirit, use, u"
+    },
+    {
+      "question": "淡々",
+      "answer": "たんたん",
+      "meaning": "uninterested, unconcerned, indifferent, dispassionate, matter-of-fact, detached, plain, light, simpl"
+    },
+    {
+      "question": "決断",
+      "answer": "けつだん",
+      "meaning": "decision, determination"
+    }
+  ]
+}

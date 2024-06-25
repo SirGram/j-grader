@@ -1,5 +1,5 @@
 export interface IDeckCard {
-    answer: string[];
+    answer: string[] | string;
     meaning: string;
     question: string;
   }

@@ -1,10 +1,10 @@
 import { create } from "zustand";
 import { IDeck } from "../types/types";
 
-const initialPrecision = 15;
-const initialInputMode= true
-const initialIsRomajiInput= true
-const initialAnswerTime= 5
+const initialPrecision = 2;
+const initialInputMode = true;
+const initialIsRomajiInput = true;
+const initialAnswerTime = 5;
 
 interface IDeckStore {
   decks: IDeck[];
@@ -14,11 +14,10 @@ interface IDeckStore {
   incrementDeckCounter: (deckName: string) => void;
   inputMode: boolean;
   setInputMode: (value: boolean) => void;
-  isRomajiInput:boolean;
+  isRomajiInput: boolean;
   setIsRomajiInput: (value: boolean) => void;
-  answerTime:number;
-  setAnswerTime:(value: number) => void;
-
+  answerTime: number;
+  setAnswerTime: (value: number) => void;
 }
 
 export const useDeckStore = create<IDeckStore>((set) => ({
@@ -41,5 +40,3 @@ export const useDeckStore = create<IDeckStore>((set) => ({
   answerTime: initialAnswerTime,
   setAnswerTime: (value) => set({ answerTime: value }),
 }));
-
-

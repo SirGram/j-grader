@@ -36,3 +36,11 @@ export function calculateResultWithError(j: number, n: number, N: number, initia
     SE: SE.toFixed(1)
   };
 }
+
+export function processAnswer(answer: string | string[]): string[] {
+  if (Array.isArray(answer)) {
+    return answer;
+  } else {
+    return answer.split(',').map(item => item.trim());
+  }
+}

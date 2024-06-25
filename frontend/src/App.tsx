@@ -6,6 +6,21 @@ import dataN2 from "./decks/n2.json";
 import dataN3 from "./decks/n3.json";
 import dataN4 from "./decks/n4.json";
 import dataN5 from "./decks/n5.json";
+import data1K from "./decks/1k.json";
+import data2K from "./decks/2.5k.json";
+import data5K from "./decks/5k.json";
+import data10K from "./decks/10k.json";
+import data20k from "./decks/20k.json";
+import data25k from "./decks/25k.json";
+import data30k from "./decks/30k.json";
+import data35k from "./decks/35k.json";
+import data40k from "./decks/40k.json";
+import data50k from "./decks/50k.json";
+import data60k from "./decks/60k.json";
+import data70k from "./decks/70k.json";
+import data80k from "./decks/80k.json";
+import data90k from "./decks/90k.json";
+
 import { IDeck, IDeckCard, IDeckCardWithState } from "./types/types";
 import DeckTable from "./components/DeckTable";
 import Precision from "./components/Precision";
@@ -230,8 +245,8 @@ function Game() {
     </section>
   ) : (
     <section className="flex flex-col gap-10 justify-center items-center">
-        <Results elapsedTime={seconds} />
-        <WordTable words={words} />
+      <Results elapsedTime={seconds} />
+      <WordTable words={words} />
     </section>
   );
 }
@@ -247,7 +262,27 @@ export default function App() {
     setAnswerTime,
   } = useDeckStore();
 
-  const availableDecks = [dataN1, dataN2, dataN3, dataN4, dataN5];
+  const jlptDecks = [dataN1, dataN2, dataN3, dataN4, dataN5];
+  const frequencyDecks = [
+    data1K,
+    data2K,
+    data5K,
+    data10K,
+    data20k,
+    data25k,
+    data30k,
+    data35k,
+    data40k,
+    data50k,
+    data60k,
+    data70k,
+    data80k,
+    data90k,
+  ];
+  const {setPrecision} = useDeckStore()
+  const [activeTab, setActiveTab] = useState<"noken" | "frequency">("frequency");
+  const availableDecks = activeTab === "noken" ? jlptDecks : frequencyDecks;
+
   const [selectedDecksNames, setSelectedDecksNames] = useState<string[]>([]);
   const [gameStarted, setGameStarted] = useState(false);
   const answerTimeOptions = [0, 3, 4, 5, 6, 7, 10];
@@ -329,10 +364,19 @@ export default function App() {
     }
   };
 
+  useEffect(() => {
+    setSelectedDecksNames([]);
+    if (activeTab === "frequency") {
+      setPrecision(2);
+    } else {
+      setPrecision(15);
+    }
+  }, [activeTab]);
+
   return (
     <div className="min-h-screen flex flex-col">
-    <header className="w-full p-4 bg-[url('/bg.png')] bg-left-top bg-contain bg-no-repeat bg-opacity-60 relative md:text-5xl">
-      <div className="absolute inset-0 bg-[url('/bg.png')] bg-left-top bg-contain bg-no-repeat opacity-60  -z-20"></div>
+      <header className="w-full p-4 bg-[url('/bg.png')] bg-left-top bg-contain bg-no-repeat bg-opacity-60 relative md:text-5xl">
+        <div className="absolute inset-0 bg-[url('/bg.png')] bg-left-top bg-contain bg-no-repeat opacity-60  -z-20"></div>
         <h1 className="font-hiroshi relative z-10">
           j<span className="text-red-800">-GRADE</span>
           <span className="text-red-950">r</span>
@@ -346,24 +390,41 @@ export default function App() {
       </header>
       <ThemeSelector />
       <main
-        className={`flex items-center w-full flex-1 h-full p-4 pb-10   flex-col gap-6  justify-center items-center `}
+        className={`flex items-center w-full flex-1 h-full p-4 pb-10   flex-col gap-6  justify-center  `}
       >
         {!gameStarted ? (
           <div className="  bg-base-100  flex  gap-20 flex-col md:flex-row">
             <div>
+              <div role="tablist" className="tabs tabs-bordered pb-2">
+                <a
+                  role="tab"
+                  className={`tab ${activeTab === "noken" ? "tab-active" : ""}`}
+                  onClick={() => setActiveTab("noken")}
+                >
+                  JLPT
+                </a>
+                <a
+                  role="tab"
+                  className={`tab ${activeTab === "frequency" ? "tab-active" : ""}`}
+                  onClick={() => setActiveTab("frequency")}
+                >
+                  FREQUENCY
+                </a>
+              </div>
               <div
-                className={`flex w-full justify-end pr-6 ${decks.length > 0 ? "opacity-0" : ""}`}
+                className={`flex w-full   justify-end pr-6 ${decks.length > 0 ? "opacity-0" : ""}`}
               >
                 <div className="animate-bounce animate-infinite flex items-end ">
                   <span className="mb-1">Select a deck</span>
                   <FaArrowTurnDown />
                 </div>
               </div>
-              <DeckTable
-                availableDecks={availableDecks}
-                handleChange={handleDeckSelection}
-                selectedDecksNames={selectedDecksNames}
-              />
+                <DeckTable
+                  availableDecks={availableDecks}
+                  handleChange={handleDeckSelection}
+                  selectedDecksNames={selectedDecksNames}
+                />
+            
             </div>
             <div className="flex flex-col gap-4">
               <Precision />
@@ -392,11 +453,13 @@ export default function App() {
                 <button
                   onClick={handleNextAnswerTimeOption}
                   className="radial-progress bg-base-200"
-                  style={{
-                    "--value": answerTimeProgress.toString() ,
-                    "--size": "4rem",
-                    "--thickness": "10px",
-                  }as React.CSSProperties}
+                  style={
+                    {
+                      "--value": answerTimeProgress.toString(),
+                      "--size": "4rem",
+                      "--thickness": "10px",
+                    } as React.CSSProperties
+                  }
                   role="progressbar"
                 >
                   {answerTime}s
@@ -426,14 +489,14 @@ export default function App() {
           </div>
         ) : (
           <>
-              <button
-                className={`ml-4 sm:ml-20 btn w-fit btn-accent text-xl left-0 self-start mr-auto`}
-                onClick={restartGame}
-              >
-                <BsArrowLeft />
-                BACK
-              </button>
-          
+            <button
+              className={`ml-4 sm:ml-20 btn w-fit btn-accent text-xl left-0 self-start mr-auto`}
+              onClick={restartGame}
+            >
+              <BsArrowLeft />
+              BACK
+            </button>
+
             <Game />
           </>
         )}

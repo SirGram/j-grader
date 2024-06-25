@@ -2,12 +2,15 @@ import { useState, useRef, useEffect } from "react";
 import { toRomaji } from "wanakana";
 import { useDeckStore } from "../stores/deckStore";
 import { IDeckCard } from "../types/types";
+import { processAnswer } from "../utils/utils";
 
 interface WordCardProps {
   word: IDeckCard | null;
   onAnswer: (value: boolean) => void;
   isRomajiInput: boolean;
 }
+
+
 
 export function WordCard({ word, onAnswer }: WordCardProps) {
   const { inputMode, isRomajiInput } = useDeckStore();
@@ -19,20 +22,21 @@ export function WordCard({ word, onAnswer }: WordCardProps) {
     setInputValue(value);
     console.log(value);
 
-    const answers = isRomajiInput
-      ? word?.answer.map((answer) => toRomaji(answer.toLowerCase()))
-      : word?.answer;
+    if (word) {
+      const answers = processAnswer(word.answer);
+      const processedAnswers = isRomajiInput
+        ? answers.map((answer) => toRomaji(answer.toLowerCase()))
+        : answers;
 
-    if (answers && answers.includes(value)) {
-      onAnswer(true);
-      setInputValue("");
-    } else if (value.includes("1" || "１")) {
-      onAnswer(false);
-
-      setInputValue("");
+      if (processedAnswers.includes(value)) {
+        onAnswer(true);
+        setInputValue("");
+      } else if (value.includes("1") || value.includes("１")) {
+        onAnswer(false);
+        setInputValue("");
+      }
     }
   };
-
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "1") {

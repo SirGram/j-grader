@@ -1,24 +1,28 @@
-import { useEffect, useState } from "react";
-import { IDeckCardWithState } from "../types/types";
+import { useEffect, useState } from "react";import { IDeckCardWithState } from "../types/types";
+import { processAnswer } from "../utils/utils";
+
+
 
 function PastWordCard({ word }: { word: IDeckCardWithState | null }) {
-    return (
-      <article
-        className={`w-full p-2 flex flex-col shadow-xl rounded-lg overflow-hidden bg-primary-content transition-all ${!word && "opacity-0"}`}
+  const answers = word ? processAnswer(word.answer) : [];
+
+  return (
+    <article
+      className={`w-full p-2 flex flex-col shadow-xl rounded-lg overflow-hidden bg-primary-content transition-all ${!word && "opacity-0"}`}
+    >
+      <div
+        className={`w-full flex-col h-28   text-5xl flex items-center justify-center pb-4 ${word?.state === "failed" ? "text-red-500" : "text-green-500"}`}
       >
-        <div
-          className={`w-full flex-col h-28   text-5xl flex items-center justify-center pb-4 ${word?.state === "failed" ? "text-red-500" : "text-green-500"}`}
-        >
-          <span className="text-xl">{word?.answer.join(", ") || ""}</span>
-          <span className={`text-5xl `}>{word?.question || ""}</span>
-        </div>
-        <div className="bg-base-300 w-full h-1 "></div>
-        <div className="w-full flex-col h-min bg-primary-content  p-4 text-5xl flex items-center justify-center ">
-          <span className="text-xl text-neutral-content">{word?.meaning || ""}</span>
-        </div>
-      </article>
-    );
-  }
+        <span className="text-xl">{answers.join(", ") || ""}</span>
+        <span className={`text-5xl `}>{word?.question || ""}</span>
+      </div>
+      <div className="bg-base-300 w-full h-1 "></div>
+      <div className="w-full flex-col h-min bg-primary-content  p-4 text-5xl flex items-center justify-center ">
+        <span className="text-xl text-neutral-content">{word?.meaning || ""}</span>
+      </div>
+    </article>
+  );
+}
 export function WordsCarrousel({ words }: { words: IDeckCardWithState[] }) {
     const [currentIndex, setCurrentIndex] = useState(0);
   
