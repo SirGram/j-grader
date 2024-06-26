@@ -262,8 +262,8 @@ export default function App() {
     setAnswerTime,
   } = useDeckStore();
 
-  const jlptDecks = [dataN1, dataN2, dataN3, dataN4, dataN5];
-  const frequencyDecks = [
+  const jlptDecks: IDeck[] = [dataN1, dataN2, dataN3, dataN4, dataN5];
+  const frequencyDecks: IDeck[] = [
     data1K,
     data2K,
     data5K,
@@ -281,7 +281,7 @@ export default function App() {
   ];
   const {setPrecision} = useDeckStore()
   const [activeTab, setActiveTab] = useState<"noken" | "frequency">("frequency");
-  const availableDecks = activeTab === "noken" ? jlptDecks : frequencyDecks;
+  const availableDecks: IDeck[] = activeTab === "noken" ? jlptDecks : frequencyDecks;
 
   const [selectedDecksNames, setSelectedDecksNames] = useState<string[]>([]);
   const [gameStarted, setGameStarted] = useState(false);
