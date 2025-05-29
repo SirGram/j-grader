@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { toRomaji } from "wanakana";
+import { toKana, toRomaji } from "wanakana";
 import { useDeckStore } from "../stores/deckStore";
 import { IDeckCard } from "../types/types";
 import { processAnswer } from "../utils/utils";
@@ -20,15 +20,25 @@ export function WordCard({ word, onAnswer }: WordCardProps) {
   const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.toLowerCase();
     setInputValue(value);
-    console.log(value);
+
+    const realValue = toRomaji(toKana(value));
 
     if (word) {
       const answers = processAnswer(word.answer);
       const processedAnswers = isRomajiInput
-        ? answers.map((answer) => toRomaji(answer.toLowerCase()))
+        ? answers.map((answer) => toRomaji(answer.toLowerCase(), { customRomajiMapping:{
+          "んな":"nnna",
+          "んに": "nnni",
+          "んぬ": "nnnu",
+          "んね": "nnne",
+          "んの": "nnno",
+          "んにゃ": "nnnya",
+          "んにゅ": "nnnyu",
+          "んにょ": "nnnyo",
+            }}).replace("n'", "nn"))
         : answers;
 
-      if (processedAnswers.includes(value)) {
+      if (processedAnswers.includes(isRomajiInput ? realValue : value)) {
         onAnswer(true);
         setInputValue("");
       } else if (value.includes("1") || value.includes("１")) {
