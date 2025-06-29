@@ -6,16 +6,15 @@ import { processAnswer } from "../utils/utils";
 
 interface WordCardProps {
   word: IDeckCard | null;
-  onAnswer: (value: boolean) => void;
+  onAnswer: (value: boolean | null) => void;
   isRomajiInput: boolean;
 }
-
-
 
 export function WordCard({ word, onAnswer }: WordCardProps) {
   const { inputMode, isRomajiInput } = useDeckStore();
   const [inputValue, setInputValue] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
+  const [showAnswer, setShowAnswer] = useState(false);
 
   const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.toLowerCase();
@@ -26,16 +25,20 @@ export function WordCard({ word, onAnswer }: WordCardProps) {
     if (word) {
       const answers = processAnswer(word.answer);
       const processedAnswers = isRomajiInput
-        ? answers.map((answer) => toRomaji(answer.toLowerCase(), { customRomajiMapping:{
-          "んな":"nnna",
-          "んに": "nnni",
-          "んぬ": "nnnu",
-          "んね": "nnne",
-          "んの": "nnno",
-          "んにゃ": "nnnya",
-          "んにゅ": "nnnyu",
-          "んにょ": "nnnyo",
-            }}).replace("n'", "nn"))
+        ? answers.map((answer) =>
+            toRomaji(answer.toLowerCase(), {
+              customRomajiMapping: {
+                んな: "nnna",
+                んに: "nnni",
+                んぬ: "nnnu",
+                んね: "nnne",
+                んの: "nnno",
+                んにゃ: "nnnya",
+                んにゅ: "nnnyu",
+                んにょ: "nnnyo"
+              }
+            }).replace("n'", "nn")
+          )
         : answers;
 
       if (processedAnswers.includes(isRomajiInput ? realValue : value)) {
@@ -47,15 +50,53 @@ export function WordCard({ word, onAnswer }: WordCardProps) {
       }
     }
   };
+
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "1") {
-        onAnswer(false);
-      } else if (
-        (!inputMode && event.key === "2") ||
-        (!inputMode && event.key === " ")
-      ) {
-        onAnswer(true);
+      const activeElement = document.activeElement;
+      const isInputFocused =
+        activeElement &&
+        (activeElement.tagName === "INPUT" ||
+          activeElement.tagName === "TEXTAREA" ||
+          activeElement.getAttribute("contenteditable") === "true");
+
+      // Don't process keys if input is focused (avoid conflicts)
+      if (isInputFocused) return;
+
+      if (!inputMode) {
+        if (!showAnswer && event.key === " ") {
+          event.preventDefault();
+          setShowAnswer(true);
+          onAnswer(null);
+          return;
+        }
+
+        if (showAnswer) {
+          if (event.key === "1") {
+            event.preventDefault();
+            onAnswer(false);
+            setShowAnswer(false);
+            return;
+          }
+          if (event.key === "2") {
+            event.preventDefault();
+            onAnswer(true);
+            setShowAnswer(false);
+            return;
+          }
+        }
+      } else {
+        // inputMode is true (typing mode)
+        if (event.key === "1") {
+          event.preventDefault();
+          onAnswer(false);
+          return;
+        }
+        if (event.key === "2") {
+          event.preventDefault();
+          onAnswer(true);
+          return;
+        }
       }
     };
 
@@ -63,7 +104,7 @@ export function WordCard({ word, onAnswer }: WordCardProps) {
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, [onAnswer, inputMode]);
+  }, [inputMode, showAnswer, onAnswer]);
 
   useEffect(() => {
     if (inputRef.current) {
@@ -72,6 +113,7 @@ export function WordCard({ word, onAnswer }: WordCardProps) {
       }, 100);
     }
     setInputValue("");
+    setShowAnswer(false);
   }, [word]);
 
   return (
@@ -84,26 +126,41 @@ export function WordCard({ word, onAnswer }: WordCardProps) {
           <div className="h-20 flex">
             {!inputMode ? (
               <>
-                <button
-                  className="bg-base-300 text-error w-full h-full hover:opacity-70  flex items-center justify-center"
-                  onClick={() => onAnswer(false)}
-                >
-                  FAIL
-                  <span className="kbd kbd-sm text-base-content mb-3 ml-1">
-                    1
-                  </span>
-                </button>
-
-                <button
-                  className="bg-base-200 w-full h-full hover:opacity-70 text-lime-600 flex items-center justify-center"
-                  onClick={() => onAnswer(true)}
-                >
-                  PASS
-                  <span className=" text-base-content mb-5 ml-1">
-                    <span className="kbd kbd-sm mr-0.5">2</span>
-                    <span className=" kbd kbd-sm">_</span>
-                  </span>
-                </button>
+                {!showAnswer ? (
+                  <button
+                    className="bg-base-300 w-full h-full hover:opacity-70 flex items-center justify-center"
+                    onClick={() => {
+                      setShowAnswer(true);
+                      onAnswer(null);
+                    }}
+                  >
+                    SHOW ANSWER
+                    <span className="kbd kbd-sm text-base-content mb-3 ml-1">
+                      _
+                    </span>
+                  </button>
+                ) : (
+                  <>
+                    <button
+                      className="bg-base-300 text-error w-full h-full hover:opacity-70 flex items-center justify-center"
+                      onClick={() => onAnswer(false)}
+                    >
+                      FAIL
+                      <span className="kbd kbd-sm text-base-content mb-3 ml-1">
+                        1
+                      </span>
+                    </button>
+                    <button
+                      className="bg-base-200 w-full h-full hover:opacity-70 text-lime-600 flex items-center justify-center"
+                      onClick={() => onAnswer(true)}
+                    >
+                      PASS
+                      <span className=" text-base-content mb-5 ml-1">
+                        <span className="kbd kbd-sm mr-0.5">2</span>
+                      </span>
+                    </button>
+                  </>
+                )}
               </>
             ) : (
               <div className="p-2 w-full ">

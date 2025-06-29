@@ -42,7 +42,7 @@ function Game() {
     isRomajiInput,
     setIsRomajiInput,
     inputMode,
-    answerTime,
+    answerTime
   } = useDeckStore();
 
   const { startTimer, pauseTimer, seconds } = useTimer();
@@ -52,7 +52,7 @@ function Game() {
     isCountdownRunning,
     togglePause,
     resetCountdown,
-    stopCountdown,
+    stopCountdown
   } = useCountDown(answerTime);
 
   const [decksEmpty, setDecksEmpty] = useState(false);
@@ -117,23 +117,47 @@ function Game() {
     }
   }, [word, decksEmpty]);
 
-  const handleAnswer = (isCorrect: boolean) => {
-    if (word) {
-      if (isCorrect) {
-        setWords((prevWords) => [...prevWords, { ...word, state: "passed" }]);
-        if (deck) {
-          const updatedDecks = decks;
-          updatedDecks[deckIndex].correctCount! += 1;
-          setDecks(updatedDecks);
-        }
+  const handleAnswer = (isCorrect: boolean | null) => {
+    if (!word) return;
+
+    // Determine new state based on isCorrect
+    const newState =
+      isCorrect === true
+        ? "passed"
+        : isCorrect === false
+          ? "failed"
+          : "unrated";
+
+    setWords((prevWords) => {
+      // Find index of existing word by question
+      const index = prevWords.findIndex((w) => w.question === word.question);
+
+      if (index === -1) {
+        return [...prevWords, { ...word, state: newState }];
       } else {
-        setFailedWordsNumber((prev) => prev + 1);
-        setWords((prevWords) => [...prevWords, { ...word, state: "failed" }]);
+        const newWords = [...prevWords];
+        newWords[index] = { ...newWords[index], state: newState };
+        return newWords;
       }
-      setButtonPressed(true);
+    });
+
+    if (isCorrect === true) {
+      if (deck) {
+        // Update decks immutably
+        const updatedDecks = decks.map((d, i) =>
+          i === deckIndex
+            ? { ...d, correctCount: (d.correctCount ?? 0) + 1 }
+            : d
+        );
+        setDecks(updatedDecks);
+      }
+      shiftCard();
+    } else if (isCorrect === false) {
+      setFailedWordsNumber((prev) => prev + 1);
+      shiftCard();
     }
 
-    shiftCard();
+    setButtonPressed(true);
   };
 
   const remainingCards = decks.reduce(
@@ -225,7 +249,7 @@ function Game() {
       <div className="flex flex-col justify-center gap-10  items-center">
         <div className="relative">
           {wordComponent}
-          {answerTime !== 0 && (
+          {answerTime !== 0 && inputMode && (
             <button
               onClick={() => togglePause()}
               className="absolute right-1 top-1 text-neutral-content"
@@ -259,7 +283,7 @@ export default function App() {
     inputMode,
     setInputMode,
     answerTime,
-    setAnswerTime,
+    setAnswerTime
   } = useDeckStore();
 
   const jlptDecks: IDeck[] = [dataN1, dataN2, dataN3, dataN4, dataN5];
@@ -277,15 +301,18 @@ export default function App() {
     data60k,
     data70k,
     data80k,
-    data90k,
+    data90k
   ];
-  const {setPrecision} = useDeckStore()
-  const [activeTab, setActiveTab] = useState<"noken" | "frequency">("frequency");
-  const availableDecks: IDeck[] = activeTab === "noken" ? jlptDecks : frequencyDecks;
+  const { setPrecision } = useDeckStore();
+  const [activeTab, setActiveTab] = useState<"noken" | "frequency">(
+    "frequency"
+  );
+  const availableDecks: IDeck[] =
+    activeTab === "noken" ? jlptDecks : frequencyDecks;
 
   const [selectedDecksNames, setSelectedDecksNames] = useState<string[]>([]);
   const [gameStarted, setGameStarted] = useState(false);
-  const answerTimeOptions = [0, 3, 4, 5, 6, 7, 10];
+  const answerTimeOptions = [0, 5, 10, 20];
   const answerTimeLastOption = answerTimeOptions[answerTimeOptions.length - 1];
   const answerTimeProgress = (answerTime * 100) / answerTimeLastOption;
 
@@ -322,7 +349,7 @@ export default function App() {
       .map((deck) => ({
         ...deck,
         deckSize: deck.cards.length,
-        correctCount: 0,
+        correctCount: 0
       }));
 
     // Pick random cards based on precision value size
@@ -332,7 +359,7 @@ export default function App() {
       return {
         ...deck,
         cards: randomCards,
-        sampleSize: randomCards.length,
+        sampleSize: randomCards.length
       };
     });
 
@@ -347,6 +374,7 @@ export default function App() {
   console.log(decks);
 
   const handleNextAnswerTimeOption = () => {
+    if (!inputMode) return;
     const currentIndex = answerTimeOptions.indexOf(answerTime);
     const nextIndex = (currentIndex + 1) % answerTimeOptions.length;
     setAnswerTime(answerTimeOptions[nextIndex]);
@@ -373,6 +401,12 @@ export default function App() {
     }
   }, [activeTab]);
 
+  useEffect(() => {
+    if (!inputMode) {
+      setAnswerTime(0);
+    }
+  }, [inputMode, setAnswerTime]);
+
   return (
     <div className="min-h-screen flex flex-col">
       <header className="w-full p-4 bg-[url('/bg.png')] bg-left-top bg-contain bg-no-repeat bg-opacity-60 relative md:text-5xl">
@@ -393,8 +427,9 @@ export default function App() {
         className={`flex items-center w-full flex-1 h-full p-4 pb-10   flex-col gap-6  justify-center  `}
       >
         {!gameStarted ? (
-          <div className="  bg-base-100  flex  gap-20 flex-col md:flex-row">
-            <div>
+          <div className="bg-base-100 flex gap-20 flex-col md:flex-row">
+            {/* Left panel: Tabs + deck selection */}
+            <div className="min-w-[300px] flex-shrink-0">
               <div role="tablist" className="tabs tabs-bordered pb-2">
                 <a
                   role="tab"
@@ -411,28 +446,32 @@ export default function App() {
                   FREQUENCY
                 </a>
               </div>
+
               <div
-                className={`flex w-full   justify-end pr-6 ${decks.length > 0 ? "opacity-0" : ""}`}
+                className={`flex w-full justify-end pr-6 min-h-[40px] ${
+                  decks.length > 0 ? "invisible" : "visible"
+                }`}
               >
-                <div className="animate-bounce animate-infinite flex items-end ">
+                <div className="animate-bounce animate-infinite flex items-end">
                   <span className="mb-1">Select a deck</span>
                   <FaArrowTurnDown />
                 </div>
               </div>
-                <DeckTable
-                  availableDecks={availableDecks}
-                  handleChange={handleDeckSelection}
-                  selectedDecksNames={selectedDecksNames}
-                />
-            
+
+              <DeckTable
+                availableDecks={availableDecks}
+                handleChange={handleDeckSelection}
+                selectedDecksNames={selectedDecksNames}
+              />
             </div>
-            <div className="flex flex-col gap-4">
+
+            {/* Right panel: Controls */}
+            <div className="flex flex-col gap-4 min-w-[300px] flex-shrink-0">
               <Precision />
               <label
                 htmlFor="inputType"
                 className="flex w-full justify-between"
               >
-                {" "}
                 Write answers?
                 <input
                   type="checkbox"
@@ -444,42 +483,61 @@ export default function App() {
               </label>
               <label
                 htmlFor="inputType"
-                className="flex w-full justify-between place-items-center"
+                className="flex w-full justify-between place-items-center gap-2"
+                title="Set answer time. 0 means unlimited time (timer disabled)."
               >
-                {" "}
-                <span className={`${answerTime === 0 ? " line-through" : ""} `}>
+                <span
+                  className={`font-semibold ${answerTime === 0 ? "text-red-600 line-through" : ""}`}
+                >
                   Answer Time
                 </span>
+
                 <button
                   onClick={handleNextAnswerTimeOption}
-                  className="radial-progress bg-base-200"
+                  className={`radial-progress bg-base-200 w-16 h-16 flex flex-col items-center justify-center select-none
+      ${answerTime === 0 ? "border-2 border-red-600 text-red-600" : "text-neutral-content"}
+    `}
                   style={
                     {
-                      "--value": answerTimeProgress.toString(),
+                      "--value":
+                        answerTime === 0
+                          ? "100"
+                          : answerTimeProgress.toString(),
                       "--size": "4rem",
-                      "--thickness": "10px",
+                      "--thickness": "10px"
                     } as React.CSSProperties
                   }
                   role="progressbar"
+                  aria-label={`Answer time set to ${answerTime === 0 ? "unlimited" : answerTime + " seconds"}`}
                 >
-                  {answerTime}s
+                  {answerTime === 0 ? (
+                    <>
+                      <span className="text-sm font-bold">Off</span>
+                    </>
+                  ) : (
+                    <span className="text-lg font-bold">{answerTime}s</span>
+                  )}
                 </button>
               </label>
 
-              <div className="   flex w-full justify-end">
-                <div className="bg-base-200 w-fit p-4  rounded-box">
+              <div className="flex w-full justify-end">
+                <div className="bg-base-200 w-fit p-4 rounded-box">
                   Total cards: <b>{totalCardCountSample}</b>
                 </div>
               </div>
+
               <div
-                className={`   flex w-full justify-end  ${decks.length > 0 ? "" : "opacity-0"}`}
+                className={`flex w-full justify-end min-h-[48px] ${
+                  decks.length > 0 ? "visible" : "invisible"
+                }`}
               >
-                <div className="bg-base-200 w-fit p-4  rounded-box">
+                <div className="bg-base-200 w-fit p-4 rounded-box">
                   Estimated time: <b>{getTimeRange()}</b>
                 </div>
               </div>
+
               <button
-                className={`btn w-full btn-accent text-xl `}
+                className="btn w-full btn-accent text-xl"
                 onClick={startGame}
                 disabled={decks.length < 1 || totalCardCountSample < 1}
               >

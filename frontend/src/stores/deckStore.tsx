@@ -31,12 +31,12 @@ export const useDeckStore = create<IDeckStore>((set) => ({
         deck.name === deckName
           ? { ...deck, correctCount: (deck.correctCount || 0) + 1 }
           : deck
-      ),
+      )
     })),
   inputMode: initialInputMode,
   setInputMode: (value) => set({ inputMode: value }),
   isRomajiInput: initialIsRomajiInput,
   setIsRomajiInput: (value) => set({ isRomajiInput: value }),
   answerTime: initialAnswerTime,
-  setAnswerTime: (value) => set({ answerTime: value }),
+  setAnswerTime: (value) => set({ answerTime: value })
 }));
