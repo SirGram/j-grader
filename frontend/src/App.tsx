@@ -304,11 +304,16 @@ export default function App() {
     data90k
   ];
   const { setPrecision } = useDeckStore();
-  const [activeTab, setActiveTab] = useState<"noken" | "frequency">(
-    "frequency"
+  const [activeTab, setActiveTab] = useState<"noken" | "frequency" | "custom">(
+    "noken"
   );
+  const [customDecks, setCustomDecks] = useState<IDeck[]>([]);
   const availableDecks: IDeck[] =
-    activeTab === "noken" ? jlptDecks : frequencyDecks;
+    activeTab === "noken"
+      ? jlptDecks
+      : activeTab === "frequency"
+        ? frequencyDecks
+        : customDecks;
 
   const [selectedDecksNames, setSelectedDecksNames] = useState<string[]>([]);
   const [gameStarted, setGameStarted] = useState(false);
@@ -407,6 +412,126 @@ export default function App() {
     }
   }, [inputMode, setAnswerTime]);
 
+  // Load custom decks from localStorage
+  const loadCustomDecks = () => {
+    const storedDecks = localStorage.getItem("customDecks");
+    if (storedDecks) {
+      try {
+        const parsedDecks = JSON.parse(storedDecks);
+        if (Array.isArray(parsedDecks)) {
+          const validDecks = parsedDecks
+            .filter(
+              (deck) =>
+                deck.name &&
+                Array.isArray(deck.cards) &&
+                deck.cards.every(
+                  (card: any) =>
+                    typeof card.question === "string" &&
+                    typeof card.answer === "string"
+                )
+            )
+            .map((deck) => ({
+              ...deck,
+              correctCount: 0,
+              deckSize: deck.cards.length
+            }));
+          setCustomDecks(validDecks);
+        }
+      } catch (err) {
+        console.error("Failed to parse custom decks:", err);
+        setCustomDecks([]);
+      }
+    } else {
+      setCustomDecks([]);
+    }
+  };
+
+  // Save custom decks to localStorage
+  const saveCustomDecks = (decks: IDeck[]) => {
+    localStorage.setItem("customDecks", JSON.stringify(decks));
+  };
+
+  const handleCustomDeckUpload = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      try {
+        const json = JSON.parse(e.target?.result as string);
+        if (!json.name || !Array.isArray(json.cards)) {
+          alert("Invalid deck format. Must have 'name' and 'cards' array.");
+          return;
+        }
+
+        // Check if cards have required fields
+        const hasValidCards = json.cards.every(
+          (card: any) =>
+            typeof card.question === "string" && typeof card.answer === "string"
+        );
+
+        if (!hasValidCards) {
+          alert(
+            "Invalid card format. Each card must have 'question' and 'answer' strings."
+          );
+          return;
+        }
+
+        // Check if deck name already exists
+        const existingDeckIndex = customDecks.findIndex(
+          (deck) => deck.name === json.name
+        );
+
+        const newDeck = {
+          ...json,
+          correctCount: 0,
+          deckSize: json.cards.length
+        };
+
+        let updatedDecks;
+        if (existingDeckIndex !== -1) {
+          // Replace existing deck
+          updatedDecks = [...customDecks];
+          updatedDecks[existingDeckIndex] = newDeck;
+          alert(`Deck "${json.name}" updated!`);
+        } else {
+          // Add new deck
+          updatedDecks = [...customDecks, newDeck];
+          alert(`Deck "${json.name}" uploaded!`);
+        }
+
+        setCustomDecks(updatedDecks);
+        saveCustomDecks(updatedDecks);
+
+        // Clear the file input
+        event.target.value = "";
+      } catch (err) {
+        alert("Failed to read JSON file. Please check the format.");
+        console.error(err);
+      }
+    };
+    reader.readAsText(file);
+  };
+
+  const handleDeleteCustomDeck = (deckName: string) => {
+    const updatedDecks = customDecks.filter((deck) => deck.name !== deckName);
+    setCustomDecks(updatedDecks);
+    saveCustomDecks(updatedDecks);
+
+    // Remove from selected decks if it was selected
+    setSelectedDecksNames((prev) => prev.filter((name) => name !== deckName));
+
+    alert(`Deck "${deckName}" deleted!`);
+  };
+
+  useEffect(() => {
+    if (activeTab === "custom") {
+      loadCustomDecks();
+    }
+  }, [activeTab]);
+
   return (
     <div className="min-h-screen flex flex-col">
       <header className="w-full p-4 bg-[url('/bg.png')] bg-left-top bg-contain bg-no-repeat bg-opacity-60 relative md:text-5xl">
@@ -415,7 +540,7 @@ export default function App() {
           j<span className="text-red-800">-GRADE</span>
           <span className="text-red-950">r</span>
           <span className="ml-2 badge badge-outline badge-primary md:text-2xl p-4 font-sans">
-            BETA
+            1.0
           </span>
         </h1>
         <h2 className="ml-10 text-base relative z-10">
@@ -445,24 +570,80 @@ export default function App() {
                 >
                   FREQUENCY
                 </a>
+                <a
+                  role="tab"
+                  className={`tab ${activeTab === "custom" ? "tab-active" : ""}`}
+                  onClick={() => setActiveTab("custom")}
+                >
+                  CUSTOM
+                </a>
               </div>
 
-              <div
-                className={`flex w-full justify-end pr-6 min-h-[40px] ${
-                  decks.length > 0 ? "invisible" : "visible"
-                }`}
-              >
-                <div className="animate-bounce animate-infinite flex items-end">
-                  <span className="mb-1">Select a deck</span>
-                  <FaArrowTurnDown />
+              {availableDecks.length > 0 && (
+                <>
+                  <div
+                    className={`flex w-full justify-end pr-6 min-h-[40px] ${
+                      decks.length > 0 ? "invisible" : "visible"
+                    }`}
+                  >
+                    <div className="animate-bounce animate-infinite flex items-end">
+                      <span className="mb-1">Select a deck</span>
+                      <FaArrowTurnDown />
+                    </div>
+                  </div>
+
+                  <DeckTable
+                    availableDecks={availableDecks}
+                    handleChange={handleDeckSelection}
+                    selectedDecksNames={selectedDecksNames}
+                  />
+                </>
+              )}
+
+              {activeTab === "custom" && (
+                <div className="space-y-4 mt-4">
+                  <div>
+                    <input
+                      type="file"
+                      accept=".json"
+                      onChange={handleCustomDeckUpload}
+                      className="file-input w-full input-info"
+                    />
+                    <p className="text-xs text-gray-500 mt-1">
+                      Format:&nbsp;
+                      <code>
+                        {
+                          "{ name: string, cards: [{ question, answer, meaning }] }"
+                        }
+                      </code>
+                    </p>
+                  </div>
+
+                  {customDecks.length > 0 && (
+                    <div className="space-y-2">
+                      <h3 className="font-semibold text-sm">
+                        Manage Custom Decks:
+                      </h3>
+                      {customDecks.map((deck) => (
+                        <div
+                          key={deck.name}
+                          className="flex items-center justify-between bg-base-200 p-2 rounded"
+                        >
+                          <span className="text-sm font-medium">
+                            {deck.name}
+                          </span>
+                          <button
+                            onClick={() => handleDeleteCustomDeck(deck.name)}
+                            className="btn btn-xs btn-error"
+                          >
+                            Delete
+                          </button>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
-              </div>
-
-              <DeckTable
-                availableDecks={availableDecks}
-                handleChange={handleDeckSelection}
-                selectedDecksNames={selectedDecksNames}
-              />
+              )}
             </div>
 
             {/* Right panel: Controls */}
